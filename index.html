@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+
+<head>
+    <title>What's my crab</title>
+    <style>
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/whatcrab.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+                <div class="col">
+                    <h1>What's my crab?</h1>
+                    <div class="header-tag-line">Helping to identify New Zealand crabs</div>
+                </div>
+        </header>
+        <div class="row">
+            <div class="col-4">
+                <div>
+                    <div class="filters-info">
+                        <div class="expandor" data-bind="click: function() { filterInfoShown(!filterInfoShown()); } ">
+                            Filter info ...
+                            <!-- <i class="material-icons">search</i> -->
+                            <div class="expander-icon">
+                                <i data-bind="visible: !filterInfoShown()" class="material-icons">expand_more</i>
+                                <i data-bind="visible: filterInfoShown()" class="material-icons">expand_less</i>
+                            </div>
+                        </div>
+                        <div class="filters-info-details" data-bind="visible: filterInfoShown">
+                            You can select multiple answers for each filter; for example if for the shell/carapace shape filter you select both the round and square options, then all round and square shaped crabs will show.<br/>
+                            If you're unsure of the answer or a filter doesn't apply you don't have to answer anything for it.
+                        </div>
+                        
+                    </div>
+                    <!-- ko foreach: filters -->
+                        <div class="filter" data-bind="visible: visible">
+                            <div class="question"><span data-bind="text: question"></span><i class="material-icons">help</i></div>
+                            
+                            <div class="help-text" ><i class="material-icons">help</i><span data-bind="text: helpText"></span></div>
+                            <!-- <div>filter visibility is <span data-bind="text:visible"></span> </div> -->
+                            <div class="filter-options">
+                                <!-- ko foreach: possibleValues -->
+                                <div class="filter-option" data-bind="css: { activated: activated }, click : function() { activated(!activated()); $parents[1].filterValueChangedEvent($parents[0]); }">
+                                    
+                                    <div data-bind="text:text"></div>
+                                    <!-- <span data-bind="text:activated"></span> -->
+                                    <div data-bind="visible: image">
+                                        <img data-bind="attr: { src : image }" alt="crab-shape" />
+                                    </div>
+                                </div>
+                                <!-- /ko -->
+                            </div>
+                        </div>
+                    <!-- /ko -->
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="matched-results-title">These are the crabs that match your filters <span></span>:</div>
+                
+                <!-- ko foreach: crabData -->
+                <div class="crab-container" data-bind="visible:visible">
+                    <div class="common-name" data-bind="text:commonName"></div>
+                    <div class="scientific-name" >(<span data-bind="text:scientificName"></span>)</div>
+                    <div class="crab-image-container" data-bind="with : currentImage">
+                        <div class="image-count-display" data-bind="text: $parent.images.length, visible: $parent.images.length > 1"></div>
+                        <img class="crab-image" src="" data-bind="click : function() { $parent.showNextImage(); } , attr: { src : url }" alt="crab picture" />
+                    </div> 
+                </div>
+                <!-- /ko -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Challenges:
+                <ul>
+                    <li>Using a mix of scientific terms and common terms (e.g. carapace vs shell)</li>
+                    <li>I haven't got images for everything</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/knockout-3.5.1.js"></script>
+    <script type="text/javascript" src="js/whatcrab-crabdata.js"></script>
+    <script type="text/javascript" src="js/whatcrab-filterdata.js"></script>
+    <script type="text/javascript" src="js/whatcrab.js"></script>
+    <script type="text/javascript">
+
+
+
+    </script>
+</body>
+
+</html>
