@@ -35,6 +35,18 @@ var filterData = [
         ],
         visibleWhen : { key : "carapaceShape", value : "round" },
         question : "Is their a single tooth (or spike) on each side of the shell?",
+        showHelpText : true,
         helpText : "Some of the smaller round shelled crabs have a single tooth/spike on each side of their shell which can be help to narrow down the type of crab."
+    },
+    {
+        key : "posteriorSpines",
+        possibleValues : [
+            { key : "true", text : "Two posterior spines", image: "images/two-posterior-spines.png" },
+            { key : "false", text : "No posterior", image: "images/no-posterior-spines.png" }
+        ],
+        visibleWhen : { key : "carapaceShape", value : "triangle" },
+        question : "Are there two spines/spikes on the back of the shell?",
+        showHelpText : true,
+        helpText : "Some Camouflage crabs (crabs that are covered in seaweed) have two posterior spines/spikes on the back of their shell facing backwards."
     },
 ]

@@ -21,6 +21,11 @@ var FilterModel = function(filter, pageModel) {
     self.question = filter.question;            // the question for the filter e.g. "What shape is the shell of the crab"
     self.helpText = filter.helpText;            // some text that expands on the filter's question
     self.showHelpText = ko.observable(filter.showHelpText || false);    // whether the help text is shown for this question
+    self.ignored = ko.observable(false);        // if the user has selected to ignore this question
+
+    self.classes = ko.computed(function() {
+        return self.ignored() ? "filter filter-ignored" : "filter";
+    });
 
     // check to see if there are any activated values on this filter (i.e. something is selected on the filter)
     self.hasAnyValueActivated = function() {
@@ -57,14 +62,21 @@ var FilterModel = function(filter, pageModel) {
     self.setVisibility = function(visibility) {
         self.visible(visibility);
         // if we're making this filter not visible then we need to clear it so it isn't actively effecting our results list
-        var activatedFilterChange = false;
         if(!visibility) {
-            for(var i = 0; i < self.possibleValues.length; i++) {
-                if(self.possibleValues[i].activated()) {
-                    activatedFilterChange = true;
-                }
-                self.possibleValues[i].activated(false);
+            return self.deactiveFilterValues();
+        } else {
+            return false;
+        }
+    };
+
+    // deactive any set values on this filter, return a value indicating if we turned some stuff off
+    self.deactiveFilterValues = function() {
+        var activatedFilterChange = false;
+        for(var i = 0; i < self.possibleValues.length; i++) {
+            if(self.possibleValues[i].activated()) {
+                activatedFilterChange = true;
             }
+            self.possibleValues[i].activated(false);
         }
         return activatedFilterChange;
     };
@@ -146,6 +158,14 @@ var PageModel = function() {
         });
         return total;
     });
+
+    self.filterIgnoreChangedEvent = function(filterThatChanged) {
+        filterThatChanged.ignored(!filterThatChanged.ignored());
+        var vaulesDisabled = filterThatChanged.deactiveFilterValues();
+        if(vaulesDisabled) {
+            self.checkCrabVisibilityDueToFilterChange(filterToCheck);
+        }
+    };
 
     self.filterValueChangedEvent = function(filterThatChanged) {
         self.checkFilterVisibility();

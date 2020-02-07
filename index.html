@@ -39,22 +39,28 @@
                         
                     </div>
                     <!-- ko foreach: filters -->
-                        <div class="filter" data-bind="visible: visible">
-                            <div class="question"><span data-bind="text: question"></span><i title="show more info" class="material-icons" data-bind="visible: !showHelpText(), click : function() { showHelpText(true); }">help</i></div>
-                            
-                            <div class="help-text" data-bind="visible: showHelpText" ><i title="hide more info" data-bind="click : function() { showHelpText(false); }" class="material-icons">help</i><span data-bind="text: helpText"></span></div>
-                            <!-- <div>filter visibility is <span data-bind="text:visible"></span> </div> -->
-                            <div class="filter-options">
-                                <!-- ko foreach: possibleValues -->
-                                <div class="filter-option" data-bind="css: { activated: activated }, click : function() { activated(!activated()); $parents[1].filterValueChangedEvent($parents[0]); }">
-                                    
-                                    <div data-bind="text:text"></div>
-                                    <!-- <span data-bind="text:activated"></span> -->
-                                    <div data-bind="visible: image">
-                                        <img data-bind="attr: { src : image }" alt="crab-shape" />
+                        <div class="filter" data-bind="visible: visible, class : classes">
+                            <div data-bind="visible : ignored, click : function() { ignored(false); }">
+                                <span data-bind="text: question"></span> (ignored)
+                            </div>
+                            <div data-bind="visible : !ignored()">
+                                <div class="question"><span data-bind="text: question"></span><i title="show more info" class="material-icons" data-bind="visible: !showHelpText(), click : function() { showHelpText(true); }">help</i></div>
+                                
+                                <div class="help-text" data-bind="visible: showHelpText" ><i title="hide more info" data-bind="click : function() { showHelpText(false); }" class="material-icons">help</i><span data-bind="text: helpText"></span></div>
+                                <!-- <div>filter visibility is <span data-bind="text:visible"></span> </div> -->
+                                <div class="filter-options">
+                                    <!-- ko foreach: possibleValues -->
+                                    <div class="filter-option" data-bind="css: { activated: activated }, click : function() { activated(!activated()); $parents[1].filterValueChangedEvent($parents[0]); }">
+                                        
+                                        <div data-bind="text:text"></div>
+                                        <!-- <span data-bind="text:activated"></span> -->
+                                        <div data-bind="visible: image">
+                                            <img data-bind="attr: { src : image }" alt="crab-shape" />
+                                        </div>
                                     </div>
+                                    <!-- /ko -->
                                 </div>
-                                <!-- /ko -->
+                                <div class="ignore-filter-container" data-bind="click : function() { $parents[0].filterIgnoreChangedEvent($data); }">I don't know / ignore this question</div>
                             </div>
                         </div>
                     <!-- /ko -->

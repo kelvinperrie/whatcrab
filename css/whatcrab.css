@@ -32,6 +32,11 @@ header {
     padding: 1em;
     border-radius: 0.3em;
 }
+.filter-ignored{
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+    cursor: pointer;
+}
 .question {
     font-size: 1.5em;
     margin-bottom: 0.3em;
@@ -68,6 +73,11 @@ header {
     color: #FFFFFF;
     text-align: center;
     font-size: .8em;
+    cursor: pointer;
+}
+.ignore-filter-container {
+    text-align: right;
+    font-size: 0.8em;
     cursor: pointer;
 }
 
