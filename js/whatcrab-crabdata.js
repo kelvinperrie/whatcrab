@@ -9,7 +9,7 @@ var crabData = [
         images : [
             { url : "https://static.inaturalist.org/photos/58026368/large.jpg?1576450688" }
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/410371-Petrolisthes-elongatus"
+        natureWatchLink: "https://inaturalist.nz/taxa/410371-Petrolisthes-elongatus"
     },
     {
         commonName : "Red Half-Crab",
@@ -20,7 +20,7 @@ var crabData = [
         images : [
             { url : "https://static.inaturalist.org/photos/59758890/large.jpg?1579219623" }
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/471708-Petrolisthes-novaezelandiae"
+        natureWatchLink: "https://inaturalist.nz/taxa/471708-Petrolisthes-novaezelandiae"
     },
     {
         commonName : "Big-Handed Crab",
@@ -31,7 +31,7 @@ var crabData = [
         images : [
             { url : "https://static.inaturalist.org/photos/52078601/large.jpg?1569120977" }
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/410714-Heterozius-rotundifrons"
+        natureWatchLink: "https://inaturalist.nz/taxa/410714-Heterozius-rotundifrons"
     },
     {
         commonName : "Pie Crust Crab",
@@ -43,7 +43,7 @@ var crabData = [
             { url : "https://static.inaturalist.org/photos/59642254/large.jpg?1579053800" },
             { url : "https://static.inaturalist.org/photos/59642252/large.jpg?1579053798" }
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/410433-Metacarcinus-novaezelandiae"
+        natureWatchLink: "https://inaturalist.nz/taxa/410433-Metacarcinus-novaezelandiae"
     },
     {
         commonName : "Policeman Crab",
@@ -54,7 +54,7 @@ var crabData = [
         images : [
             { url : "https://static.inaturalist.org/photos/31253008/large.jpg?1549783369" }
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/471045-Neommatocarcinus-huttoni"
+        natureWatchLink: "https://inaturalist.nz/taxa/471045-Neommatocarcinus-huttoni"
     },
     {
         commonName : "Purple Rock Crab",
@@ -67,7 +67,7 @@ var crabData = [
             { url : "https://static.inaturalist.org/photos/59867596/large.jpg?1579394117" },
             { url : "https://static.inaturalist.org/photos/58026735/large.jpg?1576451040" }
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/326099-Leptograpsus-variegatus"
+        natureWatchLink: "https://inaturalist.nz/taxa/326099-Leptograpsus-variegatus"
     },
     {
         commonName : "Common Rock Crab",
@@ -80,7 +80,7 @@ var crabData = [
             { url : "https://static.inaturalist.org/photos/59867812/large.jpg?1579394358" },
             { url : "https://static.inaturalist.org/photos/36119006/large.jpg?1556341147" }
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/410820-Hemigrapsus-sexdentatus"
+        natureWatchLink: "https://inaturalist.nz/taxa/410820-Hemigrapsus-sexdentatus"
     },
     {
         commonName : "Paua Spider Crab",
@@ -91,7 +91,7 @@ var crabData = [
         images : [
             { url : "https://static.inaturalist.org/photos/56734487/large.jpg?1574391148" }
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/471049-Elamena-producta"
+        natureWatchLink: "https://inaturalist.nz/taxa/471049-Elamena-producta"
     },
     {
         commonName : "Cook's Pillbox Crab",
@@ -104,7 +104,7 @@ var crabData = [
         images : [
             { url : "https://static.inaturalist.org/photos/52079954/large.jpg?1569122286" }
         ],
-        natureWatchImageLink: "https://static.inaturalist.org/photos/52079954/large.jpg?1569122286"
+        natureWatchLink: "https://static.inaturalist.org/photos/52079954/large.jpg?1569122286"
     },
     {
         commonName : "Flat Pillbox Crab",
@@ -117,7 +117,7 @@ var crabData = [
             { url : "https://static.inaturalist.org/photos/28454186/large.jpeg?1543038599" },
             { url : "https://static.inaturalist.org/photos/26921887/large.jpeg?1540007564" }
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/410832-Halicarcinus-innominatus"
+        natureWatchLink: "https://inaturalist.nz/taxa/410832-Halicarcinus-innominatus"
     },
     {
         commonName : "Variable Pillbox Crab",
@@ -129,7 +129,7 @@ var crabData = [
         images : [
             { url : "https://static.inaturalist.org/photos/59640822/large.jpg?1579051845" }
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/416625-Halicarcinus-varius"
+        natureWatchLink: "https://inaturalist.nz/taxa/416625-Halicarcinus-varius"
     },
     {
         commonName : "White's False Spider Crab",
@@ -142,7 +142,7 @@ var crabData = [
         images : [
             { url : "https://static.inaturalist.org/photos/30676304/large.jpg?1548546813" }
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/471051-Halicarcinus-whitei"
+        natureWatchLink: "https://inaturalist.nz/taxa/471051-Halicarcinus-whitei"
     },
     {
         commonName : "New Zealand Crown Crab",
@@ -154,7 +154,7 @@ var crabData = [
             { key : "covering", values : ["setae"] }
         ],
         images : [],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/471053-Hymenosoma-depressum"
+        natureWatchLink: "https://inaturalist.nz/taxa/471053-Hymenosoma-depressum"
     },
     {
         commonName : null,
@@ -168,7 +168,7 @@ var crabData = [
             { url : "https://static.inaturalist.org/photos/29172890/large.jpeg?1544839594" },
             { url : "https://static.inaturalist.org/photos/58346532/large.jpg?1577053231" },
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/471492-Neohymenicus-pubescens"
+        natureWatchLink: "https://inaturalist.nz/taxa/471492-Neohymenicus-pubescens"
     },
     {
         commonName : "Triangle Crab",
@@ -179,7 +179,7 @@ var crabData = [
         images : [
             { url : "https://static.inaturalist.org/photos/59759094/large.jpg?1579219887" },
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/424825-Eurynolambrus-australis"
+        natureWatchLink: "https://inaturalist.nz/taxa/424825-Eurynolambrus-australis"
     },
     {
         commonName : "Small Decorator Crab",
@@ -193,7 +193,7 @@ var crabData = [
         images : [
             { url : "https://static.inaturalist.org/photos/29604637/large.jpeg?1545979036" },
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/410680-Notomithrax-minor"
+        natureWatchLink: "https://inaturalist.nz/taxa/410680-Notomithrax-minor"
     },
     {
         commonName : "Peron's Decorator Crab",
@@ -206,7 +206,7 @@ var crabData = [
         images : [
             { url : "https://static.inaturalist.org/photos/43768712/large.jpg?1562115869" },
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/410683-Notomithrax-peronii"
+        natureWatchLink: "https://inaturalist.nz/taxa/410683-Notomithrax-peronii"
     },
     {
         commonName : "Hairy Seaweed Crab",
@@ -220,7 +220,7 @@ var crabData = [
             { url : "https://static.inaturalist.org/photos/48653558/large.jpg?1566200370" },
             { url : "https://static.inaturalist.org/photos/58346138/large.jpg?1577052802" },
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/410681-Notomithrax-ursus"
+        natureWatchLink: "https://inaturalist.nz/taxa/410681-Notomithrax-ursus"
     },
     {
         commonName : "Iron Crab",
@@ -232,7 +232,7 @@ var crabData = [
             { url : "https://static.inaturalist.org/photos/58603998/large.jpg?1577488288" },
             { url : "https://static.inaturalist.org/photos/50215076/large.jpg?1567499152" },
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/496210-Ozius-deplanatus"
+        natureWatchLink: "https://inaturalist.nz/taxa/496210-Ozius-deplanatus"
     },
     {
         commonName : "Smooth-Handed Crab",
@@ -244,7 +244,7 @@ var crabData = [
             { url : "https://static.inaturalist.org/photos/29568932/large.jpeg?1545892882" },
             { url : "https://static.inaturalist.org/photos/54043892/large.jpg?1571033968" },
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/471785-Pilumnopeus-serratifrons"
+        natureWatchLink: "https://inaturalist.nz/taxa/471785-Pilumnopeus-serratifrons"
     },
     {
         commonName : "Hairy Crab",
@@ -257,7 +257,7 @@ var crabData = [
             { url : "https://static.inaturalist.org/photos/35241504/large.jpg?1555731045" },
             { url : "https://static.inaturalist.org/photos/59759210/large.jpg?1579219986" }
         ],
-        natureWatchImageLink: "https://inaturalist.nz/taxa/471785-Pilumnopeus-serratifrons"
+        natureWatchLink: "https://inaturalist.nz/taxa/471785-Pilumnopeus-serratifrons"
     },
     {
         commonName : "Red Rock Crab",

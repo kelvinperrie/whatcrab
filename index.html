@@ -31,16 +31,18 @@
                             </div>
                         </div>
                         <div class="filters-info-details" data-bind="visible: filterInfoShown">
-                            You can select multiple answers for each filter; for example if for the shell/carapace shape filter you select both the round and square options, then all round and square shaped crabs will show.<br/>
-                            If you're unsure of the answer or a filter doesn't apply you don't have to answer anything for it.
+                            <ul>
+                                <li>You can select multiple answers for each filter; for example if for the shell/carapace shape filter you select both the round and square options, then all round and square shaped crabs will show.</li>
+                                <li>If you're unsure of the answer or a filter doesn't apply you don't have to answer anything for it.</li>
+                            </ul>
                         </div>
                         
                     </div>
                     <!-- ko foreach: filters -->
                         <div class="filter" data-bind="visible: visible">
-                            <div class="question"><span data-bind="text: question"></span><i class="material-icons">help</i></div>
+                            <div class="question"><span data-bind="text: question"></span><i title="show more info" class="material-icons" data-bind="visible: !showHelpText(), click : function() { showHelpText(true); }">help</i></div>
                             
-                            <div class="help-text" ><i class="material-icons">help</i><span data-bind="text: helpText"></span></div>
+                            <div class="help-text" data-bind="visible: showHelpText" ><i title="hide more info" data-bind="click : function() { showHelpText(false); }" class="material-icons">help</i><span data-bind="text: helpText"></span></div>
                             <!-- <div>filter visibility is <span data-bind="text:visible"></span> </div> -->
                             <div class="filter-options">
                                 <!-- ko foreach: possibleValues -->
@@ -59,7 +61,7 @@
                 </div>
             </div>
             <div class="col-8">
-                <div class="matched-results-title">These are the crabs that match your filters <span></span>:</div>
+                <div class="matched-results-title">These are the crabs that match your filters (<span data-bind="text: shownCrabCount"></span>):</div>
                 
                 <!-- ko foreach: crabData -->
                 <div class="crab-container" data-bind="visible:visible">
@@ -69,6 +71,18 @@
                         <div class="image-count-display" data-bind="text: $parent.images.length, visible: $parent.images.length > 1"></div>
                         <img class="crab-image" src="" data-bind="click : function() { $parent.showNextImage(); } , attr: { src : url }" alt="crab picture" />
                     </div> 
+                    <div class="crab-links">
+                        <div class="crab-link">
+                            <a data-bind="attr: { href : natureWatchLink }" target="_blank" title="See more info on inaturalist.nz">
+                                <i class="material-icons">info</i>
+                            </a>
+                        </div>
+                        <div class="crab-link">
+                            <a data-bind="attr: { href : natureWatchImagesLink }" target="_blank" title="See more images on inaturalist.nz">
+                                <i class="material-icons">image</i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <!-- /ko -->
             </div>

@@ -20,7 +20,7 @@ var FilterModel = function(filter, pageModel) {
     }
     self.question = filter.question;            // the question for the filter e.g. "What shape is the shell of the crab"
     self.helpText = filter.helpText;            // some text that expands on the filter's question
-    self.showHelpText = ko.observable(false);
+    self.showHelpText = ko.observable(filter.showHelpText || false);    // whether the help text is shown for this question
 
     // check to see if there are any activated values on this filter (i.e. something is selected on the filter)
     self.hasAnyValueActivated = function() {
@@ -66,6 +66,7 @@ var CrabModel = function(crab) {
     self.scientificName = crab.scientificName;                  // the stupid scientific name
     self.attributes = crab.attributes;                          // an array of attributes that describe the crab e.g. [ { key : "carapaceShape",  values : ["oval"] } ]
     self.images = crab.images;
+    self.natureWatchLink = crab.natureWatchLink;
     self.currentImageIndex = ko.observable(0);
     self.hiddenByFilters = ko.observableArray();                // an obs array of the filter keys that have caused this crab to be hidden
 
@@ -77,6 +78,9 @@ var CrabModel = function(crab) {
             return null;
         }
         return self.images[self.currentImageIndex()];
+    });
+    self.natureWatchImagesLink = ko.computed(function() {
+        return self.natureWatchLink + "/browse_photos";
     });
     self.showNextImage = function() {
         self.currentImageIndex(self.currentImageIndex()+1);
@@ -118,7 +122,13 @@ var PageModel = function() {
     //   });
 
     self.shownCrabCount = ko.computed(function() {
-
+        var total = 0;
+        ko.utils.arrayForEach(self.crabData(), function(item) {
+            if (item.visible()) {
+                total += 1;
+            }
+        });
+        return total;
     });
 
     self.filterValueChangedEvent = function(filterThatChanged) {
