@@ -25,7 +25,7 @@ var FilterModel = function(filter, pageModel) {
     // check to see if there are any activated values on this filter (i.e. something is selected on the filter)
     self.hasAnyValueActivated = function() {
         for(var i = 0; i < filter.possibleValues.length; i++) {
-            if(filter.possibleValues.activated() === true) {
+            if(filter.possibleValues[i].activated() === true) {
                 return true;
             }
         }
@@ -52,6 +52,22 @@ var FilterModel = function(filter, pageModel) {
         }
         return activeValues;
     }
+
+    // set the visibility of the filter, return whether we had to deactive some filter options
+    self.setVisibility = function(visibility) {
+        self.visible(visibility);
+        // if we're making this filter not visible then we need to clear it so it isn't actively effecting our results list
+        var activatedFilterChange = false;
+        if(!visibility) {
+            for(var i = 0; i < self.possibleValues.length; i++) {
+                if(self.possibleValues[i].activated()) {
+                    activatedFilterChange = true;
+                }
+                self.possibleValues[i].activated(false);
+            }
+        }
+        return activatedFilterChange;
+    };
 
     // check to see if this filter should be visible
     self.checkVisibility = function() {
@@ -139,6 +155,7 @@ var PageModel = function() {
     // go through each filter and determine whether is should be visible or not
     self.checkFilterVisibility = function() {
         for(var i = 0; i < self.filters().length; i ++) {
+            var deactivatedFilterValues = false;    // keep track of whether a filter made invisible had some values deactivated
             var filterToCheck = self.filters()[i];
             if(filterToCheck.visibleWhen) {
                 console.log("found visible when of ")
@@ -148,15 +165,20 @@ var PageModel = function() {
                 if(otherFilter) {
                     console.log("found other filter")
                     var activated = otherFilter.checkValueIsActivated(filterToCheck.visibleWhen.value);
-                    filterToCheck.visible(activated);
+                    deactivatedFilterValues = filterToCheck.setVisibility(activated);
 
                 } else {
                     // this is a weird situation where the filter is dependant on another but we couldn't find that other ...
-                    filterToCheck.visible(false);
+                    deactivatedFilterValues = filterToCheck.setVisibility(false);
                 }
             } else {
                 // this filter has not constraints on visibility so just show it
-                filterToCheck.visible(true);
+                filterToCheck.setVisibility(true);
+            }
+            // if we hide a filter and it had some value active they have now been deactivated and we need to update our
+            // crab visibility based on this filter change
+            if(deactivatedFilterValues) {
+                self.checkCrabVisibilityDueToFilterChange(filterToCheck);
             }
         }
     };
@@ -165,6 +187,7 @@ var PageModel = function() {
     self.checkCrabVisibilityDueToFilterChange = function(filterThatChanged) {
         // get the values that are set on the filter
         var activeValues = filterThatChanged.getActiveValues();
+        console.log("crab visibility check")
         console.log(activeValues);
         // for each crab, check to see if this filter change effects visibility
         crabLoop:for(var i = 0; i < self.crabData().length; i ++) {
