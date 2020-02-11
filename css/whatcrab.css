@@ -98,6 +98,11 @@ header {
     color: #ebebeb;
     padding: 0.3em;
 }
+.crab-shadow {
+    -moz-box-shadow:    5px 5px 4px 0px #888;
+    -webkit-box-shadow: 5px 5px 4px 0px #888;
+    box-shadow:         5px 5px 4px 0px #888;
+  }
 .crab-container .scientific-name {
     font-size: 0.8em;
 }

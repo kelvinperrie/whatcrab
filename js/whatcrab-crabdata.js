@@ -61,7 +61,7 @@ var crabData = [
         scientificName : "Leptograpsus variegatus",
         aka : ["Swift Footed Shore Crab", "Purple Ninja Crab"],
         attributes : [
-            { key: "carapaceShape" , values : ["square"] }
+            { key: "carapaceShape" , values : ["square","round"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/59867596/large.jpg?1579394117" },

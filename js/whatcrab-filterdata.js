@@ -33,7 +33,7 @@ var filterData = [
             { key : "true", text : "Has tooth on edge of shell", image: "images/tooth-on-margin-true.png" },
             { key : "false", text : "No tooth on edge of shell", image: "images/tooth-on-margin-false.png" }
         ],
-        visibleWhen : { key : "carapaceShape", value : "round" },
+        visibleWhen : [{ key : "carapaceShape", value : "round" }],
         question : "Is their a single tooth (or spike) on each side of the shell?",
         showHelpText : true,
         helpText : "Some of the smaller round shelled crabs have a single tooth/spike on each side of their shell which can be help to narrow down the type of crab."

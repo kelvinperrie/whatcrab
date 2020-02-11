@@ -168,31 +168,23 @@ var PageModel = function() {
     };
 
     self.filterValueChangedEvent = function(filterThatChanged) {
-        self.checkFilterVisibility();
+        self.setFilterVisibility();
         self.checkCrabVisibilityDueToFilterChange(filterThatChanged);
     };
 
     // go through each filter and determine whether is should be visible or not
-    self.checkFilterVisibility = function() {
+    self.setFilterVisibility = function() {
         for(var i = 0; i < self.filters().length; i ++) {
             var deactivatedFilterValues = false;    // keep track of whether a filter made invisible had some values deactivated
             var filterToCheck = self.filters()[i];
             if(filterToCheck.visibleWhen) {
-                console.log("found visible when of ")
-                console.log(filterToCheck.visibleWhen);
-                var keyToCheck = filterToCheck.visibleWhen.key;
-                var otherFilter = self.findFilterByKey(keyToCheck);
-                if(otherFilter) {
-                    console.log("found other filter")
-                    var activated = otherFilter.checkValueIsActivated(filterToCheck.visibleWhen.value);
-                    deactivatedFilterValues = filterToCheck.setVisibility(activated);
 
-                } else {
-                    // this is a weird situation where the filter is dependant on another but we couldn't find that other ...
-                    deactivatedFilterValues = filterToCheck.setVisibility(false);
-                }
+                // check the conditions on this filter to see if it should be visible or not
+                var activated = self.evaluateFilterVisibilityCondition(filterToCheck.visibleWhen);
+                deactivatedFilterValues = filterToCheck.setVisibility(activated);
+
             } else {
-                // this filter has not constraints on visibility so just show it
+                // this filter has no constraints on visibility so just show it
                 filterToCheck.setVisibility(true);
             }
             // if we hide a filter and it had some value active they have now been deactivated and we need to update our
@@ -202,6 +194,52 @@ var PageModel = function() {
             }
         }
     };
+
+    // could be an object or an array of objects, figure out how to evaluate it correctly
+    // array example
+    // visibleWhen : [{ key : "carapaceShape", value : "round" },{ key : "covering", value : "setae", or : true }],
+    // object example
+    // visibleWhen : { key : "carapaceShape", value : "round" },
+    self.evaluateFilterVisibilityCondition = function(visibleWhen) {
+        if(Array.isArray(visibleWhen)) {
+            return self.evaluateFilterVisibilityConditionCollection(visibleWhen);
+        } else {
+            return self.evaluateFilterVisibilityConditionObject(visibleWhen);
+        }
+    }
+
+    // given an array of objects that describe when a filter should be visible, evaluate a true / false
+    // visibleWhen : [{ key : "carapaceShape", value : "round" },{ key : "covering", value : "setae", or : true }],
+    self.evaluateFilterVisibilityConditionCollection = function(visibleWhen) {
+        var activated = null;
+        for(var i = 0; i < visibleWhen.length; i++) {
+            var itemActivated = self.evaluateFilterVisibilityCondition(visibleWhen[i]);
+            // should this be an 'or' condition or an 'and' condition
+            if(visibleWhen[i].or) {
+                // if we haven't evaluated any other items in the array then just use this result, otherwise OR it together
+                activated = (activated === null) ? itemActivated : activated || itemActivated;
+            } else {
+                // if we haven't evaluated any other items in the array then just use this result, otherwise AND it together
+                activated = (activated === null) ? itemActivated : activated && itemActivated;
+            }
+        }
+        return (activated === null) ? true : activated;
+    }
+
+    // given a filter visibility condition object check to see if it evaluateds to a true or false
+    // visibleWhen : { key : "carapaceShape", value : "round" },
+    self.evaluateFilterVisibilityConditionObject = function(visibleWhen) {
+        var keyToCheck = visibleWhen.key;
+        var otherFilter = self.findFilterByKey(keyToCheck);
+        if(otherFilter) {
+            var activated = otherFilter.checkValueIsActivated(visibleWhen.value);
+            return activated;
+        } else {
+            // this is a weird situation where the filter is dependant on another but we couldn't find that other ...
+            console.log("we couldn't find the filter that this visibility condition is based on. This shouldn't happen :(, check filter data is setup properly. key: " + keyToCheck + ", value: " + visibleWhen.value);
+            return false;
+        }
+    }
 
     // good name, good work kelvin
     self.checkCrabVisibilityDueToFilterChange = function(filterThatChanged) {
@@ -269,7 +307,7 @@ var PageModel = function() {
         for(var i = 0; i < filterData.length; i++) {
             self.filters.push(new FilterModel(filterData[i], self));
         }
-        self.checkFilterVisibility();
+        self.setFilterVisibility();
     }
     self.initialize();
 }
