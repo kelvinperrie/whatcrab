@@ -5,4 +5,4 @@
 * ability to just show all filters
 * add more filters ... ?
 * some sort of reset/clear to restore all fields
-* ignoring a filter doesn't clear it's set values. whoops.
+* a way to manually exclude a crab
