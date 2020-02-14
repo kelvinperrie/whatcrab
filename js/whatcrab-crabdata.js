@@ -4,7 +4,16 @@ var crabData = [
         aka : ["Blue Half-Crab"],
         scientificName : "Petrolisthes elongatus",
         attributes : [
-            { key: "carapaceShape" , values : ["triangle"] }
+            { key: "carapaceShape" , values : ["triangle"] },
+            { key: "surface", values : ["smooth"]}
+        ],
+        details : [
+            "Carapace/shell very flat",
+            "Claws very flat and smooth",
+            "6 legs (excluding claws)",
+            "Often found under rocks in intertidal zone",
+            "Often green, but has a wide range of colours",
+            "Located all around NZ"
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/58026368/large.jpg?1576450688" }
@@ -15,7 +24,16 @@ var crabData = [
         commonName : "Red Half-Crab",
         scientificName : "Petrolisthes novaezelandiae",
         attributes : [
-            { key: "carapaceShape" , values : ["triangle"] }
+            { key: "carapaceShape" , values : ["triangle"] },
+            { key: "surface", values : ["smooth"]}
+        ],
+        details : [
+            "Carapace/shell very flat",
+            "Claws very flat with a ridge running along the top surface",
+            "6 legs (excluding claws)",
+            "Often found under rocks in intertidal zone",
+            "Coluring is red to brown",
+            "Located all around NZ"
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/59758890/large.jpg?1579219623" }
@@ -26,7 +44,15 @@ var crabData = [
         commonName : "Big-Handed Crab",
         scientificName : "Heterozius rotundifrons",
         attributes : [
-            { key: "carapaceShape" , values : ["oval"] }
+            { key: "carapaceShape" , values : ["oval"] },
+            { key: "surface", values : ["smooth","hairy"]}
+        ],
+        details : [
+            "Carapace/shell oval; wider than long",
+            "Male has one large claw",
+            "Tips of claws yellow",
+            "Coluring is light brown/green ",
+            "Located all around NZ"
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/52078601/large.jpg?1569120977" }
@@ -37,7 +63,14 @@ var crabData = [
         commonName : "Pie Crust Crab",
         scientificName : "Metacarcinus novaezelandiae",
         attributes : [
-            { key: "carapaceShape" , values : ["oval"] }
+            { key: "carapaceShape" , values : ["oval"] },
+            { key: "surface", values : ["smooth"]}
+        ],
+        details : [
+            "Carapace/shell oval; wider than long",
+            "Carpace front looks like pushed together pastry of a pie",
+            "Coluring is brown, can be reddish ",
+            "Located all around NZ"
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/59642254/large.jpg?1579053800" },
@@ -49,7 +82,15 @@ var crabData = [
         commonName : "Policeman Crab",
         scientificName : "Neommatocarcinus huttoni",
         attributes : [
-            { key: "carapaceShape" , values : ["triangle"] }
+            { key: "carapaceShape" , values : ["triangle"] },
+            { key: "surface", values : ["smooth"]}
+        ],
+        details : [
+            "Carapace/shell wider than long - not really triangular",
+            "Each side of carapace has a triangle point facing outwards",
+            "Coluring is yellowish, reddish, orange",
+            "Often found in deper water in a range of habitats",
+            "Located all around NZ"
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/31253008/large.jpg?1549783369" }
@@ -61,7 +102,15 @@ var crabData = [
         scientificName : "Leptograpsus variegatus",
         aka : ["Swift Footed Shore Crab", "Purple Ninja Crab"],
         attributes : [
-            { key: "carapaceShape" , values : ["square","round"] }
+            { key: "carapaceShape" , values : ["square","round"] },
+            { key: "surface", values : ["smooth","bumpy"]}
+        ],
+        details : [
+            "Carapace/shell squarish; Sides can something be appear quite rounded.",
+            "Coluring is purple with some white. Juveniles can be darker, almost black",
+            "Often found higher on the beach, in rocky gaps. Often on top of rocks.",
+            "Chelipeds/claws purple with white dots",
+            "Located all around NZ"
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/59867596/large.jpg?1579394117" },
@@ -188,7 +237,8 @@ var crabData = [
         attributes : [
             { key : "carapaceShape", values : ["triangle"] },
             { key : "covering", values : ["seaweed"] },
-            { key : "posteriorSpines", values : ["true"] }
+            { key : "posteriorSpines", values : ["true"] },
+            { key : "surfaceTexture", values : ["spikey"]}
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/29604637/large.jpeg?1545979036" },
@@ -201,7 +251,8 @@ var crabData = [
         attributes : [
             { key : "carapaceShape", values : ["triangle"] },
             { key : "covering", values : ["seaweed"] },
-            { key : "posteriorSpines", values : ["false"] }
+            { key : "posteriorSpines", values : ["false"] },
+            { key : "surfaceTexture", values : ["spikey"]}
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/43768712/large.jpg?1562115869" },
@@ -214,7 +265,8 @@ var crabData = [
         attributes : [
             { key : "carapaceShape", values : ["triangle"] },
             { key : "covering", values : ["seaweed"] },
-            { key : "posteriorSpines", values : ["false"] }
+            { key : "posteriorSpines", values : ["false"] },
+            { key : "surfaceTexture", values : ["spikey"]}
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/48653558/large.jpg?1566200370" },
