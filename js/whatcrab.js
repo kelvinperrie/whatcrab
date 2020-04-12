@@ -80,7 +80,6 @@ var FilterModel = function(filter, pageModel) {
         }
         return activatedFilterChange;
     };
-
     // check to see if this filter should be visible
     self.checkVisibility = function() {
 
@@ -175,7 +174,7 @@ var PageModel = function() {
         filterThatChanged.ignored(!filterThatChanged.ignored());
         var vaulesDisabled = filterThatChanged.deactiveFilterValues();
         if(vaulesDisabled) {
-            self.checkCrabVisibilityDueToFilterChange(filterToCheck);
+            self.checkCrabVisibilityDueToFilterChange(filterThatChanged);
         }
     };
 

@@ -21,6 +21,14 @@ var filterData = [
         helpText : "Some crabs have a covering of seaweed which gives them camouflage, some have either long or short hairs which gives them a furry appearance underwater, or a muddy appearance when out of water. If the crab is dead the covering may no longer exist."
     },
     {
+        key : "surfaceTexture",
+        possibleValues : [
+            { key : "spikey", text : "Spikey" }
+        ],
+        quesiton : "Does the top of the shell feel/look spikey?",
+        helpText : "THIS ONE NEED TO CHANGE TO INCLUDE OTHER TEXTURES PLEASE"
+    },
+    {
         key : "lastLegsArePaddles",
         possibleValues : [
             { key : "true", text : "Back legs are paddles", image: "images/paddles.png" },
