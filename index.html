@@ -38,6 +38,9 @@
                         </div>
                         
                     </div>
+                    <div class="clear-all-filters-button" title="clear all answers and start from scratch" data-bind="visible: activeFilterCount() > 0, click : function() { clearAllFilters(); }">
+                        Start over / clear all answers (<span data-bind="text: activeFilterCount"></span>)
+                    </div>
                     <!-- ko foreach: filters -->
                         <div class="filter" data-bind="visible: visible, class : classes">
                             <div data-bind="visible : ignored, click : function() { ignored(false); }">
@@ -60,7 +63,7 @@
                                     </div>
                                     <!-- /ko -->
                                 </div>
-                                <div class="ignore-filter-container" data-bind="click : function() { $parents[0].filterIgnoreChangedEvent($data); }">I don't know / ignore this question</div>
+                                <div class="ignore-filter-container" data-bind="click : function() { $parents[0].filterIgnoreChangedEvent($data); }" title="I don't know / ignore this question">hide this question</div>
                             </div>
                         </div>
                     <!-- /ko -->
@@ -73,8 +76,9 @@
                 <div class="crab-container crab-shadow" data-bind="visible:visible">
                     <div class="common-name" data-bind="text:commonName"></div>
                     <div class="scientific-name" >(<span data-bind="text:scientificName"></span>)</div>
+                    <div class="crab-no-image" title="I have no images of this crab" data-bind="visible: currentImage() === null">?</div>
                     <div class="crab-image-container" data-bind="with : currentImage">
-                        <div class="image-count-display" data-bind="text: $parent.images.length, visible: $parent.images.length > 1"></div>
+                        <div class="image-count-display" title="click image to show next picture" data-bind="text: $parent.images.length, visible: $parent.images.length > 1"></div>
                         <img class="crab-image" src="" data-bind="click : function() { $parent.showNextImage(); } , attr: { src : url }" alt="crab picture" />
                     </div> 
                     <div class="crab-links">

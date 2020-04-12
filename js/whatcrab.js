@@ -29,8 +29,8 @@ var FilterModel = function(filter, pageModel) {
 
     // check to see if there are any activated values on this filter (i.e. something is selected on the filter)
     self.hasAnyValueActivated = function() {
-        for(var i = 0; i < filter.possibleValues.length; i++) {
-            if(filter.possibleValues[i].activated() === true) {
+        for(var i = 0; i < self.possibleValues.length; i++) {
+            if(self.possibleValues[i].activated() === true) {
                 return true;
             }
         }
@@ -119,6 +119,7 @@ var CrabModel = function(crab) {
 
     // see if the crab contains some values for a specific filter key
     self.getValuesForAttribute = function(key) {
+        console.log("checking where key is " + key + " on " + self.commonName)
         for(var i = 0; i < self.attributes.length; i++) {
             if(self.attributes[i].key === key) {
                 return self.attributes[i].values;
@@ -153,6 +154,17 @@ var PageModel = function() {
         var total = 0;
         ko.utils.arrayForEach(self.crabData(), function(item) {
             if (item.visible()) {
+                total += 1;
+            }
+        });
+        return total;
+    });
+
+    self.activeFilterCount = ko.computed(function() {
+        var total = 0;
+        ko.utils.arrayForEach(self.filters(), function(item) {
+            console.log(item.key);
+            if (item.hasAnyValueActivated()) {
                 total += 1;
             }
         });
@@ -291,18 +303,33 @@ var PageModel = function() {
             }
 
         }
-    }
+    };
+
+    // remove all filters
+    // deactivate any set filters values, check what filters should be visible and make all crabs visible
+    self.clearAllFilters = function() {
+        for(var i = 0; i < self.filters().length; i ++) {
+            self.filters()[i].deactiveFilterValues();
+        }
+        self.setFilterVisibility();
+        for(var i = 0; i < self.crabData().length; i ++) {
+            self.crabData()[i].hiddenByFilters([]);
+        }
+    };
 
     self.findFilterByKey = function(key) {
         var match = ko.utils.arrayFirst(self.filters(), function(item) {
             return item.key == key;
         });
         return match;
-    }
+    };
 
     self.initialize = function() {
         for(var i = 0; i < crabData.length; i++) {
-            self.crabData.push(new CrabModel(crabData[i]));
+            // don't include crabs marked as inactive (active : false)
+            if(!crabData[i].hasOwnProperty('active') || crabData[i].active) {
+                self.crabData.push(new CrabModel(crabData[i]));
+            }
         }
         for(var i = 0; i < filterData.length; i++) {
             self.filters.push(new FilterModel(filterData[i], self));
