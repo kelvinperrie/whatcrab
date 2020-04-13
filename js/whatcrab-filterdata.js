@@ -39,13 +39,13 @@ var filterData = [
         visibleWhen : { key : "carapaceShape", value : "triangle" },
         question : "Is it is a camouflage crab covered in seaweed?",
         showHelpText : true,
-        helpText : "For triangle crabs, some of them are densely covered in seaweed when alive which allows them to camouflage themselves and hide. When dead these crab shells may be bare of seaweed but feel spikey where seaweed can be attached."
+        helpText : "For triangle shaped crabs, some of them are densely covered in seaweed when alive which allows them to camouflage themselves and hide. When dead these crab shells may be bare of seaweed but feel spikey where seaweed can be attached."
     },
     {
         key : "posteriorSpines",
         possibleValues : [
-            { key : "true", text : "Two posterior spines", image: "images/two-posterior-spines.png" },
-            { key : "false", text : "No posterior", image: "images/no-posterior-spines.png" }
+            { key : "true", text : "Two posterior spines", image: "images/posterior-spines.png" },
+            { key : "false", text : "No posterior spines", image: "images/shape-triangle.png" }
         ],
         visibleWhen : { key : "camouflageCrab", value : "true" },
         question : "Are there two spines/spikes on the back of the camouflage crab's shell?",
