@@ -6,7 +6,9 @@ var crabData = [
         attributes : [
             { key: "carapaceShape" , values : ["triangle", "round"] },
             { key : "lastLegsArePaddles", values : ["false"] },
-            { key: "surface", values : ["smooth"]}
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["true"]},
+            { key : "camouflageCrab", values : ["false"] }
         ],
         details : [
             "Carapace/shell very flat",
@@ -28,7 +30,9 @@ var crabData = [
         attributes : [
             { key: "carapaceShape" , values : ["triangle", "round"] },
             { key : "lastLegsArePaddles", values : ["false"] },
-            { key: "surface", values : ["smooth"]}
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["true"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
             "Carapace/shell very flat",
@@ -49,11 +53,14 @@ var crabData = [
         attributes : [
             { key: "carapaceShape" , values : ["oval"] },
             { key : "lastLegsArePaddles", values : ["false"] },
-            { key: "surface", values : ["smooth","hairy"]}
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
             "Carapace/shell oval; wider than long",
             "Male has one large claw",
+            "Legs can be a bit furry",
             "Tips of claws yellow",
             "Coluring is light brown/green ",
             "Located all around NZ"
@@ -72,7 +79,9 @@ var crabData = [
         attributes : [
             { key: "carapaceShape" , values : ["oval"] },
             { key : "lastLegsArePaddles", values : ["false"] },
-            { key: "surface", values : ["smooth"]}
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
             "Carapace/shell oval; wider than long",
@@ -93,7 +102,9 @@ var crabData = [
         attributes : [
             { key: "carapaceShape" , values : ["triangle", "other"] },
             { key : "lastLegsArePaddles", values : ["false"] },
-            { key: "surface", values : ["smooth"]}
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
             "Carapace/shell wider than long - not really triangular",
@@ -114,11 +125,14 @@ var crabData = [
         attributes : [
             { key: "carapaceShape" , values : ["square","round"] },
             { key : "lastLegsArePaddles", values : ["false"] },
-            { key: "surface", values : ["smooth","bumpy"]}
+            { key: "surfaceTexture", values : ["smooth","bumpy"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
             "Carapace/shell squarish; Sides can something be appear quite rounded.",
             "Coluring is purple with some white. Juveniles can be darker, almost black",
+            "When dead shells can turn to a red colour",
             "Often found higher on the beach, in rocky gaps. Often on top of rocks.",
             "Chelipeds/claws purple with white dots",
             "Located all around NZ"
@@ -136,7 +150,10 @@ var crabData = [
         aka : ["Purple Rock Crab"],
         attributes : [
             { key: "carapaceShape" , values : ["square"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/59867812/large.jpg?1579394358" },
@@ -149,8 +166,11 @@ var crabData = [
         commonName : "Paua Spider Crab",
         scientificName : "Elamena producta",
         attributes : [
-            { key: "carapaceShape" , values : ["triangle"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key: "carapaceShape" , values : ["triangle", "oval"] },
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/66571196/large.jpeg?1586643918" },
@@ -165,7 +185,10 @@ var crabData = [
         attributes : [
             { key: "carapaceShape" , values : ["round"] },
             { key : "toothOnMargin", values : ["true"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/52079954/large.jpg?1569122286" }
@@ -178,7 +201,10 @@ var crabData = [
         attributes : [
             { key : "carapaceShape", values : ["round"] },
             { key : "toothOnMargin", values : ["false"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/28454186/large.jpeg?1543038599" },
@@ -192,7 +218,10 @@ var crabData = [
         attributes : [
             { key : "carapaceShape", values : ["round"] },
             { key : "toothOnMargin", values : ["true"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/59640822/large.jpg?1579051845" }
@@ -206,7 +235,10 @@ var crabData = [
             { key : "carapaceShape", values : ["round"] },
             { key : "toothOnMargin", values : ["false"] },
             { key : "covering", values : ["setae"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth", "hairy"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/30676304/large.jpg?1548546813" }
@@ -221,7 +253,10 @@ var crabData = [
             { key : "carapaceShape", values : ["round"] },
             { key : "toothOnMargin", values : ["false"] },
             { key : "covering", values : ["setae"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth", "hairy"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [],
         natureWatchLink: "https://inaturalist.nz/taxa/471053-Hymenosoma-depressum",
@@ -234,7 +269,10 @@ var crabData = [
             { key : "carapaceShape", values : ["round"] },
             { key : "toothOnMargin", values : ["false"] },
             { key : "covering", values : ["setae"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["hairy"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/64200577/large.jpeg?1584863612" },
@@ -249,7 +287,10 @@ var crabData = [
         scientificName : "Eurynolambrus australis",
         attributes : [
             { key : "carapaceShape", values : ["triangle"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/59759094/large.jpg?1579219887" },
@@ -266,7 +307,8 @@ var crabData = [
             { key : "camouflageCrab", values : ["true"] },
             { key : "posteriorSpines", values : ["true"] },
             { key : "lastLegsArePaddles", values : ["false"] },
-            { key : "surfaceTexture", values : ["spikey"]}
+            { key : "surfaceTexture", values : ["spikey","seaweed"]},
+            { key: "halfCrab", values : ["false"]}
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/29604637/large.jpeg?1545979036" },
@@ -282,10 +324,12 @@ var crabData = [
             { key : "camouflageCrab", values : ["true"] },
             { key : "posteriorSpines", values : ["false"] },
             { key : "lastLegsArePaddles", values : ["false"] },
-            { key : "surfaceTexture", values : ["spikey"]}
+            { key : "surfaceTexture", values : ["spikey","seaweed"]},
+            { key: "halfCrab", values : ["false"]}
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/43768712/large.jpg?1562115869" },
+            { url : "https://static.inaturalist.org/photos/33868742/large.jpg?1554091330" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410683-Notomithrax-peronii"
     },
@@ -298,11 +342,13 @@ var crabData = [
             { key : "camouflageCrab", values : ["true"] },
             { key : "posteriorSpines", values : ["false"] },
             { key : "lastLegsArePaddles", values : ["false"] },
-            { key : "surfaceTexture", values : ["spikey"]}
+            { key : "surfaceTexture", values : ["spikey","seaweed", "hairy"]},
+            { key: "halfCrab", values : ["false"]}
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/48653558/large.jpg?1566200370" },
             { url : "https://static.inaturalist.org/photos/58346138/large.jpg?1577052802" },
+            { url : "https://static.inaturalist.org/photos/36106015/large.jpg?1556337652" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410681-Notomithrax-ursus"
     },
@@ -311,7 +357,10 @@ var crabData = [
         scientificName : "Ozius deplanatus",
         attributes : [
             { key : "carapaceShape", values : ["oval"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/64200560/large.jpeg?1584863575" },
@@ -325,7 +374,10 @@ var crabData = [
         scientificName : "Pilumnopeus serratifrons",
         attributes : [
             { key : "carapaceShape", values : ["oval"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth", "hairy"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/29568932/large.jpeg?1545892882" },
@@ -339,7 +391,10 @@ var crabData = [
         attributes : [
             { key : "carapaceShape",  values : ["oval"] },
             { key : "covering", values : ["setae"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["hairy"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/35241504/large.jpg?1555731045" },
@@ -352,7 +407,10 @@ var crabData = [
         scientificName : "Nepinnotheres novaezelandiae",
         attributes : [
             { key : "carapaceShape",  values : ["round"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/32723026/large.jpg?1552368945" },
@@ -361,10 +419,14 @@ var crabData = [
         natureWatchLink: "https://inaturalist.nz/taxa/472053-Nepinnotheres-novaezelandiae"
     },
     {
+        commonName : "Bristle Crab",
         scientificName : "Pinnotheres novaezelandiae",
         attributes : [
             { key : "carapaceShape",  values : ["round"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["hairy"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
         ],
@@ -376,7 +438,10 @@ var crabData = [
         scientificName : "Guinusia chabrus",
         attributes : [
             { key: "carapaceShape" , values : ["round", "square"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/47693819/large.jpg?1565414389" },
@@ -390,7 +455,10 @@ var crabData = [
         scientificName : "Charybdis japonica",
         attributes : [
             { key : "carapaceShape", values : ["oval"] },
-            { key : "lastLegsArePaddles", values : ["true"] }
+            { key : "lastLegsArePaddles", values : ["true"] },
+            { key: "surfaceTexture", values : ["smooth", "bumpy"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/26031963/original.jpeg?1538620860" }
@@ -402,7 +470,10 @@ var crabData = [
         scientificName : "Nectocarcinus antarcticus",
         attributes : [
             { key : "carapaceShape", values : ["square", "oval"] },
-            { key : "lastLegsArePaddles", values : ["true"] }
+            { key : "lastLegsArePaddles", values : ["true"] },
+            { key: "surfaceTexture", values : ["bumpy"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/29604819/large.jpeg?1545979517" },
@@ -416,7 +487,10 @@ var crabData = [
         scientificName : "Ovalipes catharus",
         attributes : [
             { key : "carapaceShape", values : ["oval"] },
-            { key : "lastLegsArePaddles", values : ["true"] }
+            { key : "lastLegsArePaddles", values : ["true"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/29603332/large.jpeg?1545974722" },
@@ -430,7 +504,10 @@ var crabData = [
         scientificName : "Hemiplax hirtipes",
         attributes : [
             { key : "carapaceShape", values : ["square"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth","hairy"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/29569046/large.jpeg?1545893169" },
@@ -444,7 +521,10 @@ var crabData = [
         aka : ["Burrowing Mud Crab"],
         attributes : [
             { key : "carapaceShape", values : ["square"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/41125277/large.jpg?1559802431" },
@@ -457,7 +537,10 @@ var crabData = [
         scientificName : "Cyclograpsus lavauxi",
         attributes : [
             { key : "carapaceShape", values : ["square"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/59209635/large.jpg?1578365462" },
@@ -471,7 +554,10 @@ var crabData = [
         scientificName : "Hemigrapsus crenulatus",
         attributes : [ 
             { key : "carapaceShape", values : ["square"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/29603233/large.jpeg?1545974351" },
@@ -486,7 +572,10 @@ var crabData = [
         scientificName : "Metadromia wilsoni",
         attributes : [ 
             { key : "carapaceShape", values : ["oval"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["bumpy"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [
         ],
@@ -497,7 +586,10 @@ var crabData = [
         scientificName : "Pyromaia tuberculata",
         attributes : [ 
             { key : "carapaceShape", values : ["triangle"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["bumpy","seaweed"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [ 
             { url : "https://static.inaturalist.org/photos/53457693/large.jpg?1570427581" },
@@ -510,7 +602,10 @@ var crabData = [
         scientificName : "Planes minutus",
         attributes : [ 
             { key : "carapaceShape", values : ["square"] },
-            { key : "lastLegsArePaddles", values : ["false"] }
+            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["false"]},
+            { key: "camouflageCrab", values : ["false"] }
         ],
         images : [ 
             { url : "https://static.inaturalist.org/photos/64201398/large.jpg?1584864956" },

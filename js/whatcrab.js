@@ -305,10 +305,11 @@ var PageModel = function() {
     };
 
     // remove all filters
-    // deactivate any set filters values, check what filters should be visible and make all crabs visible
+    // deactivate any set filters values, make no filters ignored, check what filters should be visible and make all crabs visible
     self.clearAllFilters = function() {
         for(var i = 0; i < self.filters().length; i ++) {
             self.filters()[i].deactiveFilterValues();
+            self.filters()[i].ignored(false);
         }
         self.setFilterVisibility();
         for(var i = 0; i < self.crabData().length; i ++) {

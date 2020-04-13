@@ -23,7 +23,7 @@
                 <div>
                     <div class="filters-info">
                         <div class="expandor" data-bind="click: function() { filterInfoShown(!filterInfoShown()); } ">
-                            Filter info ...
+                            Question info ...
                             <!-- <i class="material-icons">search</i> -->
                             <div class="expander-icon">
                                 <i data-bind="visible: !filterInfoShown()" class="material-icons">expand_more</i>
@@ -32,8 +32,8 @@
                         </div>
                         <div class="filters-info-details" data-bind="visible: filterInfoShown">
                             <ul>
-                                <li>You can select multiple answers for each filter; for example if for the shell/carapace shape filter you select both the round and square options, then all round and square shaped crabs will show.</li>
-                                <li>If you're unsure of the answer or a filter doesn't apply you don't have to answer anything for it.</li>
+                                <li>You can select multiple answers for each question; for example if for the shell/carapace shape question you select both the round and square options, then all round and square shaped crabs will show.</li>
+                                <li>If you're unsure of the answer or a question doesn't apply you don't have to answer anything for it, or you can hide it.</li>
                             </ul>
                         </div>
                         
@@ -49,7 +49,7 @@
                             <div data-bind="visible : !ignored()">
                                 <div class="question"><span data-bind="text: question"></span><i title="show more info" class="material-icons" data-bind="visible: !showHelpText(), click : function() { showHelpText(true); }">help</i></div>
                                 
-                                <div class="help-text" data-bind="visible: showHelpText" ><i title="hide more info" data-bind="click : function() { showHelpText(false); }" class="material-icons">help</i><span data-bind="text: helpText"></span></div>
+                                <div class="help-text" data-bind="visible: showHelpText" ><i title="hide more info" data-bind="click : function() { showHelpText(false); }" class="material-icons">help</i><span data-bind="html: helpText"></span></div>
                                 <!-- <div>filter visibility is <span data-bind="text:visible"></span> </div> -->
                                 <div class="filter-options">
                                     <!-- ko foreach: possibleValues -->
@@ -58,7 +58,7 @@
                                         <div data-bind="text:text"></div>
                                         <!-- <span data-bind="text:activated"></span> -->
                                         <div data-bind="visible: image">
-                                            <img data-bind="attr: { src : image }" alt="crab-shape" />
+                                            <img data-bind="attr: { src : image }" alt="filter option" />
                                         </div>
                                     </div>
                                     <!-- /ko -->
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="col-8">
-                <div class="matched-results-title">These are the crabs that match your filters (<span data-bind="text: shownCrabCount"></span>):</div>
+                <div class="matched-results-title">These are the crabs that match your answers (<span data-bind="text: shownCrabCount"></span>):</div>
                 
                 <!-- ko foreach: crabData -->
                 <div class="crab-container crab-shadow" data-bind="visible:visible">

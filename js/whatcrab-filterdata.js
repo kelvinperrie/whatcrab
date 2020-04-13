@@ -11,53 +11,35 @@ var filterData = [
         question : "What's the shape of the crab's shell?",
         helpText: "Looking down on the crab from above, what is the main shape of the shell. For some crabs it can be hard to distinguish so you can select multiple options."
     },
-    {
-        key : "covering",
-        possibleValues : [
-            { key : "setae", text : "Setae/hairs" },
-            { key : "seaweed", text : "Seaweed" }
-        ],
-        question : "Is the crab covered in something?",
-        helpText : "Some crabs have a covering of seaweed which gives them camouflage, some have either long or short hairs which gives them a furry appearance underwater, or a muddy appearance when out of water. If the crab is dead the covering may no longer exist."
-    },
-    {
-        key : "surfaceTexture",
-        possibleValues : [
-            { key : "spikey", text : "Spikey" }
-        ],
-        quesiton : "Does the top of the shell feel/look spikey?",
-        helpText : "THIS ONE NEED TO CHANGE TO INCLUDE OTHER TEXTURES PLEASE"
-    },
+    // {
+    //     key : "covering",
+    //     possibleValues : [
+    //         { key : "setae", text : "Setae/hairs" },
+    //         { key : "seaweed", text : "Seaweed" }
+    //     ],
+    //     question : "Is the crab covered in something?",
+    //     helpText : "Some crabs have a covering of seaweed which gives them camouflage, some have either long or short hairs which gives them a furry appearance underwater, or a muddy appearance when out of water. If the crab is dead the covering may no longer exist."
+    // },
     {
         key : "lastLegsArePaddles",
         possibleValues : [
             { key : "true", text : "Back legs are paddles", image: "images/paddles.png" },
-            { key : "false", text : "Back legs NOT paddles", image: "" }
+            { key : "false", text : "Back legs NOT paddles", image: "images/shape-oval.png" }
         ],
         visibleWhen : [{ key : "carapaceShape", value : "square" }, { key : "carapaceShape", value : "oval", or: "true" }],
         question : "Are the back legs paddles?",
         helpText : "Some crabs have paddles on their back set of legs which they use to swim."
     },
     {
-        key : "toothOnMargin",
-        possibleValues : [
-            { key : "true", text : "Has tooth on edge of shell", image: "images/tooth-on-margin-true.png" },
-            { key : "false", text : "No tooth on edge of shell", image: "images/tooth-on-margin-false.png" }
-        ],
-        visibleWhen : [{ key : "carapaceShape", value : "round" }],
-        question : "Is their a single tooth (or spike) on each side of the shell?",
-        showHelpText : true,
-        helpText : "Some of the smaller round shelled crabs have a single tooth/spike on each side of their shell which can be help to narrow down the type of crab."
-    },
-    {
         key : "camouflageCrab",
         possibleValues : [
-            { key : "true", text : "Is camouflage crab", image: "" }
+            { key : "true", text : "It IS a camouflage crab", image: "" },
+            { key : "false", text : "Is NOT a camouflage crab", image: "" }
         ],
         visibleWhen : { key : "carapaceShape", value : "triangle" },
-        question : "Determine if this is a camouflage crab",
+        question : "Is it is a camouflage crab covered in seaweed?",
         showHelpText : true,
-        helpText : "For triangle crabs, some of them are densely covered in seaweed when alive. When dead their shell may be bumpy with hooks where seaweed can be attached and outward point spikes on the side."
+        helpText : "For triangle crabs, some of them are densely covered in seaweed when alive which allows them to camouflage themselves and hide. When dead these crab shells may be bare of seaweed but feel spikey where seaweed can be attached."
     },
     {
         key : "posteriorSpines",
@@ -66,8 +48,43 @@ var filterData = [
             { key : "false", text : "No posterior", image: "images/no-posterior-spines.png" }
         ],
         visibleWhen : { key : "camouflageCrab", value : "true" },
-        question : "Are there two spines/spikes on the back of the shell?",
+        question : "Are there two spines/spikes on the back of the camouflage crab's shell?",
         showHelpText : true,
         helpText : "Some Camouflage crabs (crabs that are covered in seaweed) have two posterior spines/spikes on the back of their shell facing backwards."
+    },
+    {
+        key : "halfCrab",
+        possibleValues : [
+            { key : "true", text : "It IS a half crab", image: "images/halfcrab.png" },
+            { key : "false", text : "Is NOT a half crab", image: "images/shape-round.png" }
+        ],
+        visibleWhen : [{ key : "carapaceShape", value : "triangle" },{ key : "carapaceShape", value : "round", or : "true" }],
+        question : "Is it a half-crab with only 6 legs (excluding claws)?",
+        showHelpText : true,
+        helpText : "Half-crabs are small and flat and only have six legs (excluding claws); other crabs have eight legs (excluding claws). Crabs in the wild can be missing legs due to preditor attack."
+    },
+    {
+        key : "toothOnMargin",
+        possibleValues : [
+            { key : "true", text : "Single tooth on edge of shell", image: "images/tooth-on-margin-true.png" }
+            // ,
+            // { key : "false", text : "No tooth on edge of shell", image: "images/tooth-on-margin-false.png" }
+        ],
+        visibleWhen : [{ key : "carapaceShape", value : "round" }],
+        question : "Is their a single tooth (or spike) on each side of the shell?",
+        showHelpText : true,
+        helpText : "Some of the smaller round shelled crabs have a single tooth/spike on each side of their shell which can be help to narrow down the type of crab."
+    },    
+    {
+        key : "surfaceTexture",
+        possibleValues : [
+            { key : "spikey", text : "Spikey" },
+            { key : "hairy", text : "Hairy" },
+            { key : "bumpy", text : "Bumpy" },
+            { key : "smooth", text : "Smooth" },
+            { key : "seaweed", text : "Seaweed" }
+        ],
+        question : "What does the top of just the shell feel/look like?",
+        helpText : "The surface (the bit that faces the sky) of the shell can be different textures. It might be spikey (for hooking seaweed into), bumpy or smooth, or even various lengths of hair (which when out of the water can look muddy/fuzzy). For this question ignore the surface texture of legs/claws. <br/> The texture can differ sometimes for the same type of crab; i.e. one might be furry/hairy while another of the same type is smooth."
     }
 ]
