@@ -94,8 +94,11 @@ var CrabModel = function(crab) {
     self.attributes = crab.attributes;                          // an array of attributes that describe the crab e.g. [ { key : "carapaceShape",  values : ["oval"] } ]
     self.images = crab.images;
     self.natureWatchLink = crab.natureWatchLink;
+    self.details = crab.details;
+    self.aka = crab.aka || [];
     self.currentImageIndex = ko.observable(0);
     self.hiddenByFilters = ko.observableArray();                // an obs array of the filter keys that have caused this crab to be hidden
+    self.selectedForCompare = ko.observable(false);
 
     self.visible = ko.computed(function() {
         return self.hiddenByFilters().length === 0;
@@ -127,6 +130,13 @@ var CrabModel = function(crab) {
         // we don't have an attribute that matches the filter key
         return null;
     }
+
+    self.toggleForCompare = function() {
+        self.selectedForCompare(!self.selectedForCompare());
+    }
+    self.selectForCompare = function() {
+        self.selectedForCompare(true);
+    }
 }
 
 var PageModel = function() {
@@ -135,6 +145,7 @@ var PageModel = function() {
     self.crabData = ko.observableArray();
     self.filters = ko.observableArray();
     self.filterInfoShown = ko.observable(false);
+    self.compareDialogVisible = ko.observable(false);
     
     // self.crabDataFiltered = ko.computed(function(){
     //     return self.crabData().filter(
@@ -148,6 +159,14 @@ var PageModel = function() {
     //       }
     //     );
     //   });
+
+    self.crabsForCompare = ko.computed(function() {
+        return self.crabData().filter(
+            function(item) {
+                return item.selectedForCompare();
+            }
+        )
+    });
 
     self.shownCrabCount = ko.computed(function() {
         var total = 0;
@@ -169,6 +188,20 @@ var PageModel = function() {
         });
         return total;
     });
+
+    self.toggleCompareDialogVisibility = function() {
+        self.compareDialogVisible(!self.compareDialogVisible());
+        // if the dialog has been closed then set all crabs as not being marked for compare
+        if(!self.compareDialogVisible()) {
+            self.removeAllCrabsForCompare();
+        }
+    }
+
+    self.removeAllCrabsForCompare = function() {
+        for(var i = 0 ; i < self.crabData().length; i++) {
+            self.crabData()[i].selectedForCompare(false);
+        }
+    }
 
     self.filterIgnoreChangedEvent = function(filterThatChanged) {
         filterThatChanged.ignored(!filterThatChanged.ignored());

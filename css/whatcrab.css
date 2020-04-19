@@ -144,6 +144,12 @@ header {
 .crab-links {
     margin-top: 5px;
     cursor: pointer;
+    position: relative;
+}
+.crab-links-right {
+    position: absolute;
+    right: 5px;
+    top: 0;
 }
 .crab-links a:link, .crab-links a:visited, .crab-links a:active {
     color: #fff;
@@ -157,4 +163,86 @@ header {
 
 .material-icons {
     vertical-align: bottom;
+}
+
+
+
+.details-popup-container {
+    position: absolute;
+    z-index: 100;
+}
+.details-popup {
+    background-color: #CBB3BF;
+    -moz-box-shadow:    5px 5px 4px 0px #888;
+    -webkit-box-shadow: 5px 5px 4px 0px #888;
+    box-shadow:         5px 5px 4px 0px #888;
+    color: #212529;
+    border: 1px solid #888;
+    border-radius: 10px;
+}
+.popup-banner {
+    position: relative;
+    background-color: #36453B;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 2em;
+    font-size: 1.5em;
+    padding: 5px 20px;
+    color: #ebebeb;
+}
+.popup-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+.popup-close .material-icons {
+    font-size: 1.5em;
+}
+.popup-content {
+    padding: 10px;
+    white-space: nowrap;
+}
+.crab-detail-container {
+    display: inline-block;
+    /* border: 1px solid #36453B; */
+    border-radius: 0.3em;
+    padding: 5px;
+    margin: 3px;
+    background-color: #ebebeb;
+    position: relative;
+    width: 400px;
+    font-size: 0.8em;
+    vertical-align: top;
+}
+.crab-detail-container .crab-image-container {
+    height: 300px;
+    color: #ebebeb;
+}
+.remove-crab-from-dialog-container {
+    position: relative;
+    font-size: 0.8em;
+    height: 0.8em;
+}
+.remove-crab-from-dialog-container span {
+    position: absolute;
+    right: 0.5em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.crab-detail-container .common-name {
+    font-size: 1.5em;
+}
+.crab-detail-container .scientific-name {
+    font-size: 1em;
+}
+.crab-detail-container .details-list {
+}
+.crab-detail-container .crab-links {
+    background-color: #36453B;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+}
+.no-list-items {
+    margin-bottom: 1em;
 }

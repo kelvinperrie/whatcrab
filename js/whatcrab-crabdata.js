@@ -18,6 +18,9 @@ var crabData = [
             "Often green, but has a wide range of colours",
             "Located all around NZ"
         ],
+        similarTo: [
+            { key: "Petrolisthes novaezelandiae", label: "Red Half-Crab" }
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/58026368/large.jpg?1576450688" },
             { url : "https://static.inaturalist.org/photos/63808417/large.jpeg?1584517337" }
@@ -42,6 +45,9 @@ var crabData = [
             "Coluring is red to brown",
             "Located all around NZ"
         ],
+        similarTo: [
+            { key: "Petrolisthes elongatus", label: "New Zealand Half-Crab" }
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/59758890/large.jpg?1579219623" }
         ],
@@ -64,6 +70,12 @@ var crabData = [
             "Tips of claws yellow",
             "Coluring is light brown/green ",
             "Located all around NZ"
+        ],
+        similarTo: [
+            { key: "Ozius deplanatus", label: "Iron Crab" },
+            { key: "Pilumnopeus serratifrons", label: "Smooth-Handed Crab" },
+            { key: "Pilumnus lumpinus", label: "Hairy Crab" },
+            { key: "Metacarcinus novaezelandiae", label: "Pie Crust Crab" }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/64200638/large.jpeg?1584863717" },
@@ -89,6 +101,12 @@ var crabData = [
             "Coluring is brown, can be reddish ",
             "Located all around NZ"
         ],
+        similarTo: [
+            { key: "Ozius deplanatus", label: "Iron Crab" },
+            { key: "Pilumnopeus serratifrons", label: "Smooth-Handed Crab" },
+            { key: "Pilumnus lumpinus", label: "Hairy Crab" },
+            { key: "Heterozius rotundifrons", label: "Big-Handed Crab" }
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/63808393/large.jpeg?1584517295" },
             { url : "https://static.inaturalist.org/photos/59642254/large.jpg?1579053800" },
@@ -113,6 +131,7 @@ var crabData = [
             "Often found in deper water in a range of habitats",
             "Located all around NZ"
         ],
+        similarTo: [],
         images : [
             { url : "https://static.inaturalist.org/photos/31253008/large.jpg?1549783369" }
         ],
@@ -137,6 +156,9 @@ var crabData = [
             "Chelipeds/claws purple with white dots",
             "Located all around NZ"
         ],
+        similarTo: [
+            { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" }
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/65344513/large.jpeg?1585790060" },
             { url : "https://static.inaturalist.org/photos/59867596/large.jpg?1579394117" },
@@ -155,6 +177,11 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        similarTo: [
+            { key: "Leptograpsus variegatus", label: "Purple Rock Crab" },
+            { key: "Cyclograpsus lavauxi", label: "Smooth Shore Crab" } ,
+            { key: "Hemigrapsus crenulatus", label: "Hairy-handed Crab" }  
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/59867812/large.jpg?1579394358" },
             { url : "https://static.inaturalist.org/photos/64200862/large.jpeg?1584864103" },
@@ -171,6 +198,12 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        similarTo: [
+            { key: "Halicarcinus cookii", label: "Cook's Pillbox Crab" },
+            { key: "Halicarcinus innominatus", label: "Flat Pillbox Crab" },
+            { key: "Halicarcinus varius", label: "Variable Pillbox Crab" },
+            { key: "Halicarcinus whitei", label: "Estuarine Pillbox Crab" }  
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/66571196/large.jpeg?1586643918" },
@@ -190,6 +223,11 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        similarTo: [
+            { key: "Halicarcinus innominatus", label: "Flat Pillbox Crab" },
+            { key: "Halicarcinus varius", label: "Variable Pillbox Crab" },
+            { key: "Halicarcinus whitei", label: "Estuarine Pillbox Crab" }  
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/52079954/large.jpg?1569122286" }
         ],
@@ -205,6 +243,11 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        similarTo: [
+            { key: "Halicarcinus cookii", label: "Cook's Pillbox Crab" },
+            { key: "Halicarcinus varius", label: "Variable Pillbox Crab" },
+            { key: "Halicarcinus whitei", label: "Estuarine Pillbox Crab" }  
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/28454186/large.jpeg?1543038599" },
@@ -223,13 +266,19 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        similarTo: [
+            { key: "Halicarcinus cookii", label: "Cook's Pillbox Crab" },
+            { key: "Halicarcinus innominatus", label: "Flat Pillbox Crab" },
+            { key: "Halicarcinus whitei", label: "Estuarine Pillbox Crab" }  
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/59640822/large.jpg?1579051845" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/416625-Halicarcinus-varius"
     },
     {
-        commonName : "White's False Spider Crab",
+        commonName : "Estuarine Pillbox Crab",
+        aka: ["White's False Spider Crab"],
         scientificName : "Halicarcinus whitei",
         attributes : [
             { key : "carapaceShape", values : ["round"] },
@@ -239,6 +288,12 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth", "hairy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        similarTo: [
+            { key: "Halicarcinus cookii", label: "Cook's Pillbox Crab" },
+            { key: "Halicarcinus innominatus", label: "Flat Pillbox Crab" },
+            { key: "Halicarcinus varius", label: "Variable Pillbox Crab" },
+            { key: "Neohymenicus pubescens", label: "Neohymenicus pubescens" } 
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/30676304/large.jpg?1548546813" }
@@ -274,6 +329,12 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        similarTo: [
+            { key: "Halicarcinus cookii", label: "Cook's Pillbox Crab" },
+            { key: "Halicarcinus innominatus", label: "Flat Pillbox Crab" },
+            { key: "Halicarcinus varius", label: "Variable Pillbox Crab" },
+            { key: "Halicarcinus whitei", label: "Estuarine Pillbox Crab" } 
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/64200577/large.jpeg?1584863612" },
             { url : "https://static.inaturalist.org/photos/29172890/large.jpeg?1544839594" },
@@ -292,6 +353,7 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        similarTo: [],
         images : [
             { url : "https://static.inaturalist.org/photos/59759094/large.jpg?1579219887" },
         ],
@@ -310,13 +372,18 @@ var crabData = [
             { key : "surfaceTexture", values : ["spikey","seaweed"]},
             { key: "halfCrab", values : ["false"]}
         ],
+        similarTo: [
+            { key: "Notomithrax peronii", label: "Peron's Decorator Crab" },
+            { key: "Notomithrax ursus", label: "Hairy Seaweed Crab" }
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/29604637/large.jpeg?1545979036" },
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410680-Notomithrax-minor"
     },
     {
-        commonName : "Peron's Decorator Crab",
+        commonName : "Peron's Camouflage Crab",
+        aka: ["Peron's Decorator Crab"],
         scientificName : "Notomithrax peronii",
         attributes : [
             { key : "carapaceShape", values : ["triangle"] },
@@ -326,6 +393,10 @@ var crabData = [
             { key : "lastLegsArePaddles", values : ["false"] },
             { key : "surfaceTexture", values : ["spikey","seaweed"]},
             { key: "halfCrab", values : ["false"]}
+        ],
+        similarTo: [
+            { key: "Notomithrax minor", label: "Small Decorator Crab" },
+            { key: "Notomithrax ursus", label: "Hairy Seaweed Crab" }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/43768712/large.jpg?1562115869" },
@@ -345,6 +416,10 @@ var crabData = [
             { key : "surfaceTexture", values : ["spikey","seaweed", "hairy"]},
             { key: "halfCrab", values : ["false"]}
         ],
+        similarTo: [
+            { key: "Notomithrax minor", label: "Small Decorator Crab" },
+            { key: "Notomithrax peronii", label: "Peron's Decorator Crab" }
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/48653558/large.jpg?1566200370" },
             { url : "https://static.inaturalist.org/photos/58346138/large.jpg?1577052802" },
@@ -361,6 +436,10 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        similarTo: [
+            { key: "Heterozius rotundifrons", label: "Big Hand Crab" },
+            { key: "Pilumnopeus serratifrons", label: "Smooth-Handed Crab" }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/64200560/large.jpeg?1584863575" },
@@ -379,9 +458,14 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        similarTo: [
+            { key: "Ozius deplanatus", label: "Iron Crab" }
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/29568932/large.jpeg?1545892882" },
-            { url : "https://static.inaturalist.org/photos/54043892/large.jpg?1571033968" },
+            { url : "https://static.inaturalist.org/photos/53457422/large.jpg?1570427238" },
+            { url : "https://static.inaturalist.org/photos/53456631/large.jpg?1570426472" },
+            { url : "https://static.inaturalist.org/photos/53455973/large.jpg?1570425718" },
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/471785-Pilumnopeus-serratifrons"
     },
@@ -395,6 +479,9 @@ var crabData = [
             { key: "surfaceTexture", values : ["hairy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        similarTo: [
+            { key: "Pilumnus novaezelandiae", label: "Bristle Crab" }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/35241504/large.jpg?1555731045" },
@@ -412,6 +499,7 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        similarTo: [],
         images : [
             { url : "https://static.inaturalist.org/photos/32723026/large.jpg?1552368945" },
             { url : "https://static.inaturalist.org/photos/32723024/large.jpg?1552368941" }
@@ -420,17 +508,22 @@ var crabData = [
     },
     {
         commonName : "Bristle Crab",
-        scientificName : "Pinnotheres novaezelandiae",
+        scientificName : "Pilumnus novaezelandiae",
         attributes : [
-            { key : "carapaceShape",  values : ["round"] },
+            { key : "carapaceShape",  values : ["oval"] },
             { key : "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["hairy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
-        images : [
+        similarTo: [
+            { key: "Pilumnus lumpinus", label: "Hairy Crab" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/143935-Pinnotheres-novaezelandiae"
+        images : [
+            { url: "https://static.inaturalist.org/photos/53457806/large.jpg?1570427790" },
+            { url: "https://static.inaturalist.org/photos/53457825/large.jpg?1570427812" }
+        ],
+        natureWatchLink: "https://inaturalist.nz/taxa/471044-Pilumnus-novaezelandiae"
     },
     {
         commonName : "Red Rock Crab",
@@ -442,6 +535,9 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        similarTo: [
+            { key: "Nectocarcinus antarcticus", label: "Red Swimming Crab" }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/47693819/large.jpg?1565414389" },
@@ -460,6 +556,9 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        similarTo: [
+            { key: "Ovalipes catharus", label: "Paddle Crab" }
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/26031963/original.jpeg?1538620860" }
         ],
@@ -474,6 +573,9 @@ var crabData = [
             { key: "surfaceTexture", values : ["bumpy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        similarTo: [
+            { key: "Guinusia chabrus", label: "Red Rock Crab " }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/29604819/large.jpeg?1545979517" },
@@ -492,6 +594,9 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        similarTo: [
+            { key: "Charybdis japonica", label: "Asian Paddle Crab" }
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/29603332/large.jpeg?1545974722" },
             { url : "https://static.inaturalist.org/photos/63045326/large.jpg?1583702591" },
@@ -508,6 +613,9 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth","hairy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        similarTo: [
+            { key: "Austrohelice crassa", label: "Burrowing Mud Crab" }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/29569046/large.jpeg?1545893169" },
@@ -526,6 +634,10 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        similarTo: [
+            { key: "Hemiplax hirtipes", label: "Sentinel Crab" },
+            { key: "Hemigrapsus crenulatus", label: "Hairy-handed Crab" }
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/41125277/large.jpg?1559802431" },
             { url : "https://static.inaturalist.org/photos/41125280/large.jpg?1559802433" }
@@ -541,6 +653,11 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        similarTo: [
+            { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" },
+            { key: "Hemigrapsus crenulatus", label: "Hairy-handed Crab" },
+            { key: "Planes minutus", label: "Gulfweed Crab" }
         ],
         images : [
             { url : "https://static.inaturalist.org/photos/59209635/large.jpg?1578365462" },
