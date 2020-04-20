@@ -169,7 +169,7 @@ var crabData = [
     {
         commonName : "Common Rock Crab",
         scientificName : "Hemigrapsus sexdentatus",
-        aka : ["Purple Rock Crab"],
+        aka : ["Purple Rock Crab (there is another crab by this name)"],
         attributes : [
             { key: "carapaceShape" , values : ["square"] },
             { key : "lastLegsArePaddles", values : ["false"] },
@@ -676,6 +676,11 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        similarTo: [
+            { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" },
+            { key: "Austrohelice crassa", label: "Tunneling Mud Crab" }, 
+            { key: "Cyclograpsus lavauxi", label: "Smooth Shore Crab" } 
+        ],
         images : [
             { url : "https://static.inaturalist.org/photos/29603233/large.jpeg?1545974351" },
             { url : "https://static.inaturalist.org/photos/54043686/large.jpg?1571033389" },
@@ -694,6 +699,7 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        similarTo: [],
         images : [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/523181-Metadromia-wilsoni"
@@ -707,6 +713,11 @@ var crabData = [
             { key: "surfaceTexture", values : ["bumpy","seaweed"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        similarTo: [
+            { key: "Notomithrax minor", label: "Small Decorator Crab" },
+            { key: "Notomithrax peronii", label: "Peron's Decorator Crab" },
+            { key: "Notomithrax ursus", label: "Hairy Seaweed Crab" }
         ],
         images : [ 
             { url : "https://static.inaturalist.org/photos/53457693/large.jpg?1570427581" },
@@ -723,6 +734,9 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        similarTo: [
+            { key: "Cyclograpsus lavauxi", label: "Smooth Shore Crab" } 
         ],
         images : [ 
             { url : "https://static.inaturalist.org/photos/64201398/large.jpg?1584864956" },

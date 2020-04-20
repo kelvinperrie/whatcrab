@@ -170,6 +170,8 @@ header {
 .details-popup-container {
     position: absolute;
     z-index: 100;
+    max-width: 100%;
+    left: 0;
 }
 .details-popup {
     background-color: #CBB3BF;
@@ -179,6 +181,7 @@ header {
     color: #212529;
     border: 1px solid #888;
     border-radius: 10px;
+    width: 100%;
 }
 .popup-banner {
     position: relative;
@@ -202,6 +205,7 @@ header {
 .popup-content {
     padding: 10px;
     white-space: nowrap;
+    overflow-x: auto;
 }
 .crab-detail-container {
     display: inline-block;
@@ -214,6 +218,7 @@ header {
     width: 400px;
     font-size: 0.8em;
     vertical-align: top;
+    white-space: normal;
 }
 .crab-detail-container .crab-image-container {
     height: 300px;
@@ -245,4 +250,10 @@ header {
 }
 .no-list-items {
     margin-bottom: 1em;
+}
+.details-compare-link {
+    font-size: 0.8em;
+    padding-left: 1em;
+    text-decoration: underline;
+    cursor: pointer;
 }

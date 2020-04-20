@@ -96,6 +96,7 @@ var CrabModel = function(crab) {
     self.natureWatchLink = crab.natureWatchLink;
     self.details = crab.details;
     self.aka = crab.aka || [];
+    self.similarTo = crab.similarTo || [];                      // an array of similar crabs, holding a key and label
     self.currentImageIndex = ko.observable(0);
     self.hiddenByFilters = ko.observableArray();                // an obs array of the filter keys that have caused this crab to be hidden
     self.selectedForCompare = ko.observable(false);
@@ -188,6 +189,18 @@ var PageModel = function() {
         });
         return total;
     });
+
+    // mark the crab indicated by the supplied key as to be compared
+    // used when in the details/compare dialog to open a 'similar to' crab
+    // the key is the scientific name
+    self.openForCompareByKey = function(key) {
+        for(var i = 0 ; i < self.crabData().length; i++) {
+            if(self.crabData()[i].scientificName === key) {
+                self.crabData()[i].selectedForCompare(true);
+                break;
+            }
+        }
+    }
 
     self.toggleCompareDialogVisibility = function() {
         self.compareDialogVisible(!self.compareDialogVisible());

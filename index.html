@@ -60,6 +60,12 @@
                             </div>
                             <div class="similar-to-list">
                                 Simlar crabs:
+                                <ul>
+                                <!-- ko foreach: similarTo -->
+                                    <li><span data-bind="text: label"></span><span class="details-compare-link" data-bind="click: function() { $parents[1].openForCompareByKey(key) }">compare</span></li>
+                                <!-- /ko -->
+                                    <li data-bind="visible: similarTo.length === 0">none</li>
+                                </ul>
                             </div>
                             <div class="crab-links">
                                 <div class="crab-link">
