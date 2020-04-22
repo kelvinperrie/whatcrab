@@ -149,9 +149,9 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            "Carapace/shell squarish; Sides can something be appear quite rounded.",
+            "Carapace/shell squarish; Sides can sometimes appear quite rounded.",
             "Coluring is purple with some white. Juveniles can be darker, almost black",
-            "When dead shells can turn to a red colour",
+            "When dead the shells can turn to a red colour",
             "Often found higher on the beach, in rocky gaps. Often on top of rocks.",
             "Chelipeds/claws purple with white dots",
             "Located all around NZ"
@@ -367,7 +367,7 @@ var crabData = [
             { key : "carapaceShape", values : ["triangle"] },
             { key : "covering", values : ["seaweed"] },
             { key : "camouflageCrab", values : ["true"] },
-            { key : "posteriorSpines", values : ["true"] },
+            { key : "posteriorSpines", values : ["false"] },
             { key : "lastLegsArePaddles", values : ["false"] },
             { key : "surfaceTexture", values : ["spikey","seaweed"]},
             { key: "halfCrab", values : ["false"]}
@@ -389,7 +389,7 @@ var crabData = [
             { key : "carapaceShape", values : ["triangle"] },
             { key : "covering", values : ["seaweed"] },
             { key : "camouflageCrab", values : ["true"] },
-            { key : "posteriorSpines", values : ["false"] },
+            { key : "posteriorSpines", values : ["true"] },
             { key : "lastLegsArePaddles", values : ["false"] },
             { key : "surfaceTexture", values : ["spikey","seaweed"]},
             { key: "halfCrab", values : ["false"]}
@@ -624,7 +624,7 @@ var crabData = [
         natureWatchLink: "https://inaturalist.nz/taxa/416671-Hemiplax-hirtipes"
     },
     {
-        commonName : "Burrowing Mud Crab",
+        commonName : "Tunneling Mud Crab",
         scientificName : "Austrohelice crassa",
         aka : ["Burrowing Mud Crab"],
         attributes : [
