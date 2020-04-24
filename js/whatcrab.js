@@ -86,33 +86,37 @@ var FilterModel = function(filter, pageModel) {
     }
 }
 
+// object to hold data that relates to the crab and the displaying of the crab
 var CrabModel = function(crab) {
     var self = this;
 
     self.commonName = crab.commonName || "No common name";      // the name the crab is known by
     self.scientificName = crab.scientificName;                  // the stupid scientific name
     self.attributes = crab.attributes;                          // an array of attributes that describe the crab e.g. [ { key : "carapaceShape",  values : ["oval"] } ]
-    self.images = crab.images;
-    self.natureWatchLink = crab.natureWatchLink;
+    self.images = crab.images;                                  // an array of images { url: 'blah.jpg' }
+    self.natureWatchLink = crab.natureWatchLink;                // a url to the naturewatch details page
     self.details = crab.details;
-    self.aka = crab.aka || [];
+    self.aka = crab.aka || [];                                  // array of strings of other names the crab is known by
     self.similarTo = crab.similarTo || [];                      // an array of similar crabs, holding a key and label
-    self.currentImageIndex = ko.observable(0);
+    self.currentImageIndex = ko.observable(0);                  // the index of the current image being viewed - relates to the images array
     self.hiddenByFilters = ko.observableArray();                // an obs array of the filter keys that have caused this crab to be hidden
-    self.selectedForCompare = ko.observable(false);
+    self.selectedForCompare = ko.observable(false);             // a flag indicating if the crab has been selected to show in the compare dialog
 
     self.visible = ko.computed(function() {
         return self.hiddenByFilters().length === 0;
     });
+    // returns the image currently being viewed, based on the images array and the current index
     self.currentImage = ko.computed(function() {
         if(!self.images || self.images.length === 0) {
             return null;
         }
         return self.images[self.currentImageIndex()];
     });
+    // calculates the naturewatch photos link
     self.natureWatchImagesLink = ko.computed(function() {
         return self.natureWatchLink + "/browse_photos";
     });
+    // moves our current image to the next available image
     self.showNextImage = function() {
         self.currentImageIndex(self.currentImageIndex()+1);
         if(self.currentImageIndex() >= self.images.length) {
@@ -122,7 +126,7 @@ var CrabModel = function(crab) {
 
     // see if the crab contains some values for a specific filter key
     self.getValuesForAttribute = function(key) {
-        console.log("checking where key is " + key + " on " + self.commonName)
+        //console.log("checking where key is " + key + " on " + self.commonName)
         for(var i = 0; i < self.attributes.length; i++) {
             if(self.attributes[i].key === key) {
                 return self.attributes[i].values;
@@ -135,6 +139,7 @@ var CrabModel = function(crab) {
     self.toggleForCompare = function() {
         self.selectedForCompare(!self.selectedForCompare());
     }
+    // marks our crab as going to show in the compare dialog
     self.selectForCompare = function() {
         self.selectedForCompare(true);
     }
@@ -143,10 +148,10 @@ var CrabModel = function(crab) {
 var PageModel = function() {
 
     var self = this;
-    self.crabData = ko.observableArray();
-    self.filters = ko.observableArray();
-    self.filterInfoShown = ko.observable(false);
-    self.compareDialogVisible = ko.observable(false);
+    self.crabData = ko.observableArray();               // array of crab data
+    self.filters = ko.observableArray();                // array of filters/questions
+    self.filterInfoShown = ko.observable(false);        // flag indicating if the filter help info should be displayed
+    self.compareDialogVisible = ko.observable(false);   // flag indicating if the comparison dialog is open
     
     // self.crabDataFiltered = ko.computed(function(){
     //     return self.crabData().filter(
@@ -161,6 +166,7 @@ var PageModel = function() {
     //     );
     //   });
 
+    // returns an array including only the crabs that have been marked to be compared
     self.crabsForCompare = ko.computed(function() {
         return self.crabData().filter(
             function(item) {
@@ -169,6 +175,7 @@ var PageModel = function() {
         )
     });
 
+    // calculates how many crabs are current displayed
     self.shownCrabCount = ko.computed(function() {
         var total = 0;
         ko.utils.arrayForEach(self.crabData(), function(item) {
@@ -179,10 +186,10 @@ var PageModel = function() {
         return total;
     });
 
+    // calculates how many filters are active
     self.activeFilterCount = ko.computed(function() {
         var total = 0;
         ko.utils.arrayForEach(self.filters(), function(item) {
-            console.log(item.key);
             if (item.hasAnyValueActivated()) {
                 total += 1;
             }
@@ -202,7 +209,13 @@ var PageModel = function() {
         }
     }
 
+    // show or hide the compare dialog
     self.toggleCompareDialogVisibility = function() {
+        // if the dialog isn't open, and we're opening it, then stick it at the top of what the user is currently scrolled too
+        if(!self.compareDialogVisible()) {
+            var scrolledTo = $('html').scrollTop() + "px";
+            $(".details-popup-container").css({ top : scrolledTo});
+        }
         self.compareDialogVisible(!self.compareDialogVisible());
         // if the dialog has been closed then set all crabs as not being marked for compare
         if(!self.compareDialogVisible()) {
@@ -210,12 +223,15 @@ var PageModel = function() {
         }
     }
 
+    // sets all crabs as not being marked for compare
+    // used when the compare dialog is closed
     self.removeAllCrabsForCompare = function() {
         for(var i = 0 ; i < self.crabData().length; i++) {
             self.crabData()[i].selectedForCompare(false);
         }
     }
 
+    // an event fired when a filter is set to be ignored
     self.filterIgnoreChangedEvent = function(filterThatChanged) {
         filterThatChanged.ignored(!filterThatChanged.ignored());
         var vaulesDisabled = filterThatChanged.deactiveFilterValues();
@@ -224,6 +240,7 @@ var PageModel = function() {
         }
     };
 
+    // an event fired when a value on a fitler is set
     self.filterValueChangedEvent = function(filterThatChanged) {
         self.setFilterVisibility();
         self.checkCrabVisibilityDueToFilterChange(filterThatChanged);
@@ -302,8 +319,8 @@ var PageModel = function() {
     self.checkCrabVisibilityDueToFilterChange = function(filterThatChanged) {
         // get the values that are set on the filter
         var activeValues = filterThatChanged.getActiveValues();
-        console.log("crab visibility check")
-        console.log(activeValues);
+        //console.log("crab visibility check")
+        //console.log(activeValues);
         // for each crab, check to see if this filter change effects visibility
         crabLoop:for(var i = 0; i < self.crabData().length; i ++) {
             // get the values on the crab for this attribute/key
@@ -324,15 +341,14 @@ var PageModel = function() {
 
             // the crab has to have at least one of the activated values on the filter
             var matchedAValue = false;
-            console.log("checking to see if crab has one of the active values")
+            //console.log("checking to see if crab has one of the active values")
             for(var x = 0; x < activeValues.length; x ++) {
-                console.log("checking to see if crab has " + activeValues[x]);
+                //console.log("checking to see if crab has " + activeValues[x]);
                 if(crabValues.includes(activeValues[x])) {
-                    console.log("it does!")
+                    //console.log("it does!")
                     matchedAValue = true;
                 } else {
-                    console.log("it does NOT!")
-                    
+                    //console.log("it does NOT!")
                 }
             }
 
@@ -370,6 +386,7 @@ var PageModel = function() {
         return match;
     };
 
+    // setup / load all data into our models
     self.initialize = function() {
         for(var i = 0; i < crabData.length; i++) {
             // don't include crabs marked as inactive (active : false)
