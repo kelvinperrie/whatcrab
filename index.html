@@ -19,7 +19,7 @@
                     <div class="header-tag-line">Helping to identify New Zealand crabs</div>
                 </div>
         </header>
-        <div class="details-popup-container" data-bind="visible: compareDialogVisible">
+        <div class="details-popup-container"  style="display:none;" data-bind="visible: compareDialogVisible">
             <div class="details-popup">
                 <div class="popup-banner">
                     Crab details
@@ -29,7 +29,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="popup-content">
+                <div class="popup-content" >
                     <!-- ko foreach: crabsForCompare -->
                         <div class="crab-detail-container">
                             <div data-bind="" class="remove-crab-from-dialog-container"><span data-bind="visible: $parent.crabsForCompare().length > 1, click: function() { toggleForCompare(); }">remove this crab</span></div>
@@ -89,17 +89,22 @@
             <div class="col-4">
                 <div>
                     <div class="filters-info">
+                        To identify your crab answer the below questions; that will filter the list of crabs to the right. 
+                        As you answer a question other questions may appear. 
+                        You can click the <span class="material-icons">zoom_in</span> to view more details of a crab, or select multiple crabs using <span class="material-icons">check_box_outline_blank</span> then use <span class="material-icons">zoom_in</span> to compare them.
                         <div class="expandor" data-bind="click: function() { filterInfoShown(!filterInfoShown()); } ">
-                            Question info ...
                             <!-- <i class="material-icons">search</i> -->
+                            &nbsp;
                             <div class="expander-icon">
+                                More question info ...
                                 <i data-bind="visible: !filterInfoShown()" class="material-icons">expand_more</i>
                                 <i data-bind="visible: filterInfoShown()" class="material-icons">expand_less</i>
                             </div>
                         </div>
                         <div class="filters-info-details" data-bind="visible: filterInfoShown">
                             <ul>
-                                <li>You can select multiple answers for each question; for example if for the shell/carapace shape question you select both the round and square options, then all round and square shaped crabs will show.</li>
+                                <li>You can click the <span class="material-icons">help</span> icon for more help with each question.</li>
+                                <li>You can select multiple answers for each question; for example if for the shape of the shell question you select both the round and square options then all round and square shaped crabs will show.</li>
                                 <li>If you're unsure of the answer or a question doesn't apply you don't have to answer anything for it, or you can hide it.</li>
                             </ul>
                         </div>
@@ -177,8 +182,9 @@
             <div class="col">
                 Challenges:
                 <ul>
-                    <li>Using a mix of scientific terms and common terms (e.g. carapace vs shell)</li>
+                    <li>Trying to use accessible language / not using a mix of scientific terms and common terms (e.g. carapace vs shell)</li>
                     <li>I haven't got images for everything</li>
+                    <li>Only including common(?) crabs to simplify</li>
                 </ul>
             </div>
         </div>

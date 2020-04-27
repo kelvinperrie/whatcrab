@@ -29,6 +29,7 @@ h1 {
 }
 .expandor{
     cursor: pointer;
+    font-size: 0.9em;
 }
 .expander-icon{
     float: right;
@@ -197,7 +198,7 @@ h1 {
 }
 .popup-banner {
     position: relative;
-    background-color: #36453B;
+    background-color: rgb(172, 59, 97);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 2em;
@@ -256,7 +257,6 @@ h1 {
 .crab-detail-container .details-list {
 }
 .crab-detail-container .crab-links {
-    background-color: #36453B;
     border-bottom-left-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
 }
