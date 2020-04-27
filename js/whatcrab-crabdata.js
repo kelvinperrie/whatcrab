@@ -11,12 +11,10 @@ var crabData = [
             { key : "camouflageCrab", values : ["false"] }
         ],
         details : [
-            "Carapace/shell very flat",
+            "Only 6 legs (excluding claws)",
+            "Shell very flat and no teeth/spikes on side",
             "Claws very flat and smooth",
-            "6 legs (excluding claws)",
-            "Often found under rocks in intertidal zone",
-            "Often green, but has a wide range of colours",
-            "Located all around NZ"
+            "Often green, but has a wide range of colours"
         ],
         similarTo: [
             { key: "Petrolisthes novaezelandiae", label: "Red Half-Crab" }
@@ -38,12 +36,10 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            "Carapace/shell very flat",
-            "Claws very flat with a ridge running along the top surface",
-            "6 legs (excluding claws)",
-            "Often found under rocks in intertidal zone",
-            "Coluring is red to brown",
-            "Located all around NZ"
+            "Only 6 legs (excluding claws)",
+            "Shell very flat and on teeth/spikes on side",
+            "Claws very flat with a ridge running along the surface",
+            "Coluring is red to brown"
         ],
         similarTo: [
             { key: "Petrolisthes elongatus", label: "New Zealand Half-Crab" }
@@ -64,12 +60,12 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            "Carapace/shell oval; wider than long",
+            "Shell is oval shapped; wider than long",
+            "Shell has no teeth/spikes on side",
             "Male has one large claw",
             "Legs can be a bit furry",
             "Tips of claws yellow",
-            "Coluring is light brown/green ",
-            "Located all around NZ"
+            "Coluring is light brown/green "
         ],
         similarTo: [
             { key: "Ozius deplanatus", label: "Iron Crab" },
@@ -96,10 +92,10 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            "Carapace/shell oval; wider than long",
-            "Carpace front looks like pushed together pastry of a pie",
-            "Coluring is brown, can be reddish ",
-            "Located all around NZ"
+            "Shell is oval shapped; wider than long",
+            "Shell has no teeth/spikes on side",
+            "Shell front looks like pushed together pastry of a pie",
+            "Coluring is brown, can be reddish "
         ],
         similarTo: [
             { key: "Ozius deplanatus", label: "Iron Crab" },
@@ -125,11 +121,8 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            "Carapace/shell wider than long - not really triangular",
-            "Each side of carapace has a triangle point facing outwards",
-            "Coluring is yellowish, reddish, orange",
-            "Often found in deper water in a range of habitats",
-            "Located all around NZ"
+            "Shell wider than long. The front sides of the shell end in triangular points",
+            "Coluring is mostly white with bits in brighter (yellowish, reddish, orange) colours"
         ],
         similarTo: [],
         images : [
@@ -149,12 +142,12 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            "Carapace/shell squarish; Sides can sometimes appear quite rounded.",
-            "Coluring is purple with some white. Juveniles can be darker, almost black",
+            "Shell squarish; Sides can sometimes appear quite rounded.",
+            "The claws are purple with white dots.",
+            "Shell has a couple of very small teeth/spikes on the side, behind the eyes",
+            "Colouring is purple with some white. Juveniles can be darker, almost black",
             "When dead the shells can turn to a red colour",
-            "Often found higher on the beach, in rocky gaps. Often on top of rocks.",
-            "Chelipeds/claws purple with white dots",
-            "Located all around NZ"
+            "Often found higher on the beach, in rocky gaps. Often on top of rocks."
         ],
         similarTo: [
             { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" }
@@ -177,6 +170,12 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        details : [
+            "Shell is a squarish shape.",
+            "Looks very similar to the Purple Rock Crab, but this crab does NOT have white dots on the claws.",
+            "Shell has three tooth like notches on the side.",
+            "Colour range variable, often pale with dark red or purple patches."
+        ],
         similarTo: [
             { key: "Leptograpsus variegatus", label: "Purple Rock Crab" },
             { key: "Cyclograpsus lavauxi", label: "Smooth Shore Crab" } ,
@@ -198,6 +197,12 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        details : [
+            "Shell is overall oval but with flat edges on the front.",
+            "The area between the eyes sticks out past the eyes in a way that the overall shape could be considered triangular.",
+            "Shell has no teeth/spike on each side.",
+            "Colour ranges through brown, white and purple; often red."
         ],
         similarTo: [
             { key: "Halicarcinus cookii", label: "Cook's Pillbox Crab" },
@@ -223,6 +228,13 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        details : [
+            "Shell is overall round but with flatish edges towards the front.",
+            "Shell has a small tooth/spike on each side.",
+            "Crab is smooth and not furry",
+            "The area between the eyes is about level with the eyes and forms three points.",
+            "Colour range variable."
+        ],
         similarTo: [
             { key: "Halicarcinus innominatus", label: "Flat Pillbox Crab" },
             { key: "Halicarcinus varius", label: "Variable Pillbox Crab" },
@@ -243,6 +255,13 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        details : [
+            "Shell is mostly round; a bit wider than long.",
+            "Shell does NOT have a small tooth/spike on each side.",
+            "Crab is smooth and not furry",
+            "The area between the eyes is about level with the eyes and forms three points.",
+            "Colour range variable; often brown or white with mottling."
         ],
         similarTo: [
             { key: "Halicarcinus cookii", label: "Cook's Pillbox Crab" },
@@ -266,6 +285,13 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        details : [
+            "Shell is rounded.",
+            "Shell has a small tooth/spike on each side.",
+            "Crab might appear slightly furry",
+            "The area between the eyes is about level with the eyes and forms three points (which may be hard to see).",
+            "Colour is often brown or light green."
+        ],
         similarTo: [
             { key: "Halicarcinus cookii", label: "Cook's Pillbox Crab" },
             { key: "Halicarcinus innominatus", label: "Flat Pillbox Crab" },
@@ -288,6 +314,13 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth", "hairy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        details : [
+            "Shell is rounded.",
+            "Shell does not have a small tooth/spike on each side.",
+            "Crab might appear furry",
+            "The area between the eyes sticks out past the eye level and forms three points.",
+            "Colour range variable; often light brown."
         ],
         similarTo: [
             { key: "Halicarcinus cookii", label: "Cook's Pillbox Crab" },
@@ -329,6 +362,12 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        details : [
+            "Shell is rounded.",
+            "Crab will appear very furry",
+            "The area between the eyes sticks out past the eye level.",
+            "Colouring is brown."
+        ],
         similarTo: [
             { key: "Halicarcinus cookii", label: "Cook's Pillbox Crab" },
             { key: "Halicarcinus innominatus", label: "Flat Pillbox Crab" },
@@ -353,6 +392,10 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        details : [
+            "Shell is triangular.",
+            "Colour range variable; brown, white, red."
+        ],
         similarTo: [],
         images : [
             { url : "https://static.inaturalist.org/photos/59759094/large.jpg?1579219887" },
@@ -371,6 +414,12 @@ var crabData = [
             { key : "lastLegsArePaddles", values : ["false"] },
             { key : "surfaceTexture", values : ["spikey","seaweed"]},
             { key: "halfCrab", values : ["false"]}
+        ],
+        details : [
+            "Shell is triangular with a rounded base.",
+            "Shell has no spines/spikes at the rear.",
+            "The surface of the shell will be spikey and probably covered in seaweed.",
+            "Claws may be dark red/purple or white with bluish markings."
         ],
         similarTo: [
             { key: "Notomithrax peronii", label: "Peron's Decorator Crab" },
@@ -394,6 +443,12 @@ var crabData = [
             { key : "surfaceTexture", values : ["spikey","seaweed"]},
             { key: "halfCrab", values : ["false"]}
         ],
+        details : [
+            "Shell is triangular with a rounded base.",
+            "Shell has two very small spines/spikes at the rear.",
+            "The surface of the shell will be spikey and probably covered in seaweed.",
+            "Claws dark green/brown."
+        ],
         similarTo: [
             { key: "Notomithrax minor", label: "Small Decorator Crab" },
             { key: "Notomithrax ursus", label: "Hairy Seaweed Crab" }
@@ -416,6 +471,12 @@ var crabData = [
             { key : "surfaceTexture", values : ["spikey","seaweed", "hairy"]},
             { key: "halfCrab", values : ["false"]}
         ],
+        details : [
+            "Shell is triangular with a rounded base.",
+            "Shell has no spines/spikes at the rear.",
+            "The surface of the shell will be spikey and probably covered in seaweed.",
+            "Claws dark orange/purple."
+        ],
         similarTo: [
             { key: "Notomithrax minor", label: "Small Decorator Crab" },
             { key: "Notomithrax peronii", label: "Peron's Decorator Crab" }
@@ -437,6 +498,13 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        details : [
+            "Shell is oval shapped; wider than long.",
+            "Front of the shell has blunt outward facing bumps",
+            "Shell is smooth, legs can appear furry.",
+            "Claws have black tips.",
+            "Coluring is dark brown. Younger crabs can be whitish."
+        ],
         similarTo: [
             { key: "Heterozius rotundifrons", label: "Big Hand Crab" },
             { key: "Pilumnopeus serratifrons", label: "Smooth-Handed Crab" }
@@ -457,6 +525,13 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth", "hairy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        details : [
+            "Shell is oval shapped; wider than long.",
+            "Front of the shell has blunt outward facing bumps",
+            "Shell can appear smooth or can appear slightly furry/muddy, legs can appear furry.",
+            "Claws have dark brown tips.",
+            "Coluring is dark brown."
         ],
         similarTo: [
             { key: "Ozius deplanatus", label: "Iron Crab" }
@@ -480,6 +555,12 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        details : [
+            "Shell is oval shapped; wider than long.",
+            "Entire crab will appear furry/muddy due to being covered in 'hairs'.",
+            "Claws have dark brown tips.",
+            "Coluring will show as light brown due to covering of 'hairs'."
+        ],
         similarTo: [
             { key: "Pilumnus novaezelandiae", label: "Bristle Crab" }
         ],
@@ -499,6 +580,12 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        details : [
+            "Shell is round, shapped like a pea.",
+            "Shell are smooth.",
+            "Claws have dark brown tips.",
+            "Coluring range variable; whites, browns and oranges."
+        ],
         similarTo: [],
         images : [
             { url : "https://static.inaturalist.org/photos/32723026/large.jpg?1552368945" },
@@ -515,6 +602,12 @@ var crabData = [
             { key: "surfaceTexture", values : ["hairy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        details : [
+            "Shell is oval shapped; wider than long.",
+            "Entire crab will appear furry/muddy due to being covered in 'hairs'; Hairs will be in a range of lengths with some quite long.",
+            "Claws have dark brown tips. Underside of claws may be white.",
+            "Coluring beneath the hairs could be purple or yellow(?)."
         ],
         similarTo: [
             { key: "Pilumnus lumpinus", label: "Hairy Crab" }
@@ -536,6 +629,12 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        details : [
+            "Shell could be seen as either round or square shapped.",
+            "Shell front and sides have jagged spikes.",
+            "Claws have ridges of white bumps.",
+            "Coluring is red/orange with white underneath."
+        ],
         similarTo: [
             { key: "Nectocarcinus antarcticus", label: "Red Swimming Crab" }
         ],
@@ -556,6 +655,13 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        details : [
+            "Shell is oval shapped.",
+            "Shell has five teeth like spikes on each side with eight spikes between the eyes.",
+            "Last leg pair has paddles.",
+            "End of claws can have dark brown amongst white or a light blue.",
+            "Coluring is green. Underside of the front of the shell can have light blue markings."
+        ],
         similarTo: [
             { key: "Ovalipes catharus", label: "Paddle Crab" }
         ],
@@ -573,6 +679,13 @@ var crabData = [
             { key: "surfaceTexture", values : ["bumpy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        details : [
+            "Shell is oval shapped.",
+            "Shell has four teeth like spikes on each side.",
+            "Last leg pair has paddles.",
+            "End of claws white or dark red.",
+            "Coluring is red; whitish and oranges."
         ],
         similarTo: [
             { key: "Guinusia chabrus", label: "Red Rock Crab " }
@@ -594,6 +707,13 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        details : [
+            "Shell is oval shapped.",
+            "Shell has five teeth like spikes on each side, with four spikes between the eyes.",
+            "Last leg pair has paddles.",
+            "Paddles can be a bluish colour.",
+            "Coluring is light brown with dark spots, can have redish/orange areas."
+        ],
         similarTo: [
             { key: "Charybdis japonica", label: "Asian Paddle Crab" }
         ],
@@ -613,6 +733,12 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth","hairy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        details : [
+            "Shell is square/rectangle shapped, wider than long.",
+            "Shell has a couple of teeth like spikes on each side.",
+            "Legs can have a furry appearance.",
+            "Coluring can be light brown/orange with dark spots."
         ],
         similarTo: [
             { key: "Austrohelice crassa", label: "Burrowing Mud Crab" }
@@ -634,6 +760,12 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        details : [
+            "Shell is square/rectangle shapped, wider than long.",
+            "Shell has a couple of teeth like spikes on each side.",
+            "Claw tips generally lighter coloured than the body; almost white.",
+            "Coluring brown or green."
+        ],
         similarTo: [
             { key: "Hemiplax hirtipes", label: "Sentinel Crab" },
             { key: "Hemigrapsus crenulatus", label: "Hairy-handed Crab" }
@@ -653,6 +785,11 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        details : [
+            "Shell is square/rectangle shapped, wider than long.",
+            "Shell sides are smooth, with no teeth like spikes.",
+            "Coluring varies; often dark or light brown, can be redish brown or whitish with dark spots/mottling."
         ],
         similarTo: [
             { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" },
@@ -675,6 +812,12 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        details : [
+            "Shell is square but with quite curved forward corners.",
+            "Shell has two teeth like spikes on each side.",
+            "Legs can appear quite furry.",
+            "Coluring variable; Can be green, brown, reddish, largly white. Often has large spots or mottling."
         ],
         similarTo: [
             { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" },
@@ -699,6 +842,13 @@ var crabData = [
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
+        details : [
+            "Shell is oval but not much wider than long.",
+            "Shell has large, smooth bumps; resembles a sponge.",
+            "Shell has no teeth like spikes on each side.",
+            "Inner areas of claws can appear a bit furry.",
+            "Coluring red or reddish brown."
+        ],
         similarTo: [],
         images : [
         ],
@@ -713,6 +863,12 @@ var crabData = [
             { key: "surfaceTexture", values : ["bumpy","seaweed"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        details : [
+            "Shell is triangle shaped.",
+            "Shell can be bumpy or covered in 'hairs'/sedmients.",
+            "Can appear furry/muddy due to a covering of 'hairs'.",
+            "Coluring light green/brown."
         ],
         similarTo: [
             { key: "Notomithrax minor", label: "Small Decorator Crab" },
@@ -734,6 +890,13 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
+        ],
+        details : [
+            "Shell is squarish, but has rounded sides.",
+            "Shell sides are smooth, with no teeth like spikes.",
+            "The first leg pairs have a set of spikes where they join with the body.",
+            "Often found on or around objects that have been floating in the ocean.",
+            "Coluring very variable; can be blue, dark brown, almost black, yellow brown."
         ],
         similarTo: [
             { key: "Cyclograpsus lavauxi", label: "Smooth Shore Crab" } 
