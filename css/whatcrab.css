@@ -1,8 +1,5 @@
-html {
-    background-color: #CBB3BF;
-}
+
 body {
-    background-color: #CBB3BF;
     font-family: 'Hind Siliguri', sans-serif !important;
     background-color: #EEE2DC;
     color: #AC3B61;
@@ -11,9 +8,7 @@ header {
     margin-bottom: 1em;
     padding-bottom: 1em;
     background-color: #EEE2DC;
-    /* background-color: #36453B; */
     color: #AC3B61;
-    /* color: #ebebeb; */
 }
 h1 {
     font-family: 'Permanent Marker', cursive;
@@ -78,8 +73,6 @@ h1 {
 }
 .filter-option {
     display: inline-block;
-    background-color: #EF959C;
-    background-color: #CBB3BF;
     background-color: #C5C6C7;
     padding: 0.35em 1.2em;
     border: 0.1em solid #FFFFFF;
@@ -101,7 +94,6 @@ h1 {
 }
 
 .activated {
-    background-color: #96B594;
     background-color: #88b2ff;
 }
 .matched-results-title {
@@ -109,7 +101,6 @@ h1 {
 }
 .crab-container {
     display: inline-block;
-    background-color: #8DA1B9;
     margin: 0.3em 0.2em;
     width: 200px;
     height: 220px;
@@ -133,6 +124,7 @@ h1 {
     height: 140px;
     text-align: center;
     position: relative;
+    cursor: pointer;
 }
 .crab-image {
     max-width:100%;

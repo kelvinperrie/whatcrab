@@ -36,7 +36,7 @@
                             <div class="common-name" data-bind="text:commonName"></div>
                             <div class="scientific-name" >(<span data-bind="text:scientificName"></span>)</div>
                             <div class="crab-no-image" title="I have no images of this crab" data-bind="visible: currentImage() === null">?</div>
-                            <div class="crab-image-container" data-bind="with : currentImage">
+                            <div class="crab-image-container" data-bind="with : currentImage" title="click for next image">
                                 <div class="image-count-display" title="click image to show next picture" data-bind="text: $parent.images.length, visible: $parent.images.length > 1"></div>
                                 <img class="crab-image" src="" data-bind="click : function() { $parent.showNextImage(); } , attr: { src : url }" alt="crab picture" />
                             </div> 
@@ -149,7 +149,7 @@
                     <div class="common-name" data-bind="text:commonName"></div>
                     <div class="scientific-name" >(<span data-bind="text:scientificName"></span>)</div>
                     <div class="crab-no-image" title="I have no images of this crab" data-bind="visible: currentImage() === null">?</div>
-                    <div class="crab-image-container" data-bind="with : currentImage">
+                    <div class="crab-image-container" data-bind="with : currentImage" title="click for next image">
                         <div class="image-count-display" title="click image to show next picture" data-bind="text: $parent.images.length, visible: $parent.images.length > 1"></div>
                         <img class="crab-image" src="" data-bind="click : function() { $parent.showNextImage(); } , attr: { src : url }" alt="crab picture" />
                     </div> 
@@ -178,16 +178,20 @@
                 <!-- /ko -->
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                Challenges:
-                <ul>
-                    <li>Trying to use accessible language / not using a mix of scientific terms and common terms (e.g. carapace vs shell)</li>
-                    <li>I haven't got images for everything</li>
-                    <li>Only including common(?) crabs to simplify</li>
-                </ul>
+        <footer class="row">
+            <div class="col"><br/>
+                Sources: 
+                <div>
+                    iNaturalist. Available from https://www.inaturalist.org. Accessed 28/04/2020.
+                </div>
+                <div>
+                    Wikipedia. Available from https://en.wikipedia.org/, Wikimedia Foundation. Accessed 28/04/2020.
+                </div>
+                <div>
+                    Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015, 10-49 NIWA https://niwa.co.nz/static/web/coastal_crabs_2015.pdf
+                </div>
             </div>
-        </div>
+        </footer>
     </div>
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
