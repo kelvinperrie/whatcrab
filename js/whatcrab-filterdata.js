@@ -64,13 +64,23 @@ var filterData = [
         helpText : "Half-crabs are small and flat and only have six legs (excluding claws); other crabs have eight legs (excluding claws). Crabs in the wild can be missing legs due to preditor attack."
     },
     {
-        key : "toothOnMargin",
+        key : "pillboxCrab",
         possibleValues : [
-            { key : "true", text : "Single tooth on edge of shell", image: "images/tooth-on-margin-true.png" }
-            // ,
-            // { key : "false", text : "No tooth on edge of shell", image: "images/tooth-on-margin-false.png" }
+            { key : "true", text : "IS a pillbox crab", image: "images/pillbox-crab-true.png" },
+            { key : "false", text : "Is NOT a pillbox crab", image: "" }
         ],
         visibleWhen : [{ key : "carapaceShape", value : "round" }],
+        question : "Is this a pillbox crab?",
+        showHelpText : true,
+        helpText : "Pillbox crabs are small, round, FLAT crabs, slightly pointed at the front between the eyes, with long thin legs. Almost like a coin with spider legs. They are not spherical shaped (like a pea)."
+    },  
+    {
+        key : "toothOnMargin",
+        possibleValues : [
+            { key : "true", text : "Single tooth on edge of shell", image: "images/tooth-on-margin-true.png" },
+            { key : "false", text : "No tooth on edge of shell", image: "images/tooth-on-margin-false.png" }
+        ],
+        visibleWhen : [{ key : "pillboxCrab", value : "true" }],
         question : "Is their a single tooth (or spike) on each side of the shell?",
         showHelpText : true,
         helpText : "Some of the smaller round shelled crabs have a single tooth/spike on each side of their shell which can be help to narrow down the type of crab."
