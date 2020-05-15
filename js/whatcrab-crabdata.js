@@ -21,7 +21,7 @@ var crabData = [
             { key: "Petrolisthes novaezelandiae", label: "Red Half-Crab" }
         ],
         images : [
-            { url : "images/crabs/nzhalfcrab01.gif" },
+            // { url : "images/crabs/nzhalfcrab01.gif" },
             { url : "images/crabs/nzhalfcrab01.jpg" },
             { url : "images/crabs/nzhalfcrab02.jpg" },
             { url : "images/crabs/nzhalfcrab03.jpg" },
@@ -79,7 +79,7 @@ var crabData = [
             { key: "Metacarcinus novaezelandiae", label: "Pie Crust Crab" }
         ],
         images : [
-            { url : "images/crabs/bighandcrab01.gif" },
+            // { url : "images/crabs/bighandcrab01.gif" },
             { url : "images/crabs/bighandcrab01.jpg" },
             { url : "images/crabs/bighandcrab02.jpg" },
             { url : "images/crabs/bighandcrab03.jpg" },
@@ -160,7 +160,7 @@ var crabData = [
             { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" }
         ],
         images : [
-            { url : "images/crabs/purplerockcrab01.gif" },
+            // { url : "images/crabs/purplerockcrab01.gif" },
             { url : "images/crabs/purplerockcrab01.jpg" },
             { url : "images/crabs/purplerockcrab02.jpg" },
             { url : "images/crabs/purplerockcrab03.jpg" }
@@ -219,7 +219,7 @@ var crabData = [
             { key: "Halicarcinus whitei", label: "Estuarine Pillbox Crab" }  
         ],
         images : [
-            { url : "images/crabs/pauacrab01.gif" },
+            // { url : "images/crabs/pauacrab01.gif" },
             { url : "images/crabs/pauacrab03.jpg" },
             { url : "images/crabs/pauacrab04.jpg" },
             { url : "images/crabs/pauacrab01.jpg" },
@@ -283,7 +283,7 @@ var crabData = [
             { key: "Halicarcinus whitei", label: "Estuarine Pillbox Crab" }  
         ],
         images : [
-            { url : "images/crabs/flatpillboxcrab01.gif" },
+            // { url : "images/crabs/flatpillboxcrab01.gif" },
             { url : "images/crabs/flatpillboxcrab01.jpg" },
             { url : "images/crabs/flatpillboxcrab03.jpg" },
             { url : "images/crabs/flatpillboxcrab02.jpg" }
@@ -394,7 +394,7 @@ var crabData = [
             { key: "Halicarcinus whitei", label: "Estuarine Pillbox Crab" } 
         ],
         images : [
-            { url : "images/crabs/neopub01.gif" },
+            // { url : "images/crabs/neopub01.gif" },
             { url : "images/crabs/neopub01.jpg" },
             { url : "images/crabs/neopub02.jpg" },
             { url : "images/crabs/neopub03.jpg" },
@@ -418,7 +418,7 @@ var crabData = [
         ],
         similarTo: [],
         images : [
-            { url : "images/crabs/trianglecrab01.gif" },
+            // { url : "images/crabs/trianglecrab01.gif" },
             { url : "images/crabs/trianglecrab01.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/424825-Eurynolambrus-australis"
@@ -504,7 +504,7 @@ var crabData = [
             { key: "Notomithrax peronii", label: "Peron's Decorator Crab" }
         ],
         images : [
-            { url : "images/crabs/hairyseaweedcrab01.gif" },
+            // { url : "images/crabs/hairyseaweedcrab01.gif" },
             { url : "images/crabs/hairyseaweedcrab01.jpg" },
             { url : "images/crabs/hairyseaweedcrab02.jpg" },
             { url : "images/crabs/hairyseaweedcrab04.jpg" },
@@ -534,7 +534,7 @@ var crabData = [
             { key: "Pilumnopeus serratifrons", label: "Smooth-Handed Crab" }
         ],
         images : [
-            { url : "images/crabs/ironcrab01.gif" },
+            // { url : "images/crabs/ironcrab01.gif" },
             { url : "images/crabs/ironcrab01.jpg" },
             { url : "images/crabs/ironcrab02.jpg" },
             { url : "images/crabs/ironcrab03.jpg" },
@@ -564,7 +564,7 @@ var crabData = [
             { key: "Ozius deplanatus", label: "Iron Crab" }
         ],
         images : [
-            { url : "images/crabs/smoothhandedcrab01.gif" },
+            // { url : "images/crabs/smoothhandedcrab01.gif" },
             { url : "images/crabs/smoothhandedcrab01.jpg" },
             { url : "images/crabs/smoothhandedcrab02.jpg" },
             { url : "images/crabs/smoothhandedcrab03.jpg" },
@@ -593,7 +593,7 @@ var crabData = [
             { key: "Pilumnus novaezelandiae", label: "Bristle Crab" }
         ],
         images : [
-            { url : "images/crabs/hairycrab01.gif" },
+            // { url : "images/crabs/hairycrab01.gif" },
             { url : "images/crabs/hairycrab01.jpg" },
             { url : "images/crabs/hairycrab02.jpg" }
         ],
@@ -670,7 +670,7 @@ var crabData = [
             { key: "Nectocarcinus antarcticus", label: "Red Swimming Crab" }
         ],
         images : [
-            { url : "images/crabs/redrockcrab01.gif" },
+            // { url : "images/crabs/redrockcrab01.gif" },
             { url : "images/crabs/redrockcrab01.jpg" },
             { url : "images/crabs/redrockcrab02.jpg" },
             { url : "images/crabs/redrockcrab03.jpg" }
@@ -829,7 +829,7 @@ var crabData = [
             { key: "Planes minutus", label: "Gulfweed Crab" }
         ],
         images : [
-            { url : "images/crabs/smoothshorecrab01.gif" },
+            // { url : "images/crabs/smoothshorecrab01.gif" },
             { url : "images/crabs/smoothshorecrab01.jpg" },
             { url : "images/crabs/smoothshorecrab02.jpg" },
             { url : "images/crabs/smoothshorecrab03.jpg" }
@@ -858,7 +858,7 @@ var crabData = [
             { key: "Cyclograpsus lavauxi", label: "Smooth Shore Crab" } 
         ],
         images : [
-            { url : "images/crabs/hairyhandedcrab01.gif" },
+            // { url : "images/crabs/hairyhandedcrab01.gif" },
             { url : "images/crabs/hairyhandedcrab01.jpg" },
             { url : "images/crabs/hairyhandedcrab02.jpg" },
             { url : "images/crabs/hairyhandedcrab03.jpg" },
