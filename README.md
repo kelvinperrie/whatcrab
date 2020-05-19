@@ -29,7 +29,6 @@ Comparing crabs:
 ![Example 5](examples/example03-details.gif?raw=true "Comparing crab details")
 
 Things to do:
-* put the sources in at the crab details level; can i reference individual pages in a pdf?
 * tiles that get bigger if less crabs in the results
 * some way to open the raw picture full size
 * some filters should be hidden if they become not possible - for example if halfcrab is selected the pillbox crab filter should hide
