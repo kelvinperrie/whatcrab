@@ -101,6 +101,7 @@ var CrabModel = function(crab) {
     self.currentImageIndex = ko.observable(0);                  // the index of the current image being viewed - relates to the images array
     self.hiddenByFilters = ko.observableArray();                // an obs array of the filter keys that have caused this crab to be hidden
     self.selectedForCompare = ko.observable(false);             // a flag indicating if the crab has been selected to show in the compare dialog
+    self.references = crab.references || [];                    // an array of references use in the crab's details
 
     self.visible = ko.computed(function() {
         return self.hiddenByFilters().length === 0;

@@ -12,10 +12,12 @@ var crabData = [
             { key : "pillboxCrab", values : ["false"] }
         ],
         details : [
-            { text: "Only 6 legs (excluding claws)"},
-            { text: "Shell very flat and no teeth/spikes on side"},
-            { text: "Claws very flat and smooth"},
-            { text: "Often green, but has a wide range of colours"}
+            { text: "Only 6 legs (excluding claws)."},
+            { text: "Shell very flat and no teeth/spikes on side."},
+            { text: "Claws very flat and smooth."},
+            { text: "Shell can be up to 3/4 of an inch long.", references: [1]},
+            { text: "Has long wipe-like anntennae.", references: [1]},
+            { text: "Often green, but has a wide range of colours."}
         ],
         similarTo: [
             { key: "Petrolisthes novaezelandiae", label: "Red Half-Crab" }
@@ -27,7 +29,10 @@ var crabData = [
             { url : "images/crabs/nzhalfcrab03.jpg" },
             { url : "images/crabs/nzhalfcrab04.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/410371-Petrolisthes-elongatus"
+        natureWatchLink: "https://inaturalist.nz/taxa/410371-Petrolisthes-elongatus",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp93). Collins, London 1973" }
+        ]
     },
     {
         commonName : "Red Half-Crab",
@@ -41,18 +46,26 @@ var crabData = [
             { key : "pillboxCrab", values : ["false"] }
         ],
         details : [
-            { text: "Only 6 legs (excluding claws)"},
-            { text: "Shell very flat and on teeth/spikes on side"},
-            { text: "Claws very flat with a ridge running along the surface"},
-            { text: "Coluring is red to brown"}
+            { text: "Only 6 legs (excluding claws)."},
+            { text: "Shell very flat and on teeth/spikes on side."},
+            { text: "Shell can be up to 8mm long.", references: [1]},
+            { text: "Has long wipe-like anntennae.", references: [1]},
+            { text: "Claws flat but with a ridge running along the upper surface.", references: [2]},
+            { text: "Coluring is red to pinkish-brown.", references: [1]}
         ],
         similarTo: [
             { key: "Petrolisthes elongatus", label: "New Zealand Half-Crab" }
         ],
         images : [
+            { url : "images/crabs/redhalfcrab02.jpg" },
+            { url : "images/crabs/redhalfcrab03.jpg" },
             { url : "images/crabs/redhalfcrab01.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/471708-Petrolisthes-novaezelandiae"
+        natureWatchLink: "https://inaturalist.nz/taxa/471708-Petrolisthes-novaezelandiae",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp94). Collins, London 1973" },
+            { id: 2, detail : "Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015 (pp12). NIWA" }
+        ]
     },
     {
         commonName : "Big-Handed Crab",
@@ -65,12 +78,12 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is oval shapped; wider than long"},
-            { text: "Shell has no teeth/spikes on side"},
-            { text: "Male has one large claw"},
-            { text: "Legs can be a bit furry"},
-            { text: "Tips of claws yellow"},
-            { text: "Coluring is light brown/green"}
+            { text: "Shell is oval shapped; wider than long."},
+            { text: "Shell has no teeth/spikes on side."},
+            { text: "Male has one large claw."},
+            { text: "Legs can be a bit furry."},
+            { text: "Tips of claws yellow."},
+            { text: "Coluring is light brown/green."}
         ],
         similarTo: [
             { key: "Ozius deplanatus", label: "Iron Crab" },
@@ -99,9 +112,10 @@ var crabData = [
         ],
         details : [
             { text: "Shell is oval shapped; wider than long."},
-            { text: "Shell has no teeth/spikes on side."},
+            { text: "Shell has no teeth/spikes on side and is broadly rounded.", references: [1]},
             { text: "Shell front looks like pushed together pastry of a pie."},
-            { text: "Coluring is brown, can be reddish."}
+            { text: "Shell can be up to 4 inches across.", references: [1]},
+            { text: "Coluring can be a various shades of brown, grey or red, with white underside.", references: [1]}
         ],
         similarTo: [
             { key: "Ozius deplanatus", label: "Iron Crab" },
@@ -114,7 +128,10 @@ var crabData = [
             { url : "images/crabs/piecrustcrab02.jpg" },
             { url : "images/crabs/piecrustcrab03.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/410433-Metacarcinus-novaezelandiae"
+        natureWatchLink: "https://inaturalist.nz/taxa/410433-Metacarcinus-novaezelandiae",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp90). Collins, London 1973" }
+        ]
     },
     {
         commonName : "Policeman Crab",
@@ -150,11 +167,12 @@ var crabData = [
         ],
         details : [
             { text: "Shell squarish; Sides can sometimes appear quite rounded."},
-            { text: "The claws are purple with white dots."},
+            { text: "The claws of adults are purple with white dots."},
             { text: "Shell has a couple of very small teeth/spikes on the side, behind the eyes."},
             { text: "Colouring is purple with some white. Juveniles can be darker, almost black."},
+            { text: "Shell can reach 3 inches across.", references: [1]},
             { text: "When dead the shells can turn to a red colour."},
-            { text: "Often found higher on the beach, in rocky gaps. Often on top of rocks."}
+            { text: "Generally found higher on the beach, in rocky gaps. Often on top of rocks."}
         ],
         similarTo: [
             { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" }
@@ -165,7 +183,10 @@ var crabData = [
             { url : "images/crabs/purplerockcrab02.jpg" },
             { url : "images/crabs/purplerockcrab03.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/326099-Leptograpsus-variegatus"
+        natureWatchLink: "https://inaturalist.nz/taxa/326099-Leptograpsus-variegatus",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
+        ]
     },
     {
         commonName : "Common Rock Crab",
@@ -182,7 +203,8 @@ var crabData = [
             { text: "Shell is a squarish shape."},
             { text: "Looks very similar to the Purple Rock Crab, but this crab does NOT have white dots on the claws."},
             { text: "Shell has three tooth like notches on the side."},
-            { text: "Colour range variable, often pale with dark red or purple patches."}
+            { text: "Shell can be up to 1.5 inches wide.", references : [1]},
+            { text: "Colour range variable, often pale (especially underneath) with dark red or purple marbling.", references : [1]}
         ],
         similarTo: [
             { key: "Leptograpsus variegatus", label: "Purple Rock Crab" },
@@ -194,7 +216,10 @@ var crabData = [
             { url : "images/crabs/commonrockcrab02.jpg" },
             { url : "images/crabs/commonrockcrab03.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/410820-Hemigrapsus-sexdentatus"
+        natureWatchLink: "https://inaturalist.nz/taxa/410820-Hemigrapsus-sexdentatus",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
+        ]
     },
     {
         commonName : "Paua Spider Crab",
@@ -413,7 +438,7 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is triangular."},
+            { text: "Shell is triangular, with the widest edge at the back.", references: [1]},
             { text: "Colour range variable; brown, white, red."}
         ],
         similarTo: [],
@@ -421,7 +446,10 @@ var crabData = [
             // { url : "images/crabs/trianglecrab01.gif" },
             { url : "images/crabs/trianglecrab01.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/424825-Eurynolambrus-australis"
+        natureWatchLink: "https://inaturalist.nz/taxa/424825-Eurynolambrus-australis",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp92). Collins, London 1973" }
+        ]
     },
     {
         commonName : "Small Decorator Crab",
@@ -467,6 +495,7 @@ var crabData = [
         details : [
             { text: "Shell is triangular with a rounded base."},
             { text: "Shell has two very small spines/spikes at the rear."},
+            { text: "up to 3 inches long.", references: [1]},
             { text: "The surface of the shell will be spikey and probably covered in seaweed."},
             { text: "Claws dark green/brown."}
         ],
@@ -479,7 +508,10 @@ var crabData = [
             { url : "images/crabs/peronscamouflagecrab01.jpg" },
             { url : "images/crabs/peronscamouflagecrab02.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/410683-Notomithrax-peronii"
+        natureWatchLink: "https://inaturalist.nz/taxa/410683-Notomithrax-peronii",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp92). Collins, London 1973" }
+        ]
     },
     {
         commonName : "Hairy Seaweed Crab",
@@ -496,6 +528,7 @@ var crabData = [
         details : [
             { text: "Shell is triangular with a rounded base."},
             { text: "Shell has no spines/spikes at the rear."},
+            { text: "up to 2 inches long.", references: [1]},
             { text: "The surface of the shell will be spikey and probably covered in seaweed."},
             { text: "Claws dark orange/purple."}
         ],
@@ -510,10 +543,14 @@ var crabData = [
             { url : "images/crabs/hairyseaweedcrab04.jpg" },
             { url : "images/crabs/hairyseaweedcrab03.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/410681-Notomithrax-ursus"
+        natureWatchLink: "https://inaturalist.nz/taxa/410681-Notomithrax-ursus",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp92). Collins, London 1973" }
+        ]
     },
     {
         commonName : "Iron Crab",
+        aka : ["Black Finder Crab"],
         scientificName : "Ozius deplanatus",
         attributes : [
             { key : "carapaceShape", values : ["oval"] },
@@ -525,7 +562,7 @@ var crabData = [
         details : [
             { text: "Shell is oval shapped; wider than long."},
             { text: "Front of the shell has blunt outward facing bumps"},
-            { text: "Shell is smooth, legs can appear furry."},
+            { text: "Shell is smooth, legs are slightly hariy.", references : [1]},
             { text: "Claws have black tips."},
             { text: "Coluring is dark brown. Younger crabs can be whitish."}
         ],
@@ -541,7 +578,10 @@ var crabData = [
             { url : "images/crabs/ironcrab04.jpg" },
             { url : "images/crabs/ironcrab05.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/496210-Ozius-deplanatus"
+        natureWatchLink: "https://inaturalist.nz/taxa/496210-Ozius-deplanatus",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp90). Collins, London 1973" }
+        ]
     },
     {
         commonName : "Smooth-Handed Crab",
@@ -558,7 +598,7 @@ var crabData = [
             { text: "Front of the shell has blunt outward facing bumps"},
             { text: "Shell can appear smooth or can appear slightly furry/muddy, legs can appear furry."},
             { text: "Claws have dark brown tips."},
-            { text: "Coluring is dark brown."}
+            { text: "Coluring is dark brown, generally discoloured by mud", references: [1]}
         ],
         similarTo: [
             { key: "Ozius deplanatus", label: "Iron Crab" }
@@ -570,7 +610,10 @@ var crabData = [
             { url : "images/crabs/smoothhandedcrab03.jpg" },
             { url : "images/crabs/smoothhandedcrab04.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/471785-Pilumnopeus-serratifrons"
+        natureWatchLink: "https://inaturalist.nz/taxa/471785-Pilumnopeus-serratifrons",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp91). Collins, London 1973" }
+        ]
     },
     {
         commonName : "Hairy Crab",
@@ -587,7 +630,7 @@ var crabData = [
             { text: "Shell is oval shapped; wider than long."},
             { text: "Entire crab will appear furry/muddy due to being covered in 'hairs'."},
             { text: "Claws have dark brown tips."},
-            { text: "Coluring will show as light brown due to covering of 'hairs'."}
+            { text: "Coluring will show as grey or clay coloured due to covering of 'hairs'.", references:[1]}
         ],
         similarTo: [
             { key: "Pilumnus novaezelandiae", label: "Bristle Crab" }
@@ -597,7 +640,10 @@ var crabData = [
             { url : "images/crabs/hairycrab01.jpg" },
             { url : "images/crabs/hairycrab02.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/471785-Pilumnopeus-serratifrons"
+        natureWatchLink: "https://inaturalist.nz/taxa/471785-Pilumnopeus-serratifrons",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp90-91). Collins, London 1973" }
+        ]
     },
     {
         commonName : "Pea Crab",
@@ -636,8 +682,8 @@ var crabData = [
         details : [
             { text: "Shell is oval shapped; wider than long."},
             { text: "Entire crab will appear furry/muddy due to being covered in 'hairs'; Hairs will be in a range of lengths with some quite long."},
-            { text: "Claws have dark brown tips. Underside of claws may be white."},
-            { text: "Coluring beneath the hairs could be purple or yellow(?)."}
+            { text: "Claws have dark brown tips. Claws pinkish and the underside may be white.", references: [1]},
+            { text: "Coluring beneath the hairs is pinkish grey.", references: [1]}
         ],
         similarTo: [
             { key: "Pilumnus lumpinus", label: "Hairy Crab" }
@@ -646,7 +692,10 @@ var crabData = [
             { url: "images/crabs/bristlecrab01.jpg" },
             { url: "images/crabs/bristlecrab02.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/471044-Pilumnus-novaezelandiae"
+        natureWatchLink: "https://inaturalist.nz/taxa/471044-Pilumnus-novaezelandiae",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp91). Collins, London 1973" }
+        ]
     },
     {
         commonName : "Red Rock Crab",
@@ -664,6 +713,7 @@ var crabData = [
             { text: "Shell could be seen as either round or square shapped."},
             { text: "Shell front and sides have jagged spikes."},
             { text: "Claws have ridges of white bumps."},
+            { text: "Generally found lower on the beach in rock pools."},
             { text: "Coluring is red/orange with white underneath."}
         ],
         similarTo: [
@@ -820,8 +870,10 @@ var crabData = [
         ],
         details : [
             { text: "Shell is square/rectangle shapped, wider than long."},
-            { text: "Shell sides are smooth, with no teeth like spikes."},
-            { text: "Coluring varies; often dark or light brown, can be redish brown or whitish with dark spots/mottling."}
+            { text: "Shell sides are smooth, with no teeth like spikes behind the eyes."},
+            { text: "Shell can be up to an inch across.", references : [1]},
+            { text: "Found under boulders around the high tide line, does not like much water.", references : [1]},
+            { text: "Coluring varies; often brown with grey speckles, can be whitish with dark spots/mottling.", references : [1]}
         ],
         similarTo: [
             { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" },
@@ -834,7 +886,10 @@ var crabData = [
             { url : "images/crabs/smoothshorecrab02.jpg" },
             { url : "images/crabs/smoothshorecrab03.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/410426-Cyclograpsus-lavauxi"
+        natureWatchLink: "https://inaturalist.nz/taxa/410426-Cyclograpsus-lavauxi",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp88). Collins, London 1973" }
+        ]
     },
     {
         commonName : "Hairy-Handed Crab",
@@ -850,7 +905,7 @@ var crabData = [
             { text: "Shell is square but with quite curved forward corners."},
             { text: "Shell has two teeth like spikes on each side."},
             { text: "Legs can appear quite furry."},
-            { text: "Coluring variable; Can be green, brown, reddish, largly white. Often has large spots or mottling."}
+            { text: "Coluring variable; Often green, can have brown, reddish, marks or blotches. Often has large spots or mottling.", references: [1]}
         ],
         similarTo: [
             { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" },
@@ -864,7 +919,10 @@ var crabData = [
             { url : "images/crabs/hairyhandedcrab03.jpg" },
             { url : "images/crabs/hairyhandedcrab04.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/143936-Hemigrapsus-crenulatus"
+        natureWatchLink: "https://inaturalist.nz/taxa/143936-Hemigrapsus-crenulatus",
+        references : [
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
+        ]
     },
     {
         commonName : "Sponge Crab",
@@ -878,7 +936,7 @@ var crabData = [
         ],
         details : [
             { text: "Shell is oval but not much wider than long."},
-            { text: "Shell has large, smooth bumps; resembles a sponge."},
+            { text: "Carries a sponge on its shell."},
             { text: "Shell has no teeth like spikes on each side."},
             { text: "Inner areas of claws can appear a bit furry."},
             { text: "Coluring red or reddish brown."}

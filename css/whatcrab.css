@@ -246,6 +246,9 @@ h1 {
 .crab-detail-container .scientific-name {
     font-size: 1em;
 }
+.references {
+    font-size: 0.8em;
+}
 .crab-detail-container .details-list {
 }
 .crab-detail-container .crab-links {

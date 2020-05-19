@@ -55,7 +55,16 @@
                                 Details:
                                 <ul>
                                 <!-- ko foreach: details -->
-                                    <li data-bind="text: text"></li>
+                                    <li>
+                                        <span data-bind="text: text"></span>
+                                        <!-- ko if: $data["references"] -->
+                                            <sup>
+                                                <!-- ko foreach: references -->
+                                                    <span data-bind="text:$data"></span>
+                                                <!-- /ko -->
+                                            </sup>
+                                        <!-- /ko -->
+                                    </li>
                                 <!-- /ko -->
                                 </ul>
                             </div>
@@ -67,6 +76,13 @@
                                 <!-- /ko -->
                                     <li data-bind="visible: similarTo.length === 0">none</li>
                                 </ul>
+                            </div>
+                            <div class="references">
+                                <!-- ko if: $data["references"] -->
+                                    <!-- ko foreach: references -->
+                                    <div class="reference"><span data-bind="text: id"></span>: <span data-bind="text: detail"></span></div>
+                                    <!-- /ko -->
+                                <!-- /ko -->
                             </div>
                             <div class="crab-links">
                                 <div class="crab-link">
@@ -181,15 +197,12 @@
         <footer class="row">
             <div class="col"><br/>
                 Sources: 
-                <div>
-                    iNaturalist. Available from https://www.inaturalist.org. Accessed 28/04/2020.
-                </div>
-                <div>
-                    Wikipedia. Available from https://en.wikipedia.org/, Wikimedia Foundation. Accessed 28/04/2020.
-                </div>
-                <div>
-                    Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015, 10-49 NIWA https://niwa.co.nz/static/web/coastal_crabs_2015.pdf
-                </div>
+                <ul>
+                    <li>iNaturalist. Available from https://www.inaturalist.org. Accessed 28/04/2020.</li>
+                    <li>Wikipedia. Available from https://en.wikipedia.org, Wikimedia Foundation. Accessed 28/04/2020.</li>
+                    <li>Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp88-94). Collins, London 1973</li>
+                    <li>Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015, 10-49 NIWA https://niwa.co.nz/static/web/coastal_crabs_2015.pdf</li>
+                </ul>
             </div>
         </footer>
     </div>
