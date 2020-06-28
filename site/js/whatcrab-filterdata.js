@@ -83,7 +83,7 @@ var filterData = [
         visibleWhen : [{ key : "pillboxCrab", value : "true" }],
         question : "Is their a single tooth (or spike) on each side of the shell?",
         showHelpText : true,
-        helpText : "Some of the smaller round shelled crabs have a single tooth/spike on each side of their shell which can be help to narrow down the type of crab."
+        helpText : "Some of the smaller round shelled crabs have a single tooth/spike on each side of their shell which can help to narrow down the type of crab."
     },    
     {
         key : "surfaceTexture",
