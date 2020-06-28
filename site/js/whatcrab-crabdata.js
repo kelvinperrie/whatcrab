@@ -81,7 +81,7 @@ var crabData = [
             { text: "Shell is square but with quite curved forward corners."},
             { text: "Shell has two teeth like spikes on each side."},
             { text: "Legs can appear quite furry."},
-            { text: "Coluring variable; Often green, can have brown, reddish, marks or blotches. Often has large spots or mottling.", references: [1]}
+            { text: "Colouring variable; Often green, can have brown, reddish, marks or blotches. Often has large spots or mottling.", references: [1]}
         ],
         similarTo: [
             { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" },
@@ -146,7 +146,7 @@ var crabData = [
             { key : "pillboxCrab", values : ["false"] }
         ],
         details : [
-            { text: "Only 6 legs (excluding claws)."},
+            { text: "Only 6 walking legs."},
             { text: "Shell very flat and no teeth/spikes on side."},
             { text: "Claws very flat and smooth."},
             { text: "Shell can be up to 3/4 of an inch long.", references: [1]},
@@ -180,7 +180,7 @@ var crabData = [
             { key : "pillboxCrab", values : ["false"] }
         ],
         details : [
-            { text: "Only 6 legs (excluding claws)."},
+            { text: "Only 6 walking legs."},
             { text: "Shell very flat and on teeth/spikes on side."},
             { text: "Shell can be up to 8mm long.", references: [1]},
             { text: "Has long wipe-like anntennae.", references: [1]},
@@ -750,9 +750,9 @@ var crabData = [
             { key: "pillboxCrab", values : ["true"] }
         ],
         details : [
-            { text: "Shell is rounded."},
+            { text: "Shell is rounded, with no flattened edges towards the front.", references:[1]},
             { text: "Shell has a small tooth/spike on each side."},
-            { text: "Crab might appear slightly furry"},
+            { text: "Crab might appear slightly furry, but can also be smooth."},
             { text: "The area between the eyes is about level with the eyes and forms three points (which may be hard to see)."},
             { text: "Colour is often brown or light green."}
         ],
@@ -764,7 +764,10 @@ var crabData = [
         images : [
             { url : "images/crabs/variablepillboxcrab01.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/416625-Halicarcinus-varius"
+        natureWatchLink: "https://inaturalist.nz/taxa/416625-Halicarcinus-varius",
+        references : [
+            { id: 1, detail : "Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015, 21 NIWA." }
+        ]
     },
     {
         commonName : "Estuarine Pillbox Crab",

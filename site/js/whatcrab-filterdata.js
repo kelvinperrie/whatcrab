@@ -59,9 +59,9 @@ var filterData = [
             { key : "false", text : "Is NOT a half crab", image: "images/shape-round.png" }
         ],
         visibleWhen : [{ key : "carapaceShape", value : "triangle" },{ key : "carapaceShape", value : "round", or : "true" }],
-        question : "Is it a half-crab with only 6 legs (excluding claws)?",
+        question : "Is it a half-crab with only 6 walking legs?",
         showHelpText : true,
-        helpText : "Half-crabs are small and flat and only have six legs (excluding claws); other crabs have eight legs (excluding claws). Crabs in the wild can be missing legs due to preditor attack."
+        helpText : "Half-crabs are small and flat and only have six walking legs; other crabs have eight walking legs. Crabs in the wild can be missing legs due to preditor attack."
     },
     {
         key : "pillboxCrab",
