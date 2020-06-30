@@ -167,7 +167,7 @@
                     <div class="crab-no-image" title="I have no images of this crab" data-bind="visible: currentImage() === null">?</div>
                     <div class="crab-image-container" data-bind="with : currentImage" title="click for next image">
                         <div class="image-count-display" title="click image to show next picture" data-bind="text: $parent.images.length, visible: $parent.images.length > 1"></div>
-                        <img class="crab-image" src="" data-bind="click : function() { $parent.showNextImage(); } , attr: { src : url }" alt="crab picture" />
+                        <img class="crab-image" src="" data-bind="click : function() { $parent.showNextImage(); } , attr: { src : $parent.currentImageUrlSmall }" alt="crab picture" />
                     </div> 
                     <div class="crab-links">
                         <div class="crab-link">

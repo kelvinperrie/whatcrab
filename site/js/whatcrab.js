@@ -113,6 +113,13 @@ var CrabModel = function(crab) {
         }
         return self.images[self.currentImageIndex()];
     });
+    self.currentImageUrlSmall = ko.computed(function() {
+        if(self.currentImage()) {
+            // i regret formatting the image names this way, and this is going to burn me in the future
+            return self.currentImage().url.replace("images/crabs/","images/crabs/small-");
+        }
+        return null;
+    });
     // calculates the naturewatch photos link
     self.natureWatchImagesLink = ko.computed(function() {
         return self.natureWatchLink + "/browse_photos";
