@@ -877,7 +877,7 @@ var crabData = [
             { url : "images/crabs/hairycrab01.jpg" },
             { url : "images/crabs/hairycrab02.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/471785-Pilumnopeus-serratifrons",
+        natureWatchLink: "https://inaturalist.nz/taxa/471043-Pilumnus-lumpinus",
         references : [
             { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp90-91). Collins, London 1973" }
         ]
