@@ -9,7 +9,9 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth","bumpy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] },
-            { key : "pillboxCrab", values : ["false"] }
+            { key : "pillboxCrab", values : ["false"] },
+            { key : "sideNotches", values : ["true"] },
+            { key : "rectangleShaped", values : ["false"] }
         ],
         details : [
             { text: "Shell squarish; Sides can sometimes appear quite rounded."},
@@ -43,7 +45,9 @@ var crabData = [
             { key : "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
-            { key: "camouflageCrab", values : ["false"] }
+            { key: "camouflageCrab", values : ["false"] },
+            { key : "sideNotches", values : ["true"] },
+            { key : "rectangleShaped", values : ["false"] }
         ],
         details : [
             { text: "Shell is a squarish shape."},
@@ -75,7 +79,9 @@ var crabData = [
             { key : "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
-            { key: "camouflageCrab", values : ["false"] }
+            { key: "camouflageCrab", values : ["false"] },
+            { key : "sideNotches", values : ["true"] },
+            { key : "rectangleShaped", values : ["false"] }
         ],
         details : [
             { text: "Shell is square but with quite curved forward corners."},
@@ -108,7 +114,9 @@ var crabData = [
             { key : "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
-            { key: "camouflageCrab", values : ["false"] }
+            { key: "camouflageCrab", values : ["false"] },
+            { key : "sideNotches", values : ["false"] },
+            { key : "rectangleShaped", values : ["false"] }
         ],
         details : [
             { text: "Shell is square/rectangle shapped, wider than long."},
@@ -211,7 +219,9 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth","bumpy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] },
-            { key : "pillboxCrab", values : ["false"] }
+            { key : "pillboxCrab", values : ["false"] },
+            { key : "sideNotches", values : ["true"] },
+            { key : "rectangleShaped", values : ["false"] }
         ],
         details : [
             { text: "Shell could be seen as either round or square shapped."},
@@ -240,7 +250,9 @@ var crabData = [
             { key : "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
-            { key: "camouflageCrab", values : ["false"] }
+            { key: "camouflageCrab", values : ["false"] },
+            { key : "sideNotches", values : ["true"] },
+            { key : "rectangleShaped", values : ["true"] }
         ],
         details : [
             { text: "Shell is square/rectangle shapped, wider than long."},
@@ -266,7 +278,9 @@ var crabData = [
             { key : "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth","hairy"]},
             { key: "halfCrab", values : ["false"]},
-            { key: "camouflageCrab", values : ["false"] }
+            { key: "camouflageCrab", values : ["false"] },
+            { key : "sideNotches", values : ["true"] },
+            { key : "rectangleShaped", values : ["true"] }
         ],
         details : [
             { text: "Shell is square/rectangle shapped, wider than long."},
@@ -597,7 +611,9 @@ var crabData = [
             { key : "lastLegsArePaddles", values : ["true"] },
             { key: "surfaceTexture", values : ["bumpy"]},
             { key: "halfCrab", values : ["false"]},
-            { key: "camouflageCrab", values : ["false"] }
+            { key: "camouflageCrab", values : ["false"] },
+            { key : "sideNotches", values : ["true"] },
+            { key : "rectangleShaped", values : ["false"] }
         ],
         details : [
             { text: "Shell is oval shapped."},
@@ -620,16 +636,19 @@ var crabData = [
         commonName : "Gulfweed Crab",
         scientificName : "Planes minutus",
         attributes : [ 
-            { key : "carapaceShape", values : ["square"] },
+            { key : "carapaceShape", values : ["square","round"] },
             { key : "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
-            { key: "camouflageCrab", values : ["false"] }
+            { key: "camouflageCrab", values : ["false"] },
+            { key : "pillboxCrab", values : ["false"] },
+            { key : "sideNotches", values : ["false"] },
+            { key : "rectangleShaped", values : ["false"] }
         ],
         details : [
             { text: "Shell is squarish, but has rounded sides."},
             { text: "Shell sides are smooth, with no teeth like spikes."},
-            { text: "The first leg pairs have a set of spikes where they join with the body."},
+            { text: "The first leg pairs (the claws) have a set of spikes at the top of the leg where they join with the body."},
             { text: "Often found on or around objects that have been floating in the ocean."},
             { text: "Coluring very variable; can be blue, dark brown, almost black, yellow brown."}
         ],

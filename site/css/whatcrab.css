@@ -90,9 +90,11 @@ h1 {
 .ignore-filter-container {
     text-align: right;
     font-size: 0.8em;
-    cursor: pointer;
 }
-
+.ignore-filter-container span {
+    cursor: pointer;
+    text-decoration: underline;
+}
 .activated {
     background-color: #88b2ff;
 }
