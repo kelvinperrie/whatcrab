@@ -175,8 +175,8 @@ h1 {
 .details-popup-container {
     position: absolute;
     z-index: 100;
-    max-width: 100%;
-    left: 0;
+    max-width: 96%;
+    left: 2%;
 }
 .details-popup {
     background-color: #CBB3BF;
