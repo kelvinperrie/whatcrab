@@ -28,7 +28,7 @@ var filterData = [
         ],
         visibleWhen : [{ key : "carapaceShape", value : "square" }, { key : "carapaceShape", value : "oval", or: "true" }],
         question : "Are the back legs paddles?",
-        helpText : "Some crabs have paddles on their back set of legs which they use to swim."
+        helpText : "Some crabs have paddles on their back set of legs which they use to swim. The ends of crab legs usually end in a point, but these paddles are a flag oval."
     },
     {
         key : "camouflageCrab",
@@ -59,9 +59,9 @@ var filterData = [
             { key : "false", text : "Is NOT a half crab", image: "images/shape-round.png" }
         ],
         visibleWhen : [{ key : "carapaceShape", value : "triangle" },{ key : "carapaceShape", value : "round", or : "true" }],
-        question : "Is it a half-crab with only 6 legs (excluding claws)?",
+        question : "Is it a half-crab with only 6 walking legs?",
         showHelpText : true,
-        helpText : "Half-crabs are small and flat and only have six legs (excluding claws); other crabs have eight legs (excluding claws). Crabs in the wild can be missing legs due to preditor attack."
+        helpText : "Half-crabs are small and flat and only have six walking legs; other crabs have eight walking legs. Crabs in the wild can be missing legs due to preditor attack."
     },
     {
         key : "pillboxCrab",
@@ -84,6 +84,28 @@ var filterData = [
         question : "Is their a single tooth (or spike) on each side of the shell?",
         showHelpText : true,
         helpText : "Some of the smaller round shelled crabs have a single tooth/spike on each side of their shell which can help to narrow down the type of crab."
+    }, 
+    {
+        key : "sideNotches",
+        possibleValues : [
+            { key : "true", text : "The shell has notches", image: "images/square-side-notches-true.png" },
+            { key : "false", text : "No notches", image: "images/square-side-notches-false.png" }
+        ],
+        visibleWhen : [{ key : "carapaceShape", value : "square" }],
+        question : "For square shaped crabs, are their notches/spikes on the side of the shell just behind the eyes?",
+        showHelpText : true,
+        helpText : "Some crabs have notches on the sides of their shells. Sometimes they can be very small, some times they are more obvious. These can also be described as spikes or teeth."
+    },  
+    {
+        key : "rectangleShaped",
+        possibleValues : [
+            { key : "true", text : "Kind of rectangular", image: "images/square-rectangle-shaped-true.png" },
+            { key : "false", text : "Nope, it's square", image: "images/square-rectangle-shaped-false.png" }
+        ],
+        visibleWhen : [{ key : "carapaceShape", value : "square" }],
+        question : "For square shaped crabs, is the crab noticably wider than it is long (i.e. a rectangle)? ",
+        showHelpText : true,
+        helpText : "A few crabs have been described as barrel shapped and their front and back surfaces are noticably longer than their sides."
     },    
     {
         key : "surfaceTexture",

@@ -90,9 +90,11 @@ h1 {
 .ignore-filter-container {
     text-align: right;
     font-size: 0.8em;
-    cursor: pointer;
 }
-
+.ignore-filter-container span {
+    cursor: pointer;
+    text-decoration: underline;
+}
 .activated {
     background-color: #88b2ff;
 }
@@ -175,8 +177,8 @@ h1 {
 .details-popup-container {
     position: absolute;
     z-index: 100;
-    max-width: 100%;
-    left: 0;
+    max-width: 96%;
+    left: 2%;
 }
 .details-popup {
     background-color: #CBB3BF;

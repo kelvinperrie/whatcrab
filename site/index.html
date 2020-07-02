@@ -38,7 +38,7 @@
                             <div class="crab-no-image" title="I have no images of this crab" data-bind="visible: currentImage() === null">?</div>
                             <div class="crab-image-container" data-bind="with : currentImage" title="click for next image">
                                 <div class="image-count-display" title="click image to show next picture" data-bind="text: $parent.images.length, visible: $parent.images.length > 1"></div>
-                                <img class="crab-image" src="" data-bind="click : function() { $parent.showNextImage(); } , attr: { src : url, alt : $parent.commonName + ' - ' + $parent.scientificName }" alt="crab picture" />
+                                <img class="crab-image" data-bind="click : function() { $parent.showNextImage(); } , attr: { src : url, alt : $parent.commonName + ' - ' + $parent.scientificName }" alt="crab picture" />
                             </div> 
                             <div class="aka-list">
                                 <div data-bind="visible: aka.length === 0" class="no-list-items">No aliases</div>
@@ -151,7 +151,7 @@
                                     </div>
                                     <!-- /ko -->
                                 </div>
-                                <div class="ignore-filter-container" data-bind="click : function() { $parents[0].filterIgnoreChangedEvent($data); }" title="I don't know / ignore this question">hide this question</div>
+                                <div class="ignore-filter-container"><span data-bind="click : function() { $parents[0].filterIgnoreChangedEvent($data); }" title="I don't know / ignore this question">hide this question</span></div>
                             </div>
                         </div>
                     <!-- /ko -->
@@ -167,7 +167,7 @@
                     <div class="crab-no-image" title="I have no images of this crab" data-bind="visible: currentImage() === null">?</div>
                     <div class="crab-image-container" data-bind="with : currentImage" title="click for next image">
                         <div class="image-count-display" title="click image to show next picture" data-bind="text: $parent.images.length, visible: $parent.images.length > 1"></div>
-                        <img class="crab-image" src="" data-bind="click : function() { $parent.showNextImage(); } , attr: { src : url, alt : $parent.commonName + ' - ' + $parent.scientificName }" alt="crab picture" />
+                        <img class="crab-image" data-bind="click : function() { $parent.showNextImage(); } , attr: { src : $parent.currentImageUrlSmall, alt : $parent.commonName + ' - ' + $parent.scientificName }" alt="crab picture" />
                     </div> 
                     <div class="crab-links">
                         <div class="crab-link">
