@@ -4,6 +4,8 @@
 <head>
     <meta name="description" content="A guide for identifying New Zealand crabs">
     <meta name="keywords" content="crabs, crab guide, new zealand crabs, crab identification, species, crab names">
+    <meta property="og:title" content="What's My Crab">
+    <meta property="og:description" content="A guide in the form of a set of questions to help identify New Zealand Crabs." />
     <title>What's My Crab - New Zealand Crab Identification Guide</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -146,7 +148,7 @@
                                         <div data-bind="text:text"></div>
                                         <!-- <span data-bind="text:activated"></span> -->
                                         <div data-bind="visible: image">
-                                            <img data-bind="attr: { src : image }" alt="filter option" />
+                                            <img data-bind="attr: { src : image, alt : 'filter option of ' + text }" alt="filter option" />
                                         </div>
                                     </div>
                                     <!-- /ko -->
