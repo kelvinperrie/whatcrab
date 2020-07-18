@@ -96,6 +96,7 @@ var crabData = [
         ],
         images : [
             // { url : "images/crabs/hairyhandedcrab01.gif" },
+            { url : "images/crabs/hairyhandedcrab05.jpg" },
             { url : "images/crabs/hairyhandedcrab01.jpg" },
             { url : "images/crabs/hairyhandedcrab02.jpg" },
             { url : "images/crabs/hairyhandedcrab03.jpg" },
@@ -132,6 +133,7 @@ var crabData = [
         ],
         images : [
             // { url : "images/crabs/smoothshorecrab01.gif" },
+            { url : "images/crabs/smoothshorecrab04.jpg" },
             { url : "images/crabs/smoothshorecrab01.jpg" },
             { url : "images/crabs/smoothshorecrab02.jpg" },
             { url : "images/crabs/smoothshorecrab03.jpg" }
@@ -199,6 +201,8 @@ var crabData = [
             { key: "Petrolisthes elongatus", label: "New Zealand Half-Crab" }
         ],
         images : [
+            { url : "images/crabs/redhalfcrab04.jpg" },
+            { url : "images/crabs/redhalfcrab05.jpg" },
             { url : "images/crabs/redhalfcrab02.jpg" },
             { url : "images/crabs/redhalfcrab03.jpg" },
             { url : "images/crabs/redhalfcrab01.jpg" }
@@ -265,6 +269,8 @@ var crabData = [
             { key: "Hemigrapsus crenulatus", label: "Hairy-handed Crab" }
         ],
         images : [
+            { url : "images/crabs/tunnelingmudcrab03.jpg" },
+            { url : "images/crabs/tunnelingmudcrab04.jpg" },
             { url : "images/crabs/tunnelingmudcrab01.jpg" },
             { url : "images/crabs/tunnelingmudcrab02.jpg" }
         ],
@@ -311,7 +317,7 @@ var crabData = [
         details : [
             { text: "Shell is oval shapped; wider than long."},
             { text: "Front of the shell has blunt outward facing bumps"},
-            { text: "Shell is smooth, legs are slightly hariy.", references : [1]},
+            { text: "Shell is smooth, legs are slightly hairy.", references : [1]},
             { text: "Claws have black tips."},
             { text: "Coluring is dark brown. Younger crabs can be whitish."}
         ],
@@ -321,6 +327,7 @@ var crabData = [
         ],
         images : [
             // { url : "images/crabs/ironcrab01.gif" },
+            { url : "images/crabs/ironcrab06.jpg" },
             { url : "images/crabs/ironcrab01.jpg" },
             { url : "images/crabs/ironcrab02.jpg" },
             { url : "images/crabs/ironcrab03.jpg" },
@@ -387,6 +394,8 @@ var crabData = [
         ],
         images : [
             // { url : "images/crabs/smoothhandedcrab01.gif" },
+            { url : "images/crabs/smoothhandedcrab06.jpg" },
+            { url : "images/crabs/smoothhandedcrab05.jpg" },
             { url : "images/crabs/smoothhandedcrab01.jpg" },
             { url : "images/crabs/smoothhandedcrab02.jpg" },
             { url : "images/crabs/smoothhandedcrab03.jpg" },
@@ -547,7 +556,9 @@ var crabData = [
             { key: "Notomithrax ursus", label: "Hairy Seaweed Crab" }
         ],
         images : [
-            { url : "images/crabs/smalldecoratorcrab01.jpg" },
+            { url : "images/crabs/smalldecoratorcrab02.jpg" },
+            { url : "images/crabs/smalldecoratorcrab03.jpg" },
+            { url : "images/crabs/smalldecoratorcrab01.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410680-Notomithrax-minor"
     },
@@ -750,6 +761,7 @@ var crabData = [
         ],
         images : [
             // { url : "images/crabs/flatpillboxcrab01.gif" },
+            { url : "images/crabs/flatpillboxcrab04.jpg" },
             { url : "images/crabs/flatpillboxcrab01.jpg" },
             { url : "images/crabs/flatpillboxcrab03.jpg" },
             { url : "images/crabs/flatpillboxcrab02.jpg" }
@@ -816,6 +828,7 @@ var crabData = [
             { key: "Neohymenicus pubescens", label: "Neohymenicus pubescens" } 
         ],
         images : [
+            { url : "images/crabs/estuarinepillboxcrab02.jpg" },
             { url : "images/crabs/estuarinepillboxcrab01.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/471051-Halicarcinus-whitei"
@@ -864,6 +877,7 @@ var crabData = [
         ],
         images : [
             // { url : "images/crabs/neopub01.gif" },
+            { url : "images/crabs/neopub05.jpg" },
             { url : "images/crabs/neopub01.jpg" },
             { url : "images/crabs/neopub02.jpg" },
             { url : "images/crabs/neopub03.jpg" },
@@ -893,6 +907,8 @@ var crabData = [
         ],
         images : [
             // { url : "images/crabs/hairycrab01.gif" },
+            { url : "images/crabs/hairycrab03.jpg" },
+            { url : "images/crabs/hairycrab04.jpg" },
             { url : "images/crabs/hairycrab01.jpg" },
             { url : "images/crabs/hairycrab02.jpg" }
         ],
@@ -948,6 +964,8 @@ var crabData = [
         ],
         similarTo: [],
         images : [
+            { url : "images/crabs/peacrab03.jpg" },
+            { url : "images/crabs/peacrab04.jpg" },
             { url : "images/crabs/peacrab01.jpg" },
             { url : "images/crabs/peacrab02.jpg" }
         ],
@@ -1017,6 +1035,7 @@ var crabData = [
             { key: "Notomithrax ursus", label: "Hairy Seaweed Crab" }
         ],
         images : [ 
+            { url : "images/crabs/tuberculatepearcrab03.jpg" },
             { url : "images/crabs/tuberculatepearcrab01.jpg" },
             { url : "images/crabs/tuberculatepearcrab02.jpg" }
         ],
