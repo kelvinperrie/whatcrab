@@ -191,7 +191,7 @@ var crabData = [
         ],
         details : [
             { text: "Only 6 walking legs."},
-            { text: "Shell very flat and on teeth/spikes on side."},
+            { text: "Shell very flat and no teeth/spikes on side."},
             { text: "Shell can be up to 8mm long.", references: [1]},
             { text: "Has long wipe-like anntennae.", references: [1]},
             { text: "Claws flat but with a ridge running along the upper surface.", references: [2]},
