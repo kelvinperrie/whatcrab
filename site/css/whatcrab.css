@@ -13,6 +13,10 @@ header {
 h1 {
     font-family: 'Permanent Marker', cursive;
 }
+.logo {
+    width: 40px;
+    margin-left: 20px;
+}
 .filters-info {
     background-color: #ebebeb;
     margin: 0.5em 0;
