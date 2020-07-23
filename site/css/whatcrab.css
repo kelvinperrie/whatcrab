@@ -10,6 +10,13 @@ header {
     background-color: #EEE2DC;
     color: #AC3B61;
 }
+footer {
+    border-top-color: #AC3B61;
+    border-top-style: solid;
+    border-top-width: 1px;
+    margin-top: 1em;
+    padding-top: 1em;
+}
 h1 {
     font-family: 'Permanent Marker', cursive;
 }
