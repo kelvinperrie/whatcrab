@@ -201,8 +201,8 @@ var crabData = [
             { key: "Petrolisthes elongatus", label: "New Zealand Half-Crab" }
         ],
         images : [
-            { url : "images/crabs/redhalfcrab04.jpg" },
             { url : "images/crabs/redhalfcrab05.jpg" },
+            { url : "images/crabs/redhalfcrab04.jpg" },
             { url : "images/crabs/redhalfcrab02.jpg" },
             { url : "images/crabs/redhalfcrab03.jpg" },
             { url : "images/crabs/redhalfcrab01.jpg" }
