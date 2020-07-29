@@ -219,7 +219,7 @@ var PageModel = function() {
 
     // show or hide the compare dialog
     self.toggleCompareDialogVisibility = function() {
-        const topMargin = 5;    // adding a little bit to where the dialog shows to make it look more natural (wat)
+        var topMargin = 5;    // adding a little bit to where the dialog shows to make it look more natural (wat)
         // if the dialog isn't open, and we're opening it, then stick it at the top of what the user is currently scrolled too
         if(!self.compareDialogVisible()) {
             var scrolledTo = ($('html').scrollTop() + topMargin) + "px";
