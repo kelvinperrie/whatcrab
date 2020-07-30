@@ -11,15 +11,6 @@ var filterData = [
         question : "What's the shape of the crab's shell?",
         helpText: "Looking down on the crab from above, what is the main shape of the shell. For some crabs it can be hard to distinguish so you can select multiple options."
     },
-    // {
-    //     key : "covering",
-    //     possibleValues : [
-    //         { key : "setae", text : "Setae/hairs" },
-    //         { key : "seaweed", text : "Seaweed" }
-    //     ],
-    //     question : "Is the crab covered in something?",
-    //     helpText : "Some crabs have a covering of seaweed which gives them camouflage, some have either long or short hairs which gives them a furry appearance underwater, or a muddy appearance when out of water. If the crab is dead the covering may no longer exist."
-    // },
     {
         key : "lastLegsArePaddles",
         possibleValues : [
