@@ -2,25 +2,26 @@ var crabData = [
     {
         commonName : "Purple Rock Crab",
         scientificName : "Leptograpsus variegatus",
-        aka : ["Swift Footed Shore Crab", "Purple Ninja Crab"],
+        aka : ["Swift Footed Shore Crab", "Purple Ninja Crab", "Large Shore Crab"],
         attributes : [
             { key: "carapaceShape" , values : ["square","round"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth","bumpy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] },
-            { key : "pillboxCrab", values : ["false"] },
-            { key : "sideNotches", values : ["true"] },
-            { key : "rectangleShaped", values : ["false"] }
+            { key: "pillboxCrab", values : ["false"] },
+            { key: "sideNotches", values : ["true"] },
+            { key: "rectangleShaped", values : ["false"] }
         ],
         details : [
             { text: "Shell squarish; Sides can sometimes appear quite rounded."},
-            { text: "The claws of adults are purple with white dots."},
-            { text: "Shell has a couple of very small teeth/spikes on the side, behind the eyes."},
-            { text: "Colouring is purple with some white. Juveniles can be darker, almost black."},
-            { text: "Shell can reach 3 inches across.", references: [1]},
+            { text: "Shell has two teeth/spikes on each side behind the eyes.", references: [2]},
+            { text: "Shell can reach 3 inches (78mm) across.", references: [1, 2]},
+            { text: "Shell is smooth with no hair or seaweed attached."},
+            { text: "Intertidal. Generally found higher on the beach, in rocky gaps. Often on top of rocks until startled."},
+            { text: "Colouring variable but mostly purple with some white. Juveniles can be darker, almost black."},
             { text: "When dead the shells can turn to a red colour."},
-            { text: "Generally found higher on the beach, in rocky gaps. Often on top of rocks."}
+            { text: "The claws of adults are purple with white dots (almost bumps) - this is unlike any other crab."}
         ],
         similarTo: [
             { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" }
@@ -33,7 +34,8 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/326099-Leptograpsus-variegatus",
         references : [
-            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp267-268).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
@@ -42,19 +44,22 @@ var crabData = [
         aka : ["Purple Rock Crab (there is another crab by this name)"],
         attributes : [
             { key: "carapaceShape" , values : ["square"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] },
-            { key : "sideNotches", values : ["true"] },
-            { key : "rectangleShaped", values : ["false"] }
+            { key: "sideNotches", values : ["true"] },
+            { key: "rectangleShaped", values : ["false"] }
         ],
         details : [
-            { text: "Shell is a squarish shape."},
-            { text: "Looks very similar to the Purple Rock Crab, but this crab does NOT have white dots on the claws."},
-            { text: "Shell has three tooth like notches on the side."},
-            { text: "Shell can be up to 1.5 inches wide.", references : [1]},
-            { text: "Colour range variable, often pale (especially underneath) with dark red or purple marbling.", references : [1]}
+            { text: "Shell is squarish, slightly wider than long."},
+            { text: "Shell has two teeth/spikes on each side behind the eyes."},
+            { text: "Shell can be up to 57mm wide.", references : [2]},
+            { text: "Shell is smooth with no hair or seaweed attached."},
+            { text: "Intertidal between high and mid-tide.", references : [2] },
+            { text: "Usually under rocks, likes relatively sheltered shores.", references : [2] },
+            { text: "Colouring variable, often pale (especially underneath) with dark red or purple marbling.", references : [1]},
+            { text: "Looks very similar to the Purple Rock Crab, but this crab does NOT have white dots on the claws."}
         ],
         similarTo: [
             { key: "Leptograpsus variegatus", label: "Purple Rock Crab" },
@@ -68,25 +73,29 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410820-Hemigrapsus-sexdentatus",
         references : [
-            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp281-282).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
         commonName : "Hairy-Handed Crab",
         scientificName : "Hemigrapsus crenulatus",
         attributes : [ 
-            { key : "carapaceShape", values : ["square"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "carapaceShape", values : ["square"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] },
-            { key : "sideNotches", values : ["true"] },
-            { key : "rectangleShaped", values : ["false"] }
+            { key: "sideNotches", values : ["true"] },
+            { key: "rectangleShaped", values : ["false"] }
         ],
         details : [
-            { text: "Shell is square but with quite curved forward corners."},
-            { text: "Shell has two teeth like spikes on each side."},
-            { text: "Legs can appear quite furry."},
+            { text: "Shell is square, slightly wider than long, with quite curved forward corners."},
+            { text: "Shell has two (small & blunt) teeth like spikes on each side behind the eyes.", references: [2]},
+            { text: "Shell can be up to 37.5mm wide.", references: [2]},
+            { text: "Legs can appear quite hairy/furry."},
+            { text: "Found from mid-tide to below low-tide", references: [2]},
+            { text: "Can be found under stones but also burrows; prefers to be sheltered (e.g. estuaries).", references: [2]},
             { text: "Colouring variable; Often green, can have brown, reddish, marks or blotches. Often has large spots or mottling.", references: [1]}
         ],
         similarTo: [
@@ -104,7 +113,8 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/143936-Hemigrapsus-crenulatus",
         references : [
-            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp287-289).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
@@ -122,9 +132,10 @@ var crabData = [
         details : [
             { text: "Shell is square/rectangle shapped, wider than long."},
             { text: "Shell sides are smooth, with no teeth like spikes behind the eyes."},
-            { text: "Shell can be up to an inch across.", references : [1]},
-            { text: "Found under boulders around the high tide line, does not like much water.", references : [1]},
-            { text: "Coluring varies; often brown with grey speckles, can be whitish with dark spots/mottling.", references : [1]}
+            { text: "Shell can be up to 28mm across.", references : [2]},
+            { text: "Shell is smooth with no hair or seaweed attached."},
+            { text: "Found under stones & boulders around the high tide line, does not like much water.", references : [1]},
+            { text: "Coluring varies; often reddish-brown with grey speckles, can be whitish with dark spots/mottling.", references : [1]}
         ],
         similarTo: [
             { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" },
@@ -140,7 +151,8 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410426-Cyclograpsus-lavauxi",
         references : [
-            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp88). Collins, London 1973" }
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp88). Collins, London 1973" },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp310-312).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
@@ -156,12 +168,16 @@ var crabData = [
             { key : "pillboxCrab", values : ["false"] }
         ],
         details : [
-            { text: "Only 6 walking legs."},
-            { text: "Shell very flat and no teeth/spikes on side."},
-            { text: "Claws very flat and smooth."},
-            { text: "Shell can be up to 3/4 of an inch long.", references: [1]},
+            { text: "Shell round, slightly longer than wide."},
+            { text: "Shell very smooth and flat with no teeth/spikes on side."},
+            { text: "Shell can be up to 16mm long.", references: [2]},
+            { text: "Shell is smooth with no hair or seaweed attached."},
+            { text: "Found from hide-tide to just below low-tide.", references: [2]},
+            { text: "Very common, found beneath rocks, mussels or other objects.", references: [2]},
+            { text: "Often green, but has a wide range of colours."},
             { text: "Has long wipe-like anntennae.", references: [1]},
-            { text: "Often green, but has a wide range of colours."}
+            { text: "Only 6 walking legs - unlike true crabs."},
+            { text: "Claws very flat and smooth."}
         ],
         similarTo: [
             { key: "Petrolisthes novaezelandiae", label: "Red Half-Crab" }
@@ -175,7 +191,8 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410371-Petrolisthes-elongatus",
         references : [
-            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp93). Collins, London 1973" }
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp93). Collins, London 1973" },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp52-54).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
@@ -183,19 +200,22 @@ var crabData = [
         scientificName : "Petrolisthes novaezelandiae",
         attributes : [
             { key: "carapaceShape" , values : ["triangle", "round"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["true"]},
             { key: "camouflageCrab", values : ["false"] },
-            { key : "pillboxCrab", values : ["false"] }
+            { key: "pillboxCrab", values : ["false"] }
         ],
         details : [
-            { text: "Only 6 walking legs."},
-            { text: "Shell very flat and no teeth/spikes on side."},
-            { text: "Shell can be up to 8mm long.", references: [1]},
+            { text: "Shell round, slightly wider than long."},
+            { text: "Shell is flat and has no teeth/spikes on side."},
+            { text: "Shell can be up to 12.5mm long.", references: [3]},
+            { text: "Shell can be smooth but may also have fine hairs and appear fuzzy."},
+            { text: "Found intertidally, under rocks.", references: [3]},
+            { text: "Coluring for males is redish. Females are greyish/brown with red spots/patches.", references: [3]},
             { text: "Has long wipe-like anntennae.", references: [1]},
-            { text: "Claws flat but with a ridge running along the upper surface.", references: [2]},
-            { text: "Coluring is red to pinkish-brown.", references: [1]}
+            { text: "Only 6 walking legs - unlike true crabs."},
+            { text: "Claws flat but with a ridge running along the upper surface.", references: [2]}
         ],
         similarTo: [
             { key: "Petrolisthes elongatus", label: "New Zealand Half-Crab" }
@@ -210,7 +230,8 @@ var crabData = [
         natureWatchLink: "https://inaturalist.nz/taxa/471708-Petrolisthes-novaezelandiae",
         references : [
             { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp94). Collins, London 1973" },
-            { id: 2, detail : "Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015 (pp12). NIWA" }
+            { id: 2, detail : "Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015 (pp12). NIWA" },
+            { id: 3, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp61-63).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
@@ -230,9 +251,12 @@ var crabData = [
         details : [
             { text: "Shell could be seen as either round or square shapped."},
             { text: "Shell front and sides have jagged spikes."},
-            { text: "Claws have ridges of white bumps."},
-            { text: "Generally found lower on the beach in rock pools."},
-            { text: "Coluring is red/orange with white underneath."}
+            { text: "Shell can be up to 75mm long.", references: [1]},
+            { text: "Shell surface is smooth. No hairs on top, some in other locations.", references: [1]}, // todo is this right??? I don't remember any heairs
+            { text: "Found around low tide to 25m.", references: [1]},
+            { text: "Found usually in water, under rocks or ledges.", references: [1]},
+            { text: "Coluring is red/orange with white underneath."},
+            { text: "Claws have ridges of white bumps."}
         ],
         similarTo: [
             { key: "Nectocarcinus antarcticus", label: "Red Swimming Crab" }
@@ -243,26 +267,32 @@ var crabData = [
             { url : "images/crabs/redrockcrab02.jpg" },
             { url : "images/crabs/redrockcrab03.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/319553-Guinusia-chabrus"
+        natureWatchLink: "https://inaturalist.nz/taxa/319553-Guinusia-chabrus",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp272-274).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Tunneling Mud Crab",
         scientificName : "Austrohelice crassa",
         aka : ["Burrowing Mud Crab"],
         attributes : [
-            { key : "carapaceShape", values : ["square"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "carapaceShape", values : ["square"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] },
-            { key : "sideNotches", values : ["true"] },
-            { key : "rectangleShaped", values : ["true"] }
+            { key: "sideNotches", values : ["true"] },
+            { key: "rectangleShaped", values : ["true"] }
         ],
         details : [
-            { text: "Shell is square/rectangle shapped, wider than long."},
-            { text: "Shell has a couple of teeth like spikes on each side."},
-            { text: "Claw tips generally lighter coloured than the body; almost white."},
-            { text: "Coluring brown or green."}
+            { text: "Shell is square/rectangle shaped, wider than long."},
+            { text: "Shell has two teeth/spikes on each side behind the eyes."},
+            { text: "Shell can be up to 26mm wide in the south of NZ but more like 21.7 in the north.", references: [1]},
+            { text: "Shell is smooth with no hair or seaweed attached."},
+            { text: "Found in the upper intertidal region.", references: [1]},
+            { text: "Builds tunnels in sheltered areas such as habours, estuaries and magrove swamps.", references: [1]},
+            { text: "Coluring ranges from olive-green, grey to brown. Claws may have bright orange at joints.", references: [1]}
         ],
         similarTo: [
             { key: "Hemiplax hirtipes", label: "Sentinel Crab" },
@@ -274,24 +304,31 @@ var crabData = [
             { url : "images/crabs/tunnelingmudcrab01.jpg" },
             { url : "images/crabs/tunnelingmudcrab02.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/121373-Austrohelice-crassa"
+        natureWatchLink: "https://inaturalist.nz/taxa/121373-Austrohelice-crassa",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp294-296).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Sentinel Crab",
         scientificName : "Hemiplax hirtipes",
+        aka : ["Stalk-eyed Mud Crab"],
         attributes : [
-            { key : "carapaceShape", values : ["square"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "carapaceShape", values : ["square"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth","hairy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] },
-            { key : "sideNotches", values : ["true"] },
-            { key : "rectangleShaped", values : ["true"] }
+            { key: "sideNotches", values : ["true"] },
+            { key: "rectangleShaped", values : ["true"] }
         ],
         details : [
-            { text: "Shell is square/rectangle shapped, wider than long."},
-            { text: "Shell has a couple of teeth like spikes on each side."},
-            { text: "Legs can have a furry appearance."},
+            { text: "Shell is square/rectangle shaped, much wider than long.", references: [1]},
+            { text: "Shell has two teeth/spikes on each side behind the eyes."},
+            { text: "Shell can be up to 30.2mm wide.", references: [1]},
+            { text: "Shell is smooth but legs and claws have hairs which can give them a furry appearance."},
+            { text: "Found in the intertidal region to 13m.", references: [1]},
+            { text: "Builds tunnels in the lower regions of mud flats and estuaries.", references: [1]},
             { text: "Coluring can be light brown/orange with dark spots."}
         ],
         similarTo: [
@@ -301,25 +338,30 @@ var crabData = [
             { url : "images/crabs/sentinelcrab01.jpg" },
             { url : "images/crabs/sentinelcrab02.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/416671-Hemiplax-hirtipes"
+        natureWatchLink: "https://inaturalist.nz/taxa/416671-Hemiplax-hirtipes",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp336-338).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Iron Crab",
-        aka : ["Black Finder Crab"],
+        aka : ["Previously thought to be the Black Finger Crab"],
         scientificName : "Ozius deplanatus",
         attributes : [
-            { key : "carapaceShape", values : ["oval"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "carapaceShape", values : ["oval"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is oval shapped; wider than long."},
-            { text: "Front of the shell has blunt outward facing bumps"},
+            { text: "Shell is oval shapped; wider than long, with the front very wide."},
+            { text: "Shell has no noticable teeth on the sides, but the front of the shell has blunt outward facing bumps"},
             { text: "Shell is smooth, legs are slightly hairy.", references : [1]},
-            { text: "Claws have black tips."},
-            { text: "Coluring is dark brown. Younger crabs can be whitish."}
+            { text: "Shell can be up to 57mm wide.", references: [2]},
+            { text: "Found in the intertidal region underneath rocks.", references: [2]},
+            { text: "Coluring is dark chocolate-brown but much lighter if newly moulted. Claw tips are black.", references: [2]},
+            { text: "When distrubed it often raises both claws facing them up and out."}
         ],
         similarTo: [
             { key: "Heterozius rotundifrons", label: "Big Hand Crab" },
@@ -336,7 +378,8 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/496210-Ozius-deplanatus",
         references : [
-            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp90). Collins, London 1973" }
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp90). Collins, London 1973" },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp334-336).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
@@ -344,17 +387,19 @@ var crabData = [
         scientificName : "Metacarcinus novaezelandiae",
         attributes : [
             { key: "carapaceShape" , values : ["oval"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is oval shapped; wider than long."},
-            { text: "Shell has no teeth/spikes on side and is broadly rounded.", references: [1]},
-            { text: "Shell front looks like pushed together pastry of a pie."},
-            { text: "Shell can be up to 4 inches across.", references: [1]},
-            { text: "Coluring can be a various shades of brown, grey or red, with white underside.", references: [1]}
+            { text: "Shell is oval shapped; much wider than long."},
+            { text: "Shell has no teeth/spikes on side and is broadly rounded. The front of the shell looks like the pushed together pastry of a pie.", references: [1]},
+            { text: "Shell can be up to 150mm across.", references: [1]},
+            { text: "Shell is smooth with no hair or seaweed attached, legs can be slightly hairy.", references: [2]},
+            { text: "Found intertial to ?40m", references: [2]},
+            { text: "Found under stones in seaweed. Adults usually in deeper water with a sandy bottom.", references: [2]},
+            { text: "Coluring can be a various shades of brown, grey or red, with white underside. Claw tips are black.", references: [1]} // todo check this reference
         ],
         similarTo: [
             { key: "Ozius deplanatus", label: "Iron Crab" },
@@ -369,7 +414,8 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410433-Metacarcinus-novaezelandiae",
         references : [
-            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp90). Collins, London 1973" }
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp90). Collins, London 1973" },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp190-193).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
@@ -383,11 +429,13 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is oval shapped; wider than long."},
-            { text: "Front of the shell has blunt outward facing bumps"},
-            { text: "Shell can appear smooth or can appear slightly furry/muddy, legs can appear furry."},
-            { text: "Claws have dark brown tips."},
-            { text: "Coluring is dark brown, generally discoloured by mud", references: [1]}
+            { text: "Shell is oval shapped; much wider than long."},
+            { text: "Front of the shell wraps around the sides and has blunt outward facing bumps."},
+            { text: "Shell can be up to 36mm across.", references: [2]},
+            { text: "Shell can appear smooth or can appear slightly furry/muddy, legs are covered in hair and appear furry."},
+            { text: "Found intertidally", references: [2]},
+            { text: "Found under stones (possibly on sandy beachs) or in burrows.", references: [2]},
+            { text: "Coluring is dark brown, generally discoloured by mud. Claw tips are black.", references: [1]}
         ],
         similarTo: [
             { key: "Ozius deplanatus", label: "Iron Crab" }
@@ -403,7 +451,8 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/471785-Pilumnopeus-serratifrons",
         references : [
-            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp91). Collins, London 1973" }
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp91). Collins, London 1973" },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp240-243).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
