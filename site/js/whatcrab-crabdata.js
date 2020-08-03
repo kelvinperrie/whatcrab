@@ -361,7 +361,7 @@ var crabData = [
             { text: "Shell can be up to 57mm wide.", references: [2]},
             { text: "Found in the intertidal region underneath rocks.", references: [2]},
             { text: "Coluring is dark chocolate-brown but much lighter if newly moulted. Claw tips are black.", references: [2]},
-            { text: "When distrubed it often raises both claws facing them up and out."}
+            { text: "When disturbed it often raises both claws facing them up and out."}
         ],
         similarTo: [
             { key: "Heterozius rotundifrons", label: "Big Hand Crab" },
