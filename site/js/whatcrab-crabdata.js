@@ -432,7 +432,7 @@ var crabData = [
             { text: "Shell is oval shapped; much wider than long."},
             { text: "Front of the shell wraps around the sides and has blunt outward facing bumps."},
             { text: "Shell can be up to 36mm across.", references: [2]},
-            { text: "Shell can appear smooth or can appear slightly furry/muddy, legs are covered in hair and appear furry."},
+            { text: "Shell can appear smooth or can appear furry/muddy, legs are covered in hair and appear furry."},
             { text: "Found intertidally", references: [2]},
             { text: "Found under stones (possibly on sandy beachs) or in burrows.", references: [2]},
             { text: "Coluring is dark brown, generally discoloured by mud. Claw tips are black.", references: [1]}
@@ -467,11 +467,13 @@ var crabData = [
         ],
         details : [
             { text: "Shell is oval shapped; wider than long."},
-            { text: "Shell has no teeth/spikes on side."},
-            { text: "Male has one large claw."},
-            { text: "Legs can be a bit furry."},
-            { text: "Tips of claws yellow."},
-            { text: "Coluring is light brown/green."}
+            { text: "Shell has no teeth/spikes on each side."},
+            { text: "Shell can be up to 23mm across.", references: [1]},
+            { text: "Shell is smooth while legs can be a bit furry."},
+            { text: "Found intertidally", references: [1]},
+            { text: "Found under rocks in sand and gravel." , references: [1]},
+            { text: "Coluring is dull yellowish grey or green. Tips of claws yellow.", references: [1]},
+            { text: "Male has one large claw."}
         ],
         similarTo: [
             { key: "Ozius deplanatus", label: "Iron Crab" },
@@ -486,7 +488,10 @@ var crabData = [
             { url : "images/crabs/bighandcrab03.jpg" },
             { url : "images/crabs/bighandcrab04.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/410714-Heterozius-rotundifrons"
+        natureWatchLink: "https://inaturalist.nz/taxa/410714-Heterozius-rotundifrons",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp252-254).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Triangle Crab",
@@ -500,6 +505,11 @@ var crabData = [
         ],
         details : [
             { text: "Shell is triangular, with the widest edge at the back.", references: [1]},
+            { text: "Shell has four teeth/spikes on each backend corner.", references: [2]}, // todo check against photos?
+            { text: "Shell can be up to 65mm across.", references: [2]},
+            { text: "Shell is smooth with no hair or seaweed attached."},
+            { text: "Found intertidally to 40m", references: [2]},
+            { text: "Found under boulders on rocky and muddy shores.", references: [2]},
             { text: "Colour range variable; brown, white, red."}
         ],
         similarTo: [],
@@ -509,7 +519,8 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/424825-Eurynolambrus-australis",
         references : [
-            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp92). Collins, London 1973" }
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp92). Collins, London 1973" },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp124-126).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
