@@ -527,20 +527,23 @@ var crabData = [
         commonName : "Hairy Seaweed Crab",
         scientificName : "Notomithrax ursus",
         attributes : [
-            { key : "carapaceShape", values : ["triangle"] },
-            { key : "covering", values : ["seaweed"] },
-            { key : "camouflageCrab", values : ["true"] },
-            { key : "posteriorSpines", values : ["false"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
-            { key : "surfaceTexture", values : ["spikey","seaweed", "hairy"]},
+            { key: "carapaceShape", values : ["triangle"] },
+            { key: "covering", values : ["seaweed"] },
+            { key: "camouflageCrab", values : ["true"] },
+            { key: "posteriorSpines", values : ["false"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["spikey","seaweed", "hairy"]},
             { key: "halfCrab", values : ["false"]}
         ],
         details : [
-            { text: "Shell is triangular with a rounded base."},
-            { text: "Shell has no spines/spikes at the rear."},
-            { text: "up to 2 inches long.", references: [1]},
-            { text: "The surface of the shell will be spikey and probably covered in seaweed."},
-            { text: "Claws dark orange/purple."}
+            { text: "Shell is triangular with a rounded base (pear shaped)."},
+            { text: "Shell has 9 short spikes on each side."},
+            { text: "Shell can be up to 60mm long.", references: [2]},
+            { text: "The surface of the shell will feel spikey and probably be covered in seaweed or short hooked hairs."},
+            { text: "Intertial to 75m.", references: [2]},
+            { text: "Found on rocky shores or rock pools.", references: [2]},
+            { text: "Shell is probably a light orange, <b>claws dark orange/purple.</b>"},
+            { text: "<b>Shell does not have two spines/spikes at the rear</b>."}
         ],
         similarTo: [
             { key: "Notomithrax minor", label: "Small Decorator Crab" },
@@ -555,7 +558,8 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410681-Notomithrax-ursus",
         references : [
-            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp92). Collins, London 1973" }
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp92). Collins, London 1973" },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp142-144).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
@@ -563,20 +567,23 @@ var crabData = [
         aka: ["Peron's Decorator Crab"],
         scientificName : "Notomithrax peronii",
         attributes : [
-            { key : "carapaceShape", values : ["triangle"] },
-            { key : "covering", values : ["seaweed"] },
-            { key : "camouflageCrab", values : ["true"] },
-            { key : "posteriorSpines", values : ["true"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
-            { key : "surfaceTexture", values : ["spikey","seaweed"]},
+            { key: "carapaceShape", values : ["triangle"] },
+            { key: "covering", values : ["seaweed"] },
+            { key: "camouflageCrab", values : ["true"] },
+            { key: "posteriorSpines", values : ["true"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["spikey","seaweed"]},
             { key: "halfCrab", values : ["false"]}
         ],
         details : [
-            { text: "Shell is triangular with a rounded base."},
-            { text: "Shell has two very small spines/spikes at the rear."},
-            { text: "up to 3 inches long.", references: [1]},
-            { text: "The surface of the shell will be spikey and probably covered in seaweed."},
-            { text: "Claws dark green/brown."}
+            { text: "Shell is triangular with a rounded base (pear shaped)."},
+            { text: "Shell has 10 short spikes on each side."},
+            { text: "Shell can be up to 77mm long.", references: [2]},
+            { text: "The surface of the shell will feel spikey and probably be covered in seaweed or short hooked hairs."},
+            { text: "Intertial to 50m.", references: [2]},
+            { text: "Found on rocky shores or rock pools but also sand or mud.", references: [2]},
+            { text: "Shell is probably a light orange, <b>claws dark green/brown.</b>"},
+            { text: "<b>Shell has two very small spines/spikes at the rear.</b>"}
         ],
         similarTo: [
             { key: "Notomithrax minor", label: "Small Decorator Crab" },
@@ -589,7 +596,8 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410683-Notomithrax-peronii",
         references : [
-            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp92). Collins, London 1973" }
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp92). Collins, London 1973" },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp138-140).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
@@ -606,10 +614,14 @@ var crabData = [
             { key: "halfCrab", values : ["false"]}
         ],
         details : [
-            { text: "Shell is triangular with a rounded base."},
-            { text: "Shell has no spines/spikes at the rear."},
-            { text: "The surface of the shell will be spikey and probably covered in seaweed."},
-            { text: "Claws may be dark red/purple or white with bluish markings."}
+            { text: "Shell is triangular with a rounded base (pear shaped)."},
+            { text: "Shell has 12 short spikes on each side."},
+            { text: "Shell can be up to 40mm long.", references: [1]},
+            { text: "The surface of the shell will feel spikey and probably be covered in seaweed or short hooked hairs."},
+            { text: "Intertial to 35m.", references: [1]},
+            { text: "Found on rocky shores or sandy, muddy or coarse shell bottoms.", references: [1]},
+            { text: "Shell pale yellowish, <b>claws dark red/purple or white with bluish markings.</b>", references: [1]},
+            { text: "<b>Shell does not have two spines/spikes at the rear</b>."}
         ],
         similarTo: [
             { key: "Notomithrax peronii", label: "Peron's Decorator Crab" },
@@ -620,24 +632,30 @@ var crabData = [
             { url : "images/crabs/smalldecoratorcrab03.jpg" },
             { url : "images/crabs/smalldecoratorcrab01.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/410680-Notomithrax-minor"
+        natureWatchLink: "https://inaturalist.nz/taxa/410680-Notomithrax-minor",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp138-140).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Paddle Crab",
         scientificName : "Ovalipes catharus",
         attributes : [
-            { key : "carapaceShape", values : ["oval"] },
-            { key : "lastLegsArePaddles", values : ["true"] },
+            { key: "carapaceShape", values : ["oval"] },
+            { key: "lastLegsArePaddles", values : ["true"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is oval shapped."},
-            { text: "Shell has five teeth like spikes on each side, with four spikes between the eyes."},
-            { text: "Last leg pair has paddles."},
-            { text: "Paddles can be a bluish colour."},
-            { text: "Coluring is light brown with dark spots, can have redish/orange areas."}
+            { text: "Shell is oval shapped, wider than long."},
+            { text: "Shell has five teeth/spikes on each side behind the eyes, with four spikes between the eyes."},
+            { text: "Shell can be up to 150mm wide.", references: [1]},
+            { text: "Shell is smooth with no hair or seaweed attached."},
+            { text: "Found in the surf zone and continental shelf from 2m - 100m", references: [1]},
+            { text: "Found on sandy beaches or estuaries.", references: [1]},
+            { text: "Coluring is light brown with dark spots, can have redish/orange areas. Paddles can be a bluish colour."},
+            { text: "Last leg pair has paddles."}
         ],
         similarTo: [
             { key: "Charybdis japonica", label: "Asian Paddle Crab" }
@@ -647,24 +665,27 @@ var crabData = [
             { url : "images/crabs/paddlecrab02.jpg" },
             { url : "images/crabs/paddlecrab03.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/144096-Ovalipes-catharus"
+        natureWatchLink: "https://inaturalist.nz/taxa/144096-Ovalipes-catharus",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp200-202).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Asian Paddle Crab",
         scientificName : "Charybdis japonica",
         attributes : [
-            { key : "carapaceShape", values : ["oval"] },
-            { key : "lastLegsArePaddles", values : ["true"] },
+            { key: "carapaceShape", values : ["oval"] },
+            { key: "lastLegsArePaddles", values : ["true"] },
             { key: "surfaceTexture", values : ["smooth", "bumpy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is oval shapped."},
-            { text: "Shell has five teeth like spikes on each side with eight spikes between the eyes."},
-            { text: "Last leg pair has paddles."},
+            { text: "Shell is oval shapped, wider than long."}, // todo update these details if you can find a source
+            { text: "Shell has five teeth/spikes on each side behind the eyes, with eight spikes between the eyes."},
+            { text: "Coluring is green. Underside of the front of the shell can have light blue markings."},
             { text: "End of claws can have dark brown amongst white or a light blue."},
-            { text: "Coluring is green. Underside of the front of the shell can have light blue markings."}
+            { text: "Last leg pair has paddles."}
         ],
         similarTo: [
             { key: "Ovalipes catharus", label: "Paddle Crab" }
@@ -676,22 +697,26 @@ var crabData = [
     },
     {
         commonName : "Red Swimming Crab",
+        aka : ["Hairy Red Swimming Crab"],
         scientificName : "Nectocarcinus antarcticus",
         attributes : [
-            { key : "carapaceShape", values : ["square", "oval"] },
-            { key : "lastLegsArePaddles", values : ["true"] },
+            { key: "carapaceShape", values : ["square", "oval"] },
+            { key: "lastLegsArePaddles", values : ["true"] },
             { key: "surfaceTexture", values : ["bumpy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] },
-            { key : "sideNotches", values : ["true"] },
-            { key : "rectangleShaped", values : ["false"] }
+            { key: "sideNotches", values : ["true"] },
+            { key: "rectangleShaped", values : ["false"] }
         ],
         details : [
             { text: "Shell is oval shapped."},
-            { text: "Shell has four teeth like spikes on each side."},
-            { text: "Last leg pair has paddles."},
-            { text: "End of claws white or dark red."},
-            { text: "Coluring is red; whitish and oranges."}
+            { text: "Shell has three teeth/spikes on each side behind the eyes.", references: [1]},
+            { text: "Shell can be up to 87mm wide.", references: [1]},
+            { text: "Shell is smooth with no hair or seaweed attached."},
+            { text: "Found from 0 - 550m", references: [1]},
+            { text: "Found on sandy, gravel, mud and shell bottoms.", references: [1]},
+            { text: "Coluring is red, whitish and oranges. End of claws are dark red."},
+            { text: "Last leg pair has paddles."}
         ],
         similarTo: [
             { key: "Guinusia chabrus", label: "Red Rock Crab " }
@@ -701,7 +726,10 @@ var crabData = [
             { url : "images/crabs/redswimmingcrab02.jpg" },
             { url : "images/crabs/redswimmingcrab03.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/471041-Nectocarcinus-antarcticus"
+        natureWatchLink: "https://inaturalist.nz/taxa/471041-Nectocarcinus-antarcticus",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp220-222).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Gulfweed Crab",
@@ -717,7 +745,7 @@ var crabData = [
             { key : "rectangleShaped", values : ["false"] }
         ],
         details : [
-            { text: "Shell is squarish, but has rounded sides."},
+            { text: "Shell is squarish, but has rounded sides."}, // todo these details - what is the old name for this ????
             { text: "Shell sides are smooth, with no teeth like spikes."},
             { text: "The first leg pairs (the claws) have a set of spikes at the top of the leg where they join with the body."},
             { text: "Often found on or around objects that have been floating in the ocean."},
@@ -744,10 +772,13 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is overall oval but with flat edges on the front."},
-            { text: "The area between the eyes sticks out past the eyes in a way that the overall shape could be considered triangular."},
+            { text: "Shell is as wide as long, but narrow in front. <b>A bulge between the eyes means the overall shape could be considered triangular.</b>"},
             { text: "Shell has no teeth/spike on each side."},
-            { text: "Colour ranges through brown, white and purple; often red."}
+            { text: "Shell can be up to 17.8mm wide.", references: [1]},
+            { text: "Shell is smooth and not furry."},
+            { text: "Found in the lower intertidal zone.", references: [1]},
+            { text: "Found under rocks or in coarse sand or pebbles. Often found in live paua shells.", references: [1]},
+            { text: "Colour ranges through brown, white and purple; often red.", references: [1]}
         ],
         similarTo: [
             { key: "Halicarcinus cookii", label: "Cook's Pillbox Crab" },
@@ -762,7 +793,10 @@ var crabData = [
             { url : "images/crabs/pauacrab01.jpg" },
             { url : "images/crabs/pauacrab02.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/471049-Elamena-producta"
+        natureWatchLink: "https://inaturalist.nz/taxa/471049-Elamena-producta",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp354-356).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Cook's Pillbox Crab",
@@ -778,11 +812,14 @@ var crabData = [
             { key: "pillboxCrab", values : ["true"] }
         ],
         details : [
-            { text: "Shell is overall round but with flatish edges towards the front."},
-            { text: "Shell has a small tooth/spike on each side."},
-            { text: "Crab is smooth and not furry"},
-            { text: "The area between the eyes is about level with the eyes and forms three points."},
-            { text: "Colour range variable."}
+            { text: "Shell is overall round but <b>with flatish edges towards the front</b>."},
+            { text: "Shell <b>has a small tooth/spike</b> on each side."},
+            { text: "Shell can be up to 13mm wide.", references: [1]},
+            { text: "Shell is smooth and not furry."},
+            { text: "Found in the intertidal zone.", references: [1]},
+            { text: "Found on rocky shores in seaweeds.", references: [1]},
+            { text: "The <b>area between the eyes is about level with the eyes</b> and forms three points."},
+            { text: "Colour range variable; black, brown, reddish yellow, green, white."}
         ],
         similarTo: [
             { key: "Halicarcinus innominatus", label: "Flat Pillbox Crab" },
@@ -793,7 +830,10 @@ var crabData = [
             { url : "images/crabs/cookspillboxcrab01.jpg" },
             { url : "images/crabs/cookspillboxcrab02.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/471078-Halicarcinus-cookii"
+        natureWatchLink: "https://inaturalist.nz/taxa/471078-Halicarcinus-cookii",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp358-360).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Flat Pillbox Crab",
@@ -809,9 +849,12 @@ var crabData = [
         ],
         details : [
             { text: "Shell is mostly round; a bit wider than long."},
-            { text: "Shell does NOT have a small tooth/spike on each side."},
-            { text: "Crab is smooth and not furry"},
-            { text: "The area between the eyes is about level with the eyes and forms three points."},
+            { text: "Shell <b>does NOT have a small tooth/spike</b> on each side."},
+            { text: "Shell can be up to 19mm wide.", references: [1]},
+            { text: "Shell is smooth and not furry."},
+            { text: "Found in the lower intertidal zone.", references: [1]},
+            { text: "Found under rocks and among seaweeds, also on wharf piles and ship keels.", references: [1]},
+            { text: "The <b>area between the eyes is about level with the eyes</b> and forms three points."},
             { text: "Colour range variable; often brown or white with mottling."}
         ],
         similarTo: [
@@ -826,7 +869,10 @@ var crabData = [
             { url : "images/crabs/flatpillboxcrab03.jpg" },
             { url : "images/crabs/flatpillboxcrab02.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/410832-Halicarcinus-innominatus"
+        natureWatchLink: "https://inaturalist.nz/taxa/410832-Halicarcinus-innominatus",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp362-364).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Variable Pillbox Crab",
@@ -841,10 +887,13 @@ var crabData = [
             { key: "pillboxCrab", values : ["true"] }
         ],
         details : [
-            { text: "Shell is rounded, with no flattened edges towards the front.", references:[1]},
-            { text: "Shell has a small tooth/spike on each side."},
-            { text: "Crab might appear slightly furry, but can also be smooth."},
-            { text: "The area between the eyes is about level with the eyes and forms three points (which may be hard to see)."},
+            { text: "Shell is rounded, <b>with no flattened edges towards the front</b>.", references:[1]},
+            { text: "Shell <b>has a small tooth/spike on each side</b>."},
+            { text: "Shell can be up to 10.4mm wide.", references: [2]},
+            { text: "<b>Crab will probably appear slightly furry</b>, but can also be smooth."},
+            { text: "Found from intertidal zone to 30m.", references: [2]},
+            { text: "Found in sheltered areas on or under rocks or among algae.", references: [2]},
+            { text: "The <b>area between the eyes is about level with the eyes</b> and forms three points (which may be hard to see)."},
             { text: "Colour is often brown or light green."}
         ],
         similarTo: [
@@ -857,7 +906,8 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/416625-Halicarcinus-varius",
         references : [
-            { id: 1, detail : "Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015, 21 NIWA." }
+            { id: 1, detail : "Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015, 21 NIWA." },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp376-378).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
@@ -865,10 +915,10 @@ var crabData = [
         aka: ["White's False Spider Crab"],
         scientificName : "Halicarcinus whitei",
         attributes : [
-            { key : "carapaceShape", values : ["round"] },
-            { key : "toothOnMargin", values : ["false"] },
-            { key : "covering", values : ["setae"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "carapaceShape", values : ["round"] },
+            { key: "toothOnMargin", values : ["false"] },
+            { key: "covering", values : ["setae"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth", "hairy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] },
@@ -876,10 +926,13 @@ var crabData = [
         ],
         details : [
             { text: "Shell is rounded."},
-            { text: "Shell does NOT have a small tooth/spike on each side."},
-            { text: "Crab might appear furry"},
-            { text: "The area between the eyes sticks out past the eye level and forms three points."},
-            { text: "Colour range variable; often light brown."}
+            { text: "Shell <b>does NOT have a small tooth/spike</b> on each side."},
+            { text: "Shell can be up to 12.5mm wide.", references: [1]},
+            { text: "Shell <b>has a covering of hair and will appear furry</b>"},
+            { text: "Found from intertidal, shallow water.", references: [1]},
+            { text: "Found in sheltered open beaches, harbour flats or estuaries.", references: [1]},
+            { text: "The <b>area between the eyes sticks out past the eye level</b> and forms three points."},
+            { text: "Colour range variable; can be green, yellow, grey. Often light brown.", references: [1]}
         ],
         similarTo: [
             { key: "Halicarcinus cookii", label: "Cook's Pillbox Crab" },
@@ -891,7 +944,10 @@ var crabData = [
             { url : "images/crabs/estuarinepillboxcrab02.jpg" },
             { url : "images/crabs/estuarinepillboxcrab01.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/471051-Halicarcinus-whitei"
+        natureWatchLink: "https://inaturalist.nz/taxa/471051-Halicarcinus-whitei",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp380-382).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "New Zealand Crown Crab",
@@ -925,9 +981,13 @@ var crabData = [
         ],
         details : [
             { text: "Shell is rounded."},
-            { text: "Crab will appear very furry"},
+            { text: "Shell does NOT have a small tooth/spike on each side, but it wouldn't be visible through the hair regardless." },
+            { text: "Shell <b>can be up to 6.5mm wide</b>.", references: [1]},
+            { text: "<b>Crab (shell and legs) is covered in hair and will appear very furry </b>or look muddy." },
+            { text: "Found from intertidal to 10m.", references: [1]},
+            { text: "Found under rocks or among weed.", references: [1]},
             { text: "The area between the eyes sticks out past the eye level."},
-            { text: "Colouring is brown."}
+            { text: "Colouring is brown, perhaps muddy looking."}
         ],
         similarTo: [
             { key: "Halicarcinus cookii", label: "Cook's Pillbox Crab" },
@@ -943,24 +1003,30 @@ var crabData = [
             { url : "images/crabs/neopub03.jpg" },
             { url : "images/crabs/neopub04.jpg"}
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/471492-Neohymenicus-pubescens"
+        natureWatchLink: "https://inaturalist.nz/taxa/471492-Neohymenicus-pubescens",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp390-392).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Hairy Crab",
         scientificName : "Pilumnus lumpinus",
         attributes : [
-            { key : "carapaceShape",  values : ["oval"] },
-            { key : "covering", values : ["setae"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "carapaceShape",  values : ["oval"] },
+            { key: "covering", values : ["setae"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["hairy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is oval shapped; wider than long."},
-            { text: "Entire crab will appear furry/muddy due to being covered in 'hairs'."},
-            { text: "Claws have dark brown tips."},
-            { text: "Coluring will show as grey or clay coloured due to covering of 'hairs'.", references:[1]}
+            { text: "Shell is oval shapped; noticably wider than long."},
+            { text: "Shell has three teeth/spikes on each side behind the eyes but they will not be visible due to hairs."},
+            { text: "Shell can be up to 22.5mm wide.", references: [2]},
+            { text: "<b>Entire crab will appear furry/muddy due to being covered in short hairs.</b>"},
+            { text: "Found lower intertidal.", references: [2]},
+            { text: "Found on rocky shores under rocks on in crevices.", references: [2]},
+            { text: "Colouring is grey or clay coloured due to covering of hairs. Claws have dark brown tips.", references:[1]}
         ],
         similarTo: [
             { key: "Pilumnus novaezelandiae", label: "Bristle Crab" }
@@ -974,7 +1040,8 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/471043-Pilumnus-lumpinus",
         references : [
-            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp90-91). Collins, London 1973" }
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp90-91). Collins, London 1973" },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp244-246).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
@@ -988,10 +1055,13 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is oval shapped; wider than long."},
-            { text: "Entire crab will appear furry/muddy due to being covered in 'hairs'; Hairs will be in a range of lengths with some quite long."},
-            { text: "Claws have dark brown tips. Claws pinkish and the underside may be white.", references: [1]},
-            { text: "Coluring beneath the hairs is pinkish grey.", references: [1]}
+            { text: "Shell is oval shapped; noticably wider than long."},
+            { text: "Shell has three teeth/spikes on each side behind the eyes but they will probably not be visible due to hairs."},
+            { text: "Shell can be up to 20mm wide.", references: [2]},
+            { text: "Shell is sparsley covered in hair, some long and some short. The back of the shell will probably be uncovered. The mixture of long and short hairs make the crab look ragged.", references: [2]},
+            { text: "Found lower intertidal to 130m.", references: [2]},
+            { text: "Found under rocks on in crevices.", references: [2]},
+            { text: "Colouring beneath the hairs is pinkish grey, can look muddy brown. Claws have black or dark brown tips. Claws may be purplish.", references: [1, 2]}
         ],
         similarTo: [
             { key: "Pilumnus lumpinus", label: "Hairy Crab" }
@@ -1002,7 +1072,8 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/471044-Pilumnus-novaezelandiae",
         references : [
-            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp91). Collins, London 1973" }
+            { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp91). Collins, London 1973" },
+            { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp248-250).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
