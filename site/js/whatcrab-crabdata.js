@@ -542,7 +542,7 @@ var crabData = [
             { text: "The surface of the shell will feel spikey and probably be covered in seaweed or short hooked hairs."},
             { text: "Intertial to 75m.", references: [2]},
             { text: "Found on rocky shores or rock pools.", references: [2]},
-            { text: "Shell is probably a light orange, <b>claws dark orange/purple.</b>"},
+            { text: "Shell is orange, <b>claws dark orange/purple.</b>"},
             { text: "<b>Shell does not have two spines/spikes at the rear</b>."}
         ],
         similarTo: [
@@ -1025,7 +1025,7 @@ var crabData = [
             { text: "Shell can be up to 22.5mm wide.", references: [2]},
             { text: "<b>Entire crab will appear furry/muddy due to being covered in short hairs.</b>"},
             { text: "Found lower intertidal.", references: [2]},
-            { text: "Found on rocky shores under rocks on in crevices.", references: [2]},
+            { text: "Found on rocky shores under rocks or in crevices.", references: [2]},
             { text: "Colouring is grey or clay coloured due to covering of hairs. Claws have dark brown tips.", references:[1]}
         ],
         similarTo: [
@@ -1060,8 +1060,8 @@ var crabData = [
             { text: "Shell can be up to 20mm wide.", references: [2]},
             { text: "Shell is sparsley covered in hair, some long and some short. The back of the shell will probably be uncovered. The mixture of long and short hairs make the crab look ragged.", references: [2]},
             { text: "Found lower intertidal to 130m.", references: [2]},
-            { text: "Found under rocks on in crevices.", references: [2]},
-            { text: "Colouring beneath the hairs is pinkish grey, can look muddy brown. Claws have black or dark brown tips. Claws may be purplish.", references: [1, 2]}
+            { text: "Found under rocks or in crevices.", references: [2]},
+            { text: "Colouring beneath the hairs is pinkish grey, can look muddy brown. Claws have black or dark brown tips. Claws may be purplish on top, white underneath.", references: [1, 2]}
         ],
         similarTo: [
             { key: "Pilumnus lumpinus", label: "Hairy Crab" }
