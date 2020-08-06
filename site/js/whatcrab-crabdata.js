@@ -21,7 +21,7 @@ var crabData = [
             { text: "Intertidal. Generally found higher on the beach, in rocky gaps. Often on top of rocks until startled."},
             { text: "Colouring variable but mostly purple with some white. Juveniles can be darker, almost black."},
             { text: "When dead the shells can turn to a red colour."},
-            { text: "The claws of adults are purple with white dots (almost bumps) - this is unlike any other crab."}
+            { text: "The <b>claws of adults are purple with white dots</b> (almost bumps) - this is unlike any other crab."}
         ],
         similarTo: [
             { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" }
@@ -131,7 +131,7 @@ var crabData = [
         ],
         details : [
             { text: "Shell is square/rectangle shapped, wider than long."},
-            { text: "Shell sides are smooth, with no teeth like spikes behind the eyes."},
+            { text: "Shell sides are smooth, with <b>no teeth like spikes behind the eyes</b>."},
             { text: "Shell can be up to 28mm across.", references : [2]},
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found under stones & boulders around the high tide line, does not like much water.", references : [1]},
@@ -174,7 +174,7 @@ var crabData = [
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found from hide-tide to just below low-tide.", references: [2]},
             { text: "Very common, found beneath rocks, mussels or other objects.", references: [2]},
-            { text: "Often green, but has a wide range of colours."},
+            { text: "Often <b>green</b>, but has a wide range of colours."},
             { text: "Has long wipe-like anntennae.", references: [1]},
             { text: "Only 6 walking legs - unlike true crabs."},
             { text: "Claws very flat and smooth."}
@@ -212,7 +212,7 @@ var crabData = [
             { text: "Shell can be up to 12.5mm long.", references: [3]},
             { text: "Shell can be smooth but may also have fine hairs and appear fuzzy."},
             { text: "Found intertidally, under rocks.", references: [3]},
-            { text: "Coluring for males is redish. Females are greyish/brown with red spots/patches.", references: [3]},
+            { text: "Coluring for<b> males is redish. Females are greyish/brown with red spots/patches</b>.", references: [3]},
             { text: "Has long wipe-like anntennae.", references: [1]},
             { text: "Only 6 walking legs - unlike true crabs."},
             { text: "Claws flat but with a ridge running along the upper surface.", references: [2]}
@@ -286,9 +286,9 @@ var crabData = [
             { key: "rectangleShaped", values : ["true"] }
         ],
         details : [
-            { text: "Shell is square/rectangle shaped, wider than long."},
+            { text: "Shell is <b>square/rectangle shaped, wider than long</b>."},
             { text: "Shell has two teeth/spikes on each side behind the eyes."},
-            { text: "Shell can be up to 26mm wide in the south of NZ but more like 21.7 in the north.", references: [1]},
+            { text: "Shell can be up to 26mm wide in the south of NZ but more like 21.7mm in the north.", references: [1]},
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found in the upper intertidal region.", references: [1]},
             { text: "Builds tunnels in sheltered areas such as habours, estuaries and magrove swamps.", references: [1]},
@@ -323,7 +323,7 @@ var crabData = [
             { key: "rectangleShaped", values : ["true"] }
         ],
         details : [
-            { text: "Shell is square/rectangle shaped, much wider than long.", references: [1]},
+            { text: "Shell is <b>square/rectangle shaped, much wider than long</b>.", references: [1]},
             { text: "Shell has two teeth/spikes on each side behind the eyes."},
             { text: "Shell can be up to 30.2mm wide.", references: [1]},
             { text: "Shell is smooth but legs and claws have hairs which can give them a furry appearance."},
@@ -356,11 +356,11 @@ var crabData = [
         ],
         details : [
             { text: "Shell is oval shapped; wider than long, with the front very wide."},
-            { text: "Shell has no noticable teeth on the sides, but the front of the shell has blunt outward facing bumps"},
+            { text: "Shell has <b>no noticable teeth on the sides, but the front of the shell has blunt outward facing bumps.</b>"},
             { text: "Shell is smooth, legs are slightly hairy.", references : [1]},
             { text: "Shell can be up to 57mm wide.", references: [2]},
             { text: "Found in the intertidal region underneath rocks.", references: [2]},
-            { text: "Coluring is dark chocolate-brown but much lighter if newly moulted. Claw tips are black.", references: [2]},
+            { text: "Coluring is <b>dark chocolate-brown</b> but much lighter if newly moulted. Claw tips are black.", references: [2]},
             { text: "When disturbed it often raises both claws facing them up and out."}
         ],
         similarTo: [
@@ -394,7 +394,7 @@ var crabData = [
         ],
         details : [
             { text: "Shell is oval shapped; much wider than long."},
-            { text: "Shell has no teeth/spikes on side and is broadly rounded. The front of the shell looks like the pushed together pastry of a pie.", references: [1]},
+            { text: "Shell has no teeth/spikes on side and is broadly rounded. The <b>front of the shell looks like the pushed together pastry of a pie</b>.", references: [1]},
             { text: "Shell can be up to 150mm across.", references: [1]},
             { text: "Shell is smooth with no hair or seaweed attached, legs can be slightly hairy.", references: [2]},
             { text: "Found intertial to ?40m", references: [2]},
@@ -432,7 +432,7 @@ var crabData = [
             { text: "Shell is oval shapped; much wider than long."},
             { text: "Front of the shell wraps around the sides and has blunt outward facing bumps."},
             { text: "Shell can be up to 36mm across.", references: [2]},
-            { text: "Shell can appear smooth or can appear furry/muddy, legs are covered in hair and appear furry."},
+            { text: "Shell can appear smooth or can appear furry/muddy, <b>legs are covered in hair and appear furry</b>."},
             { text: "Found intertidally", references: [2]},
             { text: "Found under stones (possibly on sandy beachs) or in burrows.", references: [2]},
             { text: "Coluring is dark brown, generally discoloured by mud. Claw tips are black.", references: [1]}
@@ -472,7 +472,7 @@ var crabData = [
             { text: "Shell is smooth while legs can be a bit furry."},
             { text: "Found intertidally", references: [1]},
             { text: "Found under rocks in sand and gravel." , references: [1]},
-            { text: "Coluring is dull yellowish grey or green. Tips of claws yellow.", references: [1]},
+            { text: "Coluring is <b>dull yellowish grey or green</b>. Tips of claws yellow.", references: [1]},
             { text: "Male has one large claw."}
         ],
         similarTo: [
@@ -504,7 +504,7 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is triangular, with the widest edge at the back.", references: [1]},
+            { text: "Shell is <b>triangular, with the widest edge at the back</b>.", references: [1]},
             { text: "Shell has four blunt outward facing teeth/spikes on each backend corner.", references: [2]},
             { text: "Shell can be up to 65mm across.", references: [2]},
             { text: "Shell is smooth with no hair or seaweed attached."},
@@ -649,7 +649,7 @@ var crabData = [
         ],
         details : [
             { text: "Shell is oval shapped, wider than long."},
-            { text: "Shell has five teeth/spikes on each side behind the eyes, with four spikes between the eyes."},
+            { text: "Shell has <b>five teeth/spikes on each side behind the eyes, with four spikes between the eyes</b>."},
             { text: "Shell can be up to 150mm wide.", references: [1]},
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found in the surf zone and continental shelf from 2m - 100m", references: [1]},
@@ -682,7 +682,7 @@ var crabData = [
         ],
         details : [
             { text: "Shell is oval shapped, wider than long."}, // todo how big can this one get?
-            { text: "Shell has five teeth/spikes on each side behind the eyes, with eight spikes between the eyes."},
+            { text: "Shell has <b>five teeth/spikes on each side behind the eyes, with eight spikes between the eyes</b>."},
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found intertidally to 15m", references: [1]},
             { text: "Found on sheltered muddy beaches. Currently only found around Auckland on the east coast.", references: [1]},
@@ -752,10 +752,10 @@ var crabData = [
         ],
         details : [
             { text: "Shell is squarish, can be a little longer than wide OR a little wider than long, has rounded sides."},
-            { text: "Shell has no teeth/spikes on each side."},
+            { text: "Shell has <b>no teeth/spikes on each side</b>."},
             { text: "Shell can be up to 25mm long.", references: [1]},
             { text: "Shell is smooth with no hair or seaweed attached."},
-            { text: "Found floating on the ocean or washed up with debris. Has been found on turtles.", references: [1]},
+            { text: "Found <b>floating on the ocean or washed up with debris</b>. Has been found on turtles.", references: [1]},
             { text: "Coluring very variable; can be blue, dark brown, almost black, yellow brown. May be able to change colour.", references: [1]},
             { text: "The legs holding the claws have a set of forward facing spikes at the just above the 'elbow'."}
         ],
@@ -1034,7 +1034,7 @@ var crabData = [
             { text: "Shell is oval shapped; noticably wider than long."},
             { text: "Shell has three teeth/spikes on each side behind the eyes but they will not be visible due to hairs."},
             { text: "Shell can be up to 22.5mm wide.", references: [2]},
-            { text: "<b>Entire crab will appear furry/muddy due to being covered in short hairs.</b>"},
+            { text: "<b>Entire crab will appear furry/muddy due to being covered in very short hairs</b>."},
             { text: "Found lower intertidal.", references: [2]},
             { text: "Found on rocky shores under rocks or in crevices.", references: [2]},
             { text: "Colouring is grey or clay coloured due to covering of hairs. Claws have dark brown tips.", references:[1]}
@@ -1069,7 +1069,7 @@ var crabData = [
             { text: "Shell is oval shapped; noticably wider than long."},
             { text: "Shell has three teeth/spikes on each side behind the eyes but they will probably not be visible due to hairs."},
             { text: "Shell can be up to 20mm wide.", references: [2]},
-            { text: "Shell is sparsley covered in hair, some long and some short. The back of the shell will probably be uncovered. The mixture of long and short hairs make the crab look ragged.", references: [2]},
+            { text: "Shell is <b>sparsley covered in hair, some long and some short</b>. The back of the shell will probably be uncovered. The mixture of long and short hairs make the crab look ragged.", references: [2]},
             { text: "Found lower intertidal to 130m.", references: [2]},
             { text: "Found under rocks or in crevices.", references: [2]},
             { text: "Colouring beneath the hairs is pinkish grey, can look muddy brown. Claws have black or dark brown tips. Claws may be purplish on top, white underneath.", references: [1, 2]}
@@ -1099,7 +1099,7 @@ var crabData = [
             { key: "pillboxCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is round, shapped like a pea."},
+            { text: "Shell is round, <b>shapped like a pea</b>."},
             { text: "Shell has no teeth/spikes on each side behind the eyes."},
             { text: "Shell is up to 11.3mm wide.", references: [1]},
             { text: "Shell is smooth with no hair or seaweed attached."},
@@ -1130,7 +1130,7 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell a lot wider than long. The front corners of the shell end in outward facing triangular points."},
+            { text: "Shell a lot wider than long. The <b>front corners of the shell end in outward facing triangular points</b>."},
             { text: "Shell has no teeth/spikes on each side behind the eyes."},
             { text: "Shell is up to 42mm wide.", references: [1]},
             { text: "Shell is smooth with no hair or seaweed attached."},
@@ -1159,7 +1159,7 @@ var crabData = [
         ],
         details : [
             { text: "Shell is oval, wider than long."},
-            { text: "Shell has 3 very blunt teeth like spikes on each side.", references: [1]},
+            { text: "Shell has 3 very blunt spikes on each side.", references: [1]},
             { text: "Shell is up to 70mm wide.", references: [1]},
             { text: "Shell has a shabby covering of dark hairs that may be hard to see and may be hidden under a sponge carried on the shell.", references: [1]},
             { text: "Found low intertidally and 0 to 190m.", references: [1]},
