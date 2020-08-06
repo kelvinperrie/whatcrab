@@ -252,7 +252,7 @@ var crabData = [
             { text: "Shell could be seen as either round or square shapped."},
             { text: "Shell front and sides have jagged spikes."},
             { text: "Shell can be up to 75mm long.", references: [1]},
-            { text: "Shell surface is smooth. No hairs on top, some in other locations.", references: [1]}, // todo is this right??? I don't remember any heairs
+            { text: "Shell surface is smooth with no hairs or seaweed attached."},
             { text: "Found around low tide to 25m.", references: [1]},
             { text: "Found usually in water, under rocks or ledges.", references: [1]},
             { text: "Coluring is red/orange with white underneath."},
@@ -505,7 +505,7 @@ var crabData = [
         ],
         details : [
             { text: "Shell is triangular, with the widest edge at the back.", references: [1]},
-            { text: "Shell has four teeth/spikes on each backend corner.", references: [2]}, // todo check against photos?
+            { text: "Shell has four blunt outward facing teeth/spikes on each backend corner.", references: [2]},
             { text: "Shell can be up to 65mm across.", references: [2]},
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found intertidally to 40m", references: [2]},
@@ -681,10 +681,12 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is oval shapped, wider than long."}, // todo update these details if you can find a source
+            { text: "Shell is oval shapped, wider than long."}, // todo how big can this one get?
             { text: "Shell has five teeth/spikes on each side behind the eyes, with eight spikes between the eyes."},
-            { text: "Coluring is green. Underside of the front of the shell can have light blue markings."},
-            { text: "End of claws can have dark brown amongst white or a light blue."},
+            { text: "Shell is smooth with no hair or seaweed attached."},
+            { text: "Found intertidally to 15m", references: [1]},
+            { text: "Found on sheltered muddy beaches. Currently only found around Auckland on the east coast.", references: [1]},
+            { text: "Coluring is olive green. Underside of the front of the shell can have light blue markings."},
             { text: "Last leg pair has paddles."}
         ],
         similarTo: [
@@ -693,7 +695,10 @@ var crabData = [
         images : [
             { url : "images/crabs/asianpaddlecrab01.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/209010-Charybdis-japonica"
+        natureWatchLink: "https://inaturalist.nz/taxa/209010-Charybdis-japonica",
+        references : [
+            { id: 1, detail : "Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015 (pp39). NIWA." },
+        ]
     },
     {
         commonName : "Red Swimming Crab",
@@ -734,6 +739,7 @@ var crabData = [
     {
         commonName : "Gulfweed Crab",
         scientificName : "Planes minutus",
+        aka : ["Pacific Weed Crab"],
         attributes : [ 
             { key : "carapaceShape", values : ["square","round"] },
             { key : "lastLegsArePaddles", values : ["false"] },
@@ -745,11 +751,13 @@ var crabData = [
             { key : "rectangleShaped", values : ["false"] }
         ],
         details : [
-            { text: "Shell is squarish, but has rounded sides."}, // todo these details - what is the old name for this ????
-            { text: "Shell sides are smooth, with no teeth like spikes."},
-            { text: "The first leg pairs (the claws) have a set of spikes at the top of the leg where they join with the body."},
-            { text: "Often found on or around objects that have been floating in the ocean."},
-            { text: "Coluring very variable; can be blue, dark brown, almost black, yellow brown."}
+            { text: "Shell is squarish, can be a little longer than wide OR a little wider than long, has rounded sides."},
+            { text: "Shell has no teeth/spikes on each side."},
+            { text: "Shell can be up to 25mm long.", references: [1]},
+            { text: "Shell is smooth with no hair or seaweed attached."},
+            { text: "Found floating on the ocean or washed up with debris. Has been found on turtles.", references: [1]},
+            { text: "Coluring very variable; can be blue, dark brown, almost black, yellow brown. May be able to change colour.", references: [1]},
+            { text: "The legs holding the claws have a set of forward facing spikes at the just above the 'elbow'."}
         ],
         similarTo: [
             { key: "Cyclograpsus lavauxi", label: "Smooth Shore Crab" } 
@@ -759,7 +767,10 @@ var crabData = [
             { url : "images/crabs/gulfweedcrab02.jpg" },
             { url : "images/crabs/gulfweedcrab03.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/295349-Planes-minutus"
+        natureWatchLink: "https://inaturalist.nz/taxa/295349-Planes-minutus",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp218-320).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Paua Spider Crab",
@@ -906,7 +917,7 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/416625-Halicarcinus-varius",
         references : [
-            { id: 1, detail : "Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015, 21 NIWA." },
+            { id: 1, detail : "Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015 (pp21). NIWA." },
             { id: 2, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp376-378).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
@@ -1080,18 +1091,21 @@ var crabData = [
         commonName : "Pea Crab",
         scientificName : "Nepinnotheres novaezelandiae",
         attributes : [
-            { key : "carapaceShape",  values : ["round"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "carapaceShape",  values : ["round"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] },
-            { key : "pillboxCrab", values : ["false"] }
+            { key: "pillboxCrab", values : ["false"] }
         ],
         details : [
             { text: "Shell is round, shapped like a pea."},
-            { text: "Shell are smooth."},
-            { text: "Claws have dark brown tips."},
-            { text: "Coluring range variable; whites, browns and oranges."}
+            { text: "Shell has no teeth/spikes on each side behind the eyes."},
+            { text: "Shell is up to 11.3mm wide.", references: [1]},
+            { text: "Shell is smooth with no hair or seaweed attached."},
+            { text: "Found intertidal to 30m.", references: [1]},
+            { text: "Found inside shellfish, e.g. mussels.", references: [1]},
+            { text: "Coluring variable; the shell may be creamy white all over, or orange-brown or mauve and yellow with white spots.", references: [1]},
         ],
         similarTo: [],
         images : [
@@ -1100,7 +1114,10 @@ var crabData = [
             { url : "images/crabs/peacrab01.jpg" },
             { url : "images/crabs/peacrab02.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/472053-Nepinnotheres-novaezelandiae"
+        natureWatchLink: "https://inaturalist.nz/taxa/472053-Nepinnotheres-novaezelandiae",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp330-332).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Policeman Crab",
@@ -1113,52 +1130,69 @@ var crabData = [
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell wider than long. The front corners of the shell end in outward facing triangular points"},
-            { text: "Coluring is mostly white with bits in brighter (yellowish, reddish, orange) colours"}
+            { text: "Shell a lot wider than long. The front corners of the shell end in outward facing triangular points."},
+            { text: "Shell has no teeth/spikes on each side behind the eyes."},
+            { text: "Shell is up to 42mm wide.", references: [1]},
+            { text: "Shell is smooth with no hair or seaweed attached."},
+            { text: "Found 18 to 594m.", references: [1]},
+            { text: "Found around soft sedmients with shells and rocks.", references: [1]},
+            { text: "Coluring of the shell is mostly yellowish vermillion. Some areas of white, purple, red, brown."} // todo does this match obs on inat?
         ],
         similarTo: [],
         images : [
             { url : "images/crabs/policemancrab01.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/471045-Neommatocarcinus-huttoni"
+        natureWatchLink: "https://inaturalist.nz/taxa/471045-Neommatocarcinus-huttoni",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp262-264).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Sponge Crab",
         scientificName : "Metadromia wilsoni",
         attributes : [ 
-            { key : "carapaceShape", values : ["oval"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "carapaceShape", values : ["oval"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["bumpy"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is oval but not much wider than long."},
-            { text: "Carries a sponge on its shell."},
-            { text: "Shell has no teeth like spikes on each side."},
-            { text: "Inner areas of claws can appear a bit furry."},
-            { text: "Coluring red or reddish brown."}
+            { text: "Shell is oval, wider than long."},
+            { text: "Shell has 3 very blunt teeth like spikes on each side.", references: [1]},
+            { text: "Shell is up to 70mm wide.", references: [1]},
+            { text: "Shell has a shabby covering of dark hairs that may be hard to see and may be hidden under a sponge carried on the shell.", references: [1]},
+            { text: "Found low intertidally and 0 to 190m.", references: [1]},
+            { text: "Found under rocks but usually around sponges.", references: [1]},
+            { text: "Coluring can be a light brown, red, reddish brown; the sponge on the crab's shell might be brighter.", references: [1]}
         ],
         similarTo: [],
         images : [
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/523181-Metadromia-wilsoni"
+        natureWatchLink: "https://inaturalist.nz/taxa/523181-Metadromia-wilsoni",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp68-70).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     },
     {
         commonName : "Tuberculate Pear Crab",
         scientificName : "Pyromaia tuberculata",
         attributes : [ 
-            { key : "carapaceShape", values : ["triangle"] },
-            { key : "lastLegsArePaddles", values : ["false"] },
+            { key: "carapaceShape", values : ["triangle"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["bumpy","seaweed"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] }
         ],
         details : [
-            { text: "Shell is triangle shaped."},
-            { text: "Shell can be bumpy or covered in 'hairs'/sedmients."},
-            { text: "Can appear furry/muddy due to a covering of 'hairs'."},
-            { text: "Coluring light green/brown."}
+            { text: "Shell is triangular with a rounded base (pear shaped), with the back of the crab appearing to buldge."},
+            { text: "Shell has a large spikes on each side behind the eyes."},
+            { text: "Shell can be up to 17.7mm wide.", references: [1]},
+            { text: "Shell can be bumpy or covered in seaweed or sedmients."},
+            { text: "Found intertidally to 650m.", references: [1]},
+            { text: "Found under rocks or on sand and mud.", references: [1]},
+            { text: "Coluring light green/brown. Can appear furry/muddy due to a covering of 'hairs'."},
+            { text: "<b>Legs are significantly longer than the camouflage crabs</b>."}
         ],
         similarTo: [
             { key: "Notomithrax minor", label: "Small Decorator Crab" },
@@ -1170,6 +1204,9 @@ var crabData = [
             { url : "images/crabs/tuberculatepearcrab01.jpg" },
             { url : "images/crabs/tuberculatepearcrab02.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/523181-Metadromia-wilsoni"
+        natureWatchLink: "https://inaturalist.nz/taxa/523181-Metadromia-wilsoni",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp112-114).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
     }
 ]
