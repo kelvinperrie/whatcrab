@@ -435,7 +435,7 @@ var crabData = [
             { text: "Shell can appear smooth or can appear furry/muddy, legs are covered in hair and appear furry."},
             { text: "Found intertidally", references: [2]},
             { text: "Found under stones (possibly on sandy beachs) or in burrows.", references: [2]},
-            { text: "Coluring is dark brown, generally discoloured by mud. Claw tips are black.", references: [1]}
+            { text: "Coluring is dark brown, generally discoloured by mud. Claw tips are dark brown.", references: [1]}
         ],
         similarTo: [
             { key: "Ozius deplanatus", label: "Iron Crab" }
