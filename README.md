@@ -8,6 +8,7 @@ http://www.whatsmycrab.co.nz/
 Here is the preview:
 https://raw.githack.com/kelvinperrie/whatcrab/master/site/index.html
 
+### Examples:
 
 Front page containing filters and displaying matching crabs:
 
@@ -31,7 +32,26 @@ Comparing crabs:
 
 ![Example 5](examples/example03-details.gif?raw=true "Comparing crab details")
 
-Things to do:
+### Data structure
+
+Filter (aka question) and crab data is stored in JSON files. The JSON files are read in and the filters and crabs populated based on the contents of those files. Each filter has a key and a set of possible options that can be set for it. Each crab contains the relevant filter keys and the options that match for it. 
+
+For example, the question/filter asking about shell shape of the crab has a key of 'carapaceShape' along with the options of 'triangle', 'round', 'square', 'oval' and 'other'. 
+The data on the Red Rock Crab then lists the 'carapaceShapre' filter key and says that the options that match for it are 'round' and 'square'; meaning that if the user has responded that the shell shape is round or square then the Red Rock Crab will show. Any other response and the Red Rock Crab will be hidden (i.e. if they answer 'oval' the Red Rock Crab is hidden).
+
+The file called whatcrab-filterdata.js contains an array of filter information used to construct all of the filters/questions. It lives here:
+https://github.com/kelvinperrie/whatcrab/blob/master/site/js/whatcrab-filterdata.js
+
+A breakdown of a single filter:
+![Example 6](examples/example06-filterdata.png?raw=true "filter data explaination")
+
+The file called whatcrab-crabdata.js contains an array of crab information used to construct all of the possible crab matches. It lives here:
+https://github.com/kelvinperrie/whatcrab/blob/master/site/js/whatcrab-crabdata.js
+
+A crab is described like this:
+![Example 7](examples/example07-crabdata.png?raw=true "crab data explaination")
+
+### Things to do:
 * tiles that get bigger if less crabs in the results
 * when comparing crabs some way to view just the details that distinguish each one e.g. crab 1 has two teeth on shell, crab 2 has three teeth on shell
 * some way to open the raw picture full size
