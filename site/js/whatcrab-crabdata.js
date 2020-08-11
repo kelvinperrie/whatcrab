@@ -408,6 +408,7 @@ var crabData = [
             { key: "Heterozius rotundifrons", label: "Big-Handed Crab" }
         ],
         images : [
+            { url : "images/crabs/piecrustcrab04.jpg" },
             { url : "images/crabs/piecrustcrab01.jpg" },
             { url : "images/crabs/piecrustcrab02.jpg" },
             { url : "images/crabs/piecrustcrab03.jpg" }
