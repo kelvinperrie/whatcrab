@@ -225,6 +225,13 @@ h1 {
     white-space: nowrap;
     overflow-x: auto;
 }
+.popup-link {
+    float: right;
+    margin-right: 30px;
+    margin-top: 5px;
+    font-size: 1.2em;
+    color: #ebebeb;
+}
 .crab-detail-container {
     display: inline-block;
     /* border: 1px solid #36453B; */

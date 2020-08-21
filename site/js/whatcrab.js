@@ -205,6 +205,17 @@ var PageModel = function() {
         return total;
     });
 
+    // gets a url describing the current state of the popup; i.e. which crabs are being displayed in the popup
+    self.popupUrl = ko.computed(function() {
+        var baseUrl = window.location.href.split('?')[0];
+        var scientificNames = [];
+        for(var i = 0; i < self.crabsForCompare().length; i++) {
+            scientificNames.push(self.crabsForCompare()[i].scientificName);
+        }
+        var params = "?popupSelected=" + scientificNames.join("|");
+        return baseUrl + params;
+    });
+
     // mark the crab indicated by the supplied key as to be compared
     // used when in the details/compare dialog to open a 'similar to' crab
     // the key is the scientific name
@@ -395,6 +406,35 @@ var PageModel = function() {
         return match;
     };
 
+    // locates and returns a crab by the scientific name
+    self.findCrabByScientificName = function(scientificName) {
+        var match = ko.utils.arrayFirst(self.crabData(), function(item) {
+            return item.scientificName == scientificName;
+        });
+        return match;
+    }
+
+    // takes an array of scientific name and marks each of them as being selected for comparrison
+    self.markCrabsAsSelected = function(selectThese) {
+        for(var i = 0; i < selectThese.length; i++) {
+            var crab = self.findCrabByScientificName(selectThese[i]);
+            crab.selectedForCompare(true);
+        }
+    }
+
+    // examines the query string and activates any required options
+    self.takeActionOnQueryParams = function() {
+        var popupSelectedParams = QueryString.popupSelected;
+        console.log(popupSelectedParams);
+        if(popupSelectedParams) {
+            popupSelectedParams = decodeURI(popupSelectedParams);
+            // mark the crabs as being selected for compare and then open the dialog
+            var selectThese = popupSelectedParams.split("|");
+            self.markCrabsAsSelected(selectThese);
+            self.compareDialogVisible(true);
+        }
+    };
+
     // setup / load all data into our models
     self.initialize = function() {
         for(var i = 0; i < crabData.length; i++) {
@@ -407,6 +447,7 @@ var PageModel = function() {
             self.filters.push(new FilterModel(filterData[i], self));
         }
         self.setFilterVisibility();
+        self.takeActionOnQueryParams();
     }
     self.initialize();
 }
