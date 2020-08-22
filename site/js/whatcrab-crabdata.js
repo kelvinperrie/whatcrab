@@ -135,7 +135,7 @@ var crabData = [
             { text: "Shell can be up to 28mm across.", references : [2]},
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found under stones & boulders around the high tide line, does not like much water.", references : [1]},
-            { text: "Coluring varies; often reddish-brown with grey speckles, can be whitish with dark spots/mottling.", references : [1]}
+            { text: "Colouring varies; often reddish-brown with grey speckles, can be whitish with dark spots/mottling.", references : [1]}
         ],
         similarTo: [
             { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" },
@@ -212,7 +212,7 @@ var crabData = [
             { text: "Shell can be up to 12.5mm long.", references: [3]},
             { text: "Shell can be smooth but may also have fine hairs and appear fuzzy."},
             { text: "Found intertidally, under rocks.", references: [3]},
-            { text: "Coluring for<b> males is redish. Females are greyish/brown with red spots/patches</b>.", references: [3]},
+            { text: "Colouring for<b> males is redish. Females are greyish/brown with red spots/patches</b>.", references: [3]},
             { text: "Has long wipe-like anntennae.", references: [1]},
             { text: "Only 6 walking legs - unlike true crabs."},
             { text: "Claws flat but with a ridge running along the upper surface.", references: [2]}
@@ -255,7 +255,7 @@ var crabData = [
             { text: "Shell surface is smooth with no hairs or seaweed attached."},
             { text: "Found around low tide to 25m.", references: [1]},
             { text: "Found usually in water, under rocks or ledges.", references: [1]},
-            { text: "Coluring is red/orange with white underneath."},
+            { text: "Colouring is red/orange with white underneath."},
             { text: "Claws have ridges of white bumps."}
         ],
         similarTo: [
@@ -292,7 +292,7 @@ var crabData = [
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found in the upper intertidal region.", references: [1]},
             { text: "Builds tunnels in sheltered areas such as habours, estuaries and magrove swamps.", references: [1]},
-            { text: "Coluring ranges from olive-green, grey to brown. Claws may have bright orange at joints.", references: [1]}
+            { text: "Colouring ranges from olive-green, grey to brown. Claws may have bright orange at joints.", references: [1]}
         ],
         similarTo: [
             { key: "Hemiplax hirtipes", label: "Sentinel Crab" },
@@ -329,7 +329,7 @@ var crabData = [
             { text: "Shell is smooth but legs and claws have hairs which can give them a furry appearance."},
             { text: "Found in the intertidal region to 13m.", references: [1]},
             { text: "Builds tunnels in the lower regions of mud flats and estuaries.", references: [1]},
-            { text: "Coluring can be light brown/orange with dark spots."}
+            { text: "Colouring can be light brown/orange with dark spots."}
         ],
         similarTo: [
             { key: "Austrohelice crassa", label: "Burrowing Mud Crab" }
@@ -360,7 +360,7 @@ var crabData = [
             { text: "Shell is smooth, legs are slightly hairy.", references : [1]},
             { text: "Shell can be up to 57mm wide.", references: [2]},
             { text: "Found in the intertidal region underneath rocks.", references: [2]},
-            { text: "Coluring is <b>dark chocolate-brown</b> but much lighter if newly moulted. <b>Claw tips are black</b>.", references: [2]},
+            { text: "Colouring is <b>dark chocolate-brown</b> but much lighter if newly moulted. <b>Claw tips are black</b>.", references: [2]},
             { text: "When disturbed it often raises both claws facing them up and out."}
         ],
         similarTo: [
@@ -399,7 +399,7 @@ var crabData = [
             { text: "Shell is smooth with no hair or seaweed attached, legs can be slightly hairy.", references: [2]},
             { text: "Found intertial to ?40m", references: [2]},
             { text: "Found under stones in seaweed. Adults usually in deeper water with a sandy bottom.", references: [2]},
-            { text: "Coluring can be a various shades of brown, grey or red, with white underside. Claw tips are black.", references: [1]} // todo check this reference
+            { text: "Colouring can be a various shades of brown, grey or red, with white underside. Claw tips are black.", references: [1]} // todo check this reference
         ],
         similarTo: [
             { key: "Ozius deplanatus", label: "Iron Crab" },
@@ -436,7 +436,7 @@ var crabData = [
             { text: "Shell can appear smooth or can appear furry/muddy, <b>legs are covered in hair and appear furry</b>."},
             { text: "Found intertidally", references: [2]},
             { text: "Found under stones (possibly on sandy beachs) or in burrows.", references: [2]},
-            { text: "Coluring is dark brown, generally discoloured by mud. <b>Claw tips are dark brown</b>.", references: [1]}
+            { text: "Colouring is dark brown, generally discoloured by mud. <b>Claw tips are dark brown</b>.", references: [1]}
         ],
         similarTo: [
             { key: "Ozius deplanatus", label: "Iron Crab" }
@@ -473,7 +473,7 @@ var crabData = [
             { text: "Shell is smooth while legs can be a bit furry."},
             { text: "Found intertidally", references: [1]},
             { text: "Found under rocks in sand and gravel." , references: [1]},
-            { text: "Coluring is <b>dull yellowish grey or green</b>. Tips of claws yellow.", references: [1]},
+            { text: "Colouring is <b>dull yellowish grey or green</b>. Tips of claws yellow.", references: [1]},
             { text: "Male has one large claw."}
         ],
         similarTo: [
@@ -655,7 +655,7 @@ var crabData = [
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found in the surf zone and continental shelf from 2m - 100m", references: [1]},
             { text: "Found on sandy beaches or estuaries.", references: [1]},
-            { text: "Coluring is light brown with dark spots, can have redish/orange areas. Paddles can be a bluish colour."},
+            { text: "Colouring is light brown with dark spots, can have redish/orange areas. Paddles can be a bluish colour."},
             { text: "Last leg pair has paddles."}
         ],
         similarTo: [
@@ -687,7 +687,7 @@ var crabData = [
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found intertidally to 15m", references: [1]},
             { text: "Found on sheltered muddy beaches. Currently only found around Auckland on the east coast.", references: [1]},
-            { text: "Coluring is olive green. Underside of the front of the shell can have light blue markings."},
+            { text: "Colouring is olive green. Underside of the front of the shell can have light blue markings."},
             { text: "Last leg pair has paddles."}
         ],
         similarTo: [
@@ -721,7 +721,7 @@ var crabData = [
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found from 0 - 550m", references: [1]},
             { text: "Found on sandy, gravel, mud and shell bottoms.", references: [1]},
-            { text: "Coluring is red, whitish and oranges. End of claws are dark red."},
+            { text: "Colouring is red, whitish and oranges. End of claws are dark red."},
             { text: "Last leg pair has paddles."}
         ],
         similarTo: [
@@ -757,7 +757,7 @@ var crabData = [
             { text: "Shell can be up to 25mm long.", references: [1]},
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found <b>floating on the ocean or washed up with debris</b>. Has been found on turtles.", references: [1]},
-            { text: "Coluring very variable; can be blue, dark brown, almost black, yellow brown. May be able to change colour.", references: [1]},
+            { text: "Colouring very variable; can be blue, dark brown, almost black, yellow brown. May be able to change colour.", references: [1]},
             { text: "The legs holding the claws have a set of forward facing spikes at the just above the 'elbow'."}
         ],
         similarTo: [
@@ -1106,7 +1106,7 @@ var crabData = [
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found intertidal to 30m.", references: [1]},
             { text: "Found inside shellfish, e.g. mussels.", references: [1]},
-            { text: "Coluring variable; the shell may be creamy white all over, or orange-brown or mauve and yellow with white spots.", references: [1]},
+            { text: "Colouring variable; the shell may be creamy white all over, or orange-brown or mauve and yellow with white spots.", references: [1]},
         ],
         similarTo: [],
         images : [
@@ -1137,7 +1137,7 @@ var crabData = [
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found 18 to 594m.", references: [1]},
             { text: "Found around soft sedmients with shells and rocks.", references: [1]},
-            { text: "Coluring of the shell is mostly yellowish vermillion. Some areas of white, purple, red, brown."} // todo does this match obs on inat?
+            { text: "Colouring of the shell is mostly yellowish vermillion. Some areas of white, purple, red, brown."} // todo does this match obs on inat?
         ],
         similarTo: [],
         images : [
@@ -1165,7 +1165,7 @@ var crabData = [
             { text: "Shell has a shabby covering of dark hairs that may be hard to see and may be hidden under a sponge carried on the shell.", references: [1]},
             { text: "Found low intertidally and 0 to 190m.", references: [1]},
             { text: "Found under rocks but usually around sponges.", references: [1]},
-            { text: "Coluring can be a light brown, red, reddish brown; the sponge on the crab's shell might be brighter.", references: [1]}
+            { text: "Colouring can be a light brown, red, reddish brown; the sponge on the crab's shell might be brighter.", references: [1]}
         ],
         similarTo: [],
         images : [
@@ -1192,7 +1192,7 @@ var crabData = [
             { text: "Shell can be bumpy or covered in seaweed or sedmients."},
             { text: "Found intertidally to 650m.", references: [1]},
             { text: "Found under rocks or on sand and mud.", references: [1]},
-            { text: "Coluring light green/brown. Can appear furry/muddy due to a covering of 'hairs'."},
+            { text: "Colouring light green/brown. Can appear furry/muddy due to a covering of 'hairs'."},
             { text: "<b>Legs are significantly longer than the camouflage crabs</b>."}
         ],
         similarTo: [
