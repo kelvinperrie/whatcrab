@@ -212,7 +212,7 @@ var PageModel = function() {
         for(var i = 0; i < self.crabsForCompare().length; i++) {
             scientificNames.push(self.crabsForCompare()[i].scientificName);
         }
-        var params = "?popupSelected=" + scientificNames.join("|");
+        var params = "?compareByScientificName=" + scientificNames.join("|");
         return baseUrl + params;
     });
 
@@ -415,23 +415,22 @@ var PageModel = function() {
     }
 
     // takes an array of scientific name and marks each of them as being selected for comparrison
-    self.markCrabsAsSelected = function(selectThese) {
+    // then opens the compare dialog
+    self.openForCompareByScienificName = function(selectThese) {
         for(var i = 0; i < selectThese.length; i++) {
             var crab = self.findCrabByScientificName(selectThese[i]);
             crab.selectedForCompare(true);
         }
+        self.compareDialogVisible(true);
     }
 
     // examines the query string and activates any required options
     self.takeActionOnQueryParams = function() {
-        var popupSelectedParams = QueryString.popupSelected;
-        console.log(popupSelectedParams);
+        var popupSelectedParams = QueryString.compareByScientificName;
         if(popupSelectedParams) {
             popupSelectedParams = decodeURI(popupSelectedParams);
-            // mark the crabs as being selected for compare and then open the dialog
             var selectThese = popupSelectedParams.split("|");
-            self.markCrabsAsSelected(selectThese);
-            self.compareDialogVisible(true);
+            self.openForCompareByScienificName(selectThese);
         }
     };
 
