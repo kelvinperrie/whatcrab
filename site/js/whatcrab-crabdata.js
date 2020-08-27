@@ -181,7 +181,7 @@ var crabData = [
         ],
         similarTo: [
             { key: "Petrolisthes novaezelandiae", label: "Red Half-Crab" },
-            { key: "Petrolisthes spinosus", label: "Spiny False Crab" }
+            { key: "Petrocheles spinosus", label: "Spiny False Crab" }
         ],
         images : [
             // { url : "images/crabs/nzhalfcrab01.gif" },
@@ -220,7 +220,7 @@ var crabData = [
         ],
         similarTo: [
             { key: "Petrolisthes elongatus", label: "New Zealand Half-Crab" },
-            { key: "Petrolisthes spinosus", label: "Spiny False Crab" }
+            { key: "Petrocheles spinosus", label: "Spiny False Crab" }
         ],
         images : [
             { url : "images/crabs/redhalfcrab05.jpg" },
