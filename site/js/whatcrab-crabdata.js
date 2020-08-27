@@ -180,7 +180,8 @@ var crabData = [
             { text: "Claws very flat and smooth."}
         ],
         similarTo: [
-            { key: "Petrolisthes novaezelandiae", label: "Red Half-Crab" }
+            { key: "Petrolisthes novaezelandiae", label: "Red Half-Crab" },
+            { key: "Petrolisthes spinosus", label: "Spiny False Crab" }
         ],
         images : [
             // { url : "images/crabs/nzhalfcrab01.gif" },
@@ -201,7 +202,7 @@ var crabData = [
         attributes : [
             { key: "carapaceShape" , values : ["triangle", "round"] },
             { key: "lastLegsArePaddles", values : ["false"] },
-            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "surfaceTexture", values : ["smooth","hairy"]},
             { key: "halfCrab", values : ["true"]},
             { key: "camouflageCrab", values : ["false"] },
             { key: "pillboxCrab", values : ["false"] }
@@ -218,7 +219,8 @@ var crabData = [
             { text: "Claws flat but with a ridge running along the upper surface.", references: [2]}
         ],
         similarTo: [
-            { key: "Petrolisthes elongatus", label: "New Zealand Half-Crab" }
+            { key: "Petrolisthes elongatus", label: "New Zealand Half-Crab" },
+            { key: "Petrolisthes spinosus", label: "Spiny False Crab" }
         ],
         images : [
             { url : "images/crabs/redhalfcrab05.jpg" },
@@ -232,6 +234,43 @@ var crabData = [
             { id: 1, detail : "Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp94). Collins, London 1973" },
             { id: 2, detail : "Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015 (pp12). NIWA" },
             { id: 3, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp61-63).  Leigh Laboratory Bulletin, 22. (1988)" }
+        ]
+    },
+    {
+        commonName : "Spiny False Crab",
+        scientificName : "Petrocheles spinosus",
+        attributes : [
+            { key: "carapaceShape" , values : ["triangle", "round"] },
+            { key: "lastLegsArePaddles", values : ["false"] },
+            { key: "surfaceTexture", values : ["smooth"]},
+            { key: "halfCrab", values : ["true"]},
+            { key: "camouflageCrab", values : ["false"] },
+            { key: "pillboxCrab", values : ["false"] }
+        ],
+        details : [
+            { text: "Shell round."},
+            { text: "Shell is flat and has tiny teeth on each side which may not be visible."},
+            { text: "Shell can be up to 11.5mm long.", references: [1]},
+            { text: "Shell is smooth, legs may be hairy and appear fuzzy."},
+            { text: "Found intertidally to 100m.", references: [1]},
+            { text: "Found on mud, shingle or under rocks.", references: [1]},
+            { text: "Colouring can be greyish, or light yellow, brown or red.", references: [1]},
+            { text: "Has long wipe-like anntennae."},
+            { text: "Only 6 walking legs - unlike true crabs."},
+            { text: "<b>The inside of the arms have a row of small spines.</b>"}
+        ],
+        similarTo: [
+            { key: "Petrolisthes elongatus", label: "New Zealand Half-Crab" },
+            { key: "Petrolisthes novaezelandiae", label: "Red Half-Crab" }
+        ],
+        images : [
+            { url : "images/crabs/petrochelesspinosus03.jpg" },
+            { url : "images/crabs/petrochelesspinosus02.jpg" },
+            { url : "images/crabs/petrochelesspinosus01.jpg" }
+        ],
+        natureWatchLink: "https://inaturalist.nz/taxa/471056-Petrocheles-spinosus",
+        references : [
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp64-66).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
