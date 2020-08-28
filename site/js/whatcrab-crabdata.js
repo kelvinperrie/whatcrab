@@ -331,7 +331,8 @@ var crabData = [
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found in the upper intertidal region.", references: [1]},
             { text: "Builds tunnels in sheltered areas such as habours, estuaries and magrove swamps.", references: [1]},
-            { text: "Colouring ranges from olive-green, grey to brown. Claws may have bright orange at joints.", references: [1]}
+            { text: "Colouring ranges from olive-green, grey to brown. Claws may have bright orange at joints.", references: [1]},
+            { text: "<b>The parts of the claws that do the pinching are more-or-less straight and do not noticably angle downwards.</b>"}
         ],
         similarTo: [
             { key: "Hemiplax hirtipes", label: "Sentinel Crab" },
@@ -369,7 +370,7 @@ var crabData = [
             { text: "Found in the intertidal region to 13m.", references: [1]},
             { text: "Builds tunnels in the lower regions of mud flats and estuaries.", references: [1]},
             { text: "Colouring can be light brown/orange with dark spots."},
-            { text: "<b>The moving parts of the claws angle downwards, giving the claws a bent shape.</b>"}
+            { text: "<b>The parts of the claws that do the pinching angle downwards noticable, giving the claws a bent shape.</b>"}
         ],
         similarTo: [
             { key: "Austrohelice crassa", label: "Burrowing Mud Crab" }
