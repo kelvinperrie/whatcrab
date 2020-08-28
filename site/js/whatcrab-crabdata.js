@@ -376,7 +376,8 @@ var crabData = [
         ],
         images : [
             { url : "images/crabs/sentinelcrab01.jpg" },
-            { url : "images/crabs/sentinelcrab02.jpg" }
+            { url : "images/crabs/sentinelcrab02.jpg" },
+            { url : "images/crabs/sentinelcrab03.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/416671-Hemiplax-hirtipes",
         references : [
