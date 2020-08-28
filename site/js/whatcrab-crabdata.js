@@ -368,7 +368,8 @@ var crabData = [
             { text: "Shell is smooth but legs and claws have hairs which can give them a furry appearance."},
             { text: "Found in the intertidal region to 13m.", references: [1]},
             { text: "Builds tunnels in the lower regions of mud flats and estuaries.", references: [1]},
-            { text: "Colouring can be light brown/orange with dark spots."}
+            { text: "Colouring can be light brown/orange with dark spots."},
+            { text: "<b>The moving parts of the claws angle downwards, giving the claws a bent shape.</b>"}
         ],
         similarTo: [
             { key: "Austrohelice crassa", label: "Burrowing Mud Crab" }
