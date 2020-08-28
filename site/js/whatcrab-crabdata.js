@@ -370,7 +370,7 @@ var crabData = [
             { text: "Found in the intertidal region to 13m.", references: [1]},
             { text: "Builds tunnels in the lower regions of mud flats and estuaries.", references: [1]},
             { text: "Colouring can be light brown/orange with dark spots."},
-            { text: "<b>The parts of the claws that do the pinching angle downwards noticable, giving the claws a bent shape.</b>"}
+            { text: "<b>The parts of the claws that do the pinching angle downwards noticably, giving the claws a bent shape.</b>"}
         ],
         similarTo: [
             { key: "Austrohelice crassa", label: "Burrowing Mud Crab" }
