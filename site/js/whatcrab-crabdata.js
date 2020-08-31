@@ -93,7 +93,7 @@ var crabData = [
             { text: "Shell is square, slightly wider than long, with quite curved forward corners."},
             { text: "Shell has two (small & blunt) teeth like spikes on each side behind the eyes.", references: [2]},
             { text: "Shell can be up to 37.5mm wide.", references: [2]},
-            { text: "Legs can appear quite hairy/furry."},
+            { text: "<b>Legs can appear quite hairy/furry.</b>"},
             { text: "Found from mid-tide to below low-tide", references: [2]},
             { text: "Can be found under stones but also burrows; prefers to be sheltered (e.g. estuaries).", references: [2]},
             { text: "Colouring variable; Often green, can have brown, reddish, marks or blotches. Often has large spots or mottling.", references: [1]}
