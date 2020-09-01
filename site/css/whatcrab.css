@@ -11,11 +11,14 @@ header {
     color: #AC3B61;
 }
 footer {
-    border-top-color: #AC3B61;
+    border-top-color: #9c6f7e;
     border-top-style: solid;
     border-top-width: 1px;
     margin-top: 1em;
     padding-top: 1em;
+    background-color: #dadada;
+    color: #9a707e;
+    font-size: 0.8em;
 }
 h1 {
     font-family: 'Permanent Marker', cursive;
@@ -283,4 +286,32 @@ h1 {
     padding-left: 1em;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.info-link-button {
+    color: #24292e;
+    background-color: #eff3f6;
+    background-image: linear-gradient(180deg, #fafbfc, #eff3f6 90%);
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    border-radius: .25em;
+    border: 1px solid;
+    border-color: rgba(27,31,35,.2);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    float: right;
+    margin-right: 3px;
+}
+.info-link-button a:link, .info-link-button  a:visited{
+    color: #24292e;
+    text-decoration: none;
+}
+.info-link-button img {
+    height: 20px;
+    width: 20px;
+}
+.info-link-button .material-icons {
+    font-size: 20px;
+    vertical-align: middle;
 }
