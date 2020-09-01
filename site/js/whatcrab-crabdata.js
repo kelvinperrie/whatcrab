@@ -96,7 +96,7 @@ var crabData = [
             { text: "<b>Legs can appear quite hairy/furry.</b>"},
             { text: "Found from mid-tide to below low-tide", references: [2]},
             { text: "Can be found under stones but also burrows; prefers to be sheltered (e.g. estuaries).", references: [2]},
-            { text: "Colouring variable; Often green, can have brown, reddish, marks or blotches. Often has large spots or mottling.", references: [1]}
+            { text: "Colouring variable; <b>Often green, can have brown, reddish/purple, marks or blotches</b>. Often has large spots or mottling.", references: [1]}
         ],
         similarTo: [
             { key: "Hemigrapsus sexdentatus", label: "Common Rock Crab" },

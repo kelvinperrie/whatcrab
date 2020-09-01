@@ -327,6 +327,10 @@ var PageModel = function() {
         var otherFilter = self.findFilterByKey(keyToCheck);
         if(otherFilter) {
             var activated = otherFilter.checkValueIsActivated(visibleWhen.value);
+            // is there a not on this filter; if yes then invert the result
+            if(visibleWhen.not) {
+                activated = !activated;
+            }
             return activated;
         } else {
             // this is a weird situation where the filter is dependant on another but we couldn't find that other ...

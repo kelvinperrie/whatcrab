@@ -49,7 +49,10 @@ var filterData = [
             { key : "true", text : "It IS a half crab", image: "images/halfcrab.png" },
             { key : "false", text : "Is NOT a half crab", image: "images/shape-round.png" }
         ],
-        visibleWhen : [{ key : "carapaceShape", value : "triangle" },{ key : "carapaceShape", value : "round", or : "true" }],
+        // if the carapce is round then show the half crab filter
+        //      if pillbox is set to true, then hide this filter
+        //      if pillbox is set to true AND false, then show this filter
+        visibleWhen : [[{ key : "carapaceShape", value : "triangle" },{ key : "carapaceShape", value : "round", or : "true" }],[{ key : "pillboxCrab", value : "true", not : "yep" },{ key : "pillboxCrab", value : "false", or : "yep" }]],
         question : "Is it a half-crab with only 6 walking legs?",
         showHelpText : true,
         helpText : "Half-crabs are small and flat and only have six walking legs; other crabs have eight walking legs. Crabs in the wild can be missing legs due to preditor attack."
@@ -60,7 +63,10 @@ var filterData = [
             { key : "true", text : "IS a pillbox crab", image: "images/pillbox-crab-true.png" },
             { key : "false", text : "Is NOT a pillbox crab", image: "" }
         ],
-        visibleWhen : [{ key : "carapaceShape", value : "round" }],
+        // bit weird. If the carapace is round then show the pillbox filter
+        //      but hide it if halfcrab is set to true
+        //      but if halfcrab is set to true AND halfcrab is set to false then show it
+        visibleWhen : [{ key : "carapaceShape", value : "round" }, [{ key : "halfCrab", value : "true", not : "yep" },{ key : "halfCrab", value : "false", or : "true" }]],
         question : "Is this a pillbox crab?",
         showHelpText : true,
         helpText : "Pillbox crabs are small, round, FLAT crabs, slightly pointed at the front between the eyes, with long thin legs. Almost like a coin with spider legs. They are not spherical shaped (like a pea)."
