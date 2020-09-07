@@ -156,23 +156,11 @@ var CrabModel = function(crab) {
 var PageModel = function() {
 
     var self = this;
-    self.crabData = ko.observableArray();               // array of crab data
-    self.filters = ko.observableArray();                // array of filters/questions
-    self.filterInfoShown = ko.observable(false);        // flag indicating if the filter help info should be displayed
-    self.compareDialogVisible = ko.observable(false);   // flag indicating if the comparison dialog is open
-    
-    // self.crabDataFiltered = ko.computed(function(){
-    //     return self.crabData().filter(
-    //       function(item){
-    //         //return (self.filter().length == 0 || location.title.toLowerCase().includes(self.filter().toLowerCase()));
-    //         return true;
-    //         // for each attribute associated with this crab, see if a filter has been set
-    //         for(var i = 0; i < self.possibleValues.length; i++) {
-
-    //         }
-    //       }
-    //     );
-    //   });
+    self.crabData = ko.observableArray();                   // array of crab data
+    self.filters = ko.observableArray();                    // array of filters/questions
+    self.filterInfoShown = ko.observable(false);            // flag indicating if the filter help info should be displayed
+    self.compareDialogVisible = ko.observable(false);       // flag indicating if the comparison dialog is open
+    self.speciesSetToOpenFullImage = ko.observable(null);   // the crab that we are viewing the images as big as can for
 
     // returns an array including only the crabs that have been marked to be compared
     self.crabsForCompare = ko.computed(function() {
@@ -215,6 +203,22 @@ var PageModel = function() {
         var params = "?compareByScientificName=" + scientificNames.join("|");
         return baseUrl + params;
     });
+
+    self.isViewImageFullsizeOpen = ko.computed(function() {
+        return self.speciesSetToOpenFullImage() !== null;
+    });
+
+    self.openImageFullsize = function(species) {
+        // position the dialog at the top of the viewport I guess. There must be a css way to do this?
+        var topMargin = 5;    // adding a little bit to where the dialog shows to make it look more natural (wat)
+        var scrolledTo = ($('html').scrollTop() + topMargin) + "px";
+        $(".fullscreen-image-popup-container").css({ top : scrolledTo});
+        self.speciesSetToOpenFullImage(species);
+    }
+    self.closeImageFullsize = function() {
+        self.speciesSetToOpenFullImage(null);
+    }
+
 
     // mark the crab indicated by the supplied key as to be compared
     // used when in the details/compare dialog to open a 'similar to' crab
