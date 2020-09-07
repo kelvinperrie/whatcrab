@@ -211,8 +211,9 @@ var PageModel = function() {
     self.openImageFullsize = function(species) {
         // position the dialog at the top of the viewport I guess. There must be a css way to do this?
         var topMargin = 5;    // adding a little bit to where the dialog shows to make it look more natural (wat)
+        console.log($('html').scrollTop());
         var scrolledTo = ($('html').scrollTop() + topMargin) + "px";
-        $(".fullscreen-image-popup-container").css({ top : scrolledTo});
+        $(".fullsize-image-popup-container").css({ top : scrolledTo});
         self.speciesSetToOpenFullImage(species);
     }
     self.closeImageFullsize = function() {
