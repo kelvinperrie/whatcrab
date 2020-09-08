@@ -159,9 +159,8 @@
                             <!-- <i class="material-icons">search</i> -->
                             &nbsp;
                             <div class="expander-icon">
-                                More question info ...
-                                <i data-bind="visible: !filterInfoShown()" class="material-icons">expand_more</i>
-                                <i data-bind="visible: filterInfoShown()" class="material-icons">expand_less</i>
+                                <span data-bind="visible: !filterInfoShown()">More question info ... <i class="material-icons">expand_more</i></span>
+                                <span data-bind="visible: filterInfoShown()">Less question info ... <i class="material-icons">expand_less</i></span>
                             </div>
                         </div>
                         <div class="filters-info-details" data-bind="visible: filterInfoShown">
@@ -169,6 +168,7 @@
                                 <li>You can click the <span class="material-icons">help</span> icon for more help with each question.</li>
                                 <li>You can select multiple answers for each question; for example if for the shape of the shell question you select both the round and square options then all round and square shaped crabs will show.</li>
                                 <li>If you're unsure of the answer or a question doesn't apply you don't have to answer anything for it, or you can hide it.</li>
+                                <li>When you're looking at a crab's details (after using <span class="material-icons">zoom_in</span>) you can click the <span class="material-icons">zoom_out_map</span> to see the full sized images.</li>
                             </ul>
                         </div>
                         
