@@ -595,9 +595,9 @@ var crabData = [
         ],
         images : [
             // { url : "images/crabs/hairyseaweedcrab01.gif" },
+            { url : "images/crabs/hairyseaweedcrab04.jpg" },    // shows the claws
             { url : "images/crabs/hairyseaweedcrab01.jpg" },
-            { url : "images/crabs/hairyseaweedcrab02.jpg" },
-            { url : "images/crabs/hairyseaweedcrab04.jpg" },
+           // { url : "images/crabs/hairyseaweedcrab02.jpg" },
             { url : "images/crabs/hairyseaweedcrab03.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410681-Notomithrax-ursus",
@@ -634,7 +634,7 @@ var crabData = [
             { key: "Notomithrax ursus", label: "Hairy Seaweed Crab" }
         ],
         images : [
-            { url : "images/crabs/peronscamouflagecrab03.jpg" },
+            { url : "images/crabs/peronscamouflagecrab03.jpg" }, // shows the claws
             { url : "images/crabs/peronscamouflagecrab01.jpg" },
             { url : "images/crabs/peronscamouflagecrab02.jpg" }
         ],
@@ -672,8 +672,8 @@ var crabData = [
             { key: "Notomithrax ursus", label: "Hairy Seaweed Crab" }
         ],
         images : [
+            { url : "images/crabs/smalldecoratorcrab03.jpg" }, // shows the claws
             { url : "images/crabs/smalldecoratorcrab02.jpg" },
-            { url : "images/crabs/smalldecoratorcrab03.jpg" },
             { url : "images/crabs/smalldecoratorcrab01.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410680-Notomithrax-minor",
