@@ -636,7 +636,8 @@ var crabData = [
         images : [
             { url : "images/crabs/peronscamouflagecrab03.jpg" }, // shows the claws
             { url : "images/crabs/peronscamouflagecrab01.jpg" },
-            { url : "images/crabs/peronscamouflagecrab02.jpg" }
+            { url : "images/crabs/peronscamouflagecrab02.jpg" },
+            { url : "images/crabs/peronscamouflagecrab04.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410683-Notomithrax-peronii",
         references : [
