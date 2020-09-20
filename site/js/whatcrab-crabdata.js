@@ -797,7 +797,7 @@ var crabData = [
         ],
         details : [
             { text: "Shell is squarish, can be a little longer than wide OR a little wider than long, has rounded sides."},
-            { text: "Shell has <b>no teeth/spikes on each side</b>."},
+            { text: "Shell has <b>no teeth/spikes on each side</b>, but does have shallow indents."},
             { text: "Shell can be up to 25mm long.", references: [1]},
             { text: "Shell is smooth with no hair or seaweed attached."},
             { text: "Found <b>floating on the ocean or washed up with debris</b>. Has been found on turtles.", references: [1]},
@@ -808,9 +808,13 @@ var crabData = [
             { key: "Cyclograpsus lavauxi", label: "Smooth Shore Crab" } 
         ],
         images : [ 
-            { url : "images/crabs/gulfweedcrab01.jpg" },
-            { url : "images/crabs/gulfweedcrab02.jpg" },
-            { url : "images/crabs/gulfweedcrab03.jpg" }
+            // { url : "images/crabs/gulfweedcrab01.jpg" },
+            // { url : "images/crabs/gulfweedcrab02.jpg" },
+            // { url : "images/crabs/gulfweedcrab03.jpg" },
+            { url : "images/crabs/gulfweedcrab04.jpg" },
+            { url : "images/crabs/gulfweedcrab05.jpg" },
+            { url : "images/crabs/gulfweedcrab07.jpg" },
+            { url : "images/crabs/gulfweedcrab06.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/295349-Planes-minutus",
         references : [
