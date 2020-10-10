@@ -295,7 +295,7 @@ var crabData = [
             { text: "Found around low tide to 25m.", references: [1]},
             { text: "Found usually in water, under rocks or ledges.", references: [1]},
             { text: "Colouring is red/orange with white underneath."},
-            { text: "Claws have ridges of white bumps."}
+            { text: "<b>Claws have ridges of white bumps.</b>"}
         ],
         similarTo: [
             { key: "Nectocarcinus antarcticus", label: "Red Swimming Crab" }
@@ -340,6 +340,8 @@ var crabData = [
         ],
         images : [
             { url : "images/crabs/tunnelingmudcrab03.jpg" },
+            { url : "images/crabs/tunnelingmudcrab05.jpg" },
+            { url : "images/crabs/tunnelingmudcrab06.jpg" },
             { url : "images/crabs/tunnelingmudcrab04.jpg" },
             { url : "images/crabs/tunnelingmudcrab01.jpg" },
             { url : "images/crabs/tunnelingmudcrab02.jpg" }
@@ -376,9 +378,14 @@ var crabData = [
             { key: "Austrohelice crassa", label: "Burrowing Mud Crab" }
         ],
         images : [
+            // { url : "images/crabs/sentinelcrab01.jpg" },
+            // { url : "images/crabs/sentinelcrab02.jpg" },
+            // { url : "images/crabs/sentinelcrab03.jpg" },
+            { url : "images/crabs/sentinelcrab04.jpg" },
+            { url : "images/crabs/sentinelcrab05.jpg" },
+            { url : "images/crabs/sentinelcrab07.jpg" },
             { url : "images/crabs/sentinelcrab01.jpg" },
-            { url : "images/crabs/sentinelcrab02.jpg" },
-            { url : "images/crabs/sentinelcrab03.jpg" }
+            { url : "images/crabs/sentinelcrab06.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/416671-Hemiplax-hirtipes",
         references : [
@@ -707,6 +714,7 @@ var crabData = [
         ],
         images : [
             { url : "images/crabs/paddlecrab01.jpg" },
+            { url : "images/crabs/paddlecrab04.jpg" },
             { url : "images/crabs/paddlecrab02.jpg" },
             { url : "images/crabs/paddlecrab03.jpg" }
         ],
@@ -766,13 +774,14 @@ var crabData = [
             { text: "Found from 0 - 550m", references: [1]},
             { text: "Found on sandy, gravel, mud and shell bottoms.", references: [1]},
             { text: "Colouring is red, whitish and oranges. End of claws are dark red."},
-            { text: "Last leg pair has paddles."}
+            { text: "<b>Last leg pair has paddles.</b>"}
         ],
         similarTo: [
             { key: "Guinusia chabrus", label: "Red Rock Crab " }
         ],
         images : [
             { url : "images/crabs/redswimmingcrab01.jpg" },
+            { url : "images/crabs/redswimmingcrab04.jpg" },
             { url : "images/crabs/redswimmingcrab02.jpg" },
             { url : "images/crabs/redswimmingcrab03.jpg" }
         ],
@@ -887,8 +896,8 @@ var crabData = [
             { key: "Halicarcinus whitei", label: "Estuarine Pillbox Crab" }  
         ],
         images : [
-            { url : "images/crabs/cookspillboxcrab01.jpg" },
-            { url : "images/crabs/cookspillboxcrab02.jpg" }
+            { url : "images/crabs/cookspillboxcrab02.jpg" },
+            { url : "images/crabs/cookspillboxcrab01.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/471078-Halicarcinus-cookii",
         references : [
@@ -948,7 +957,7 @@ var crabData = [
         ],
         details : [
             { text: "Shell is rounded, <b>with no flattened edges towards the front</b>.", references:[1]},
-            { text: "Shell <b>has a small tooth/spike on each side</b>."},
+            { text: "Shell <b>has a small tooth/spike on each side</b>, which can be hard to see if the crab is furry."},
             { text: "Shell can be up to 10.4mm wide.", references: [2]},
             { text: "<b>Crab will probably appear slightly furry</b>, but can also be smooth."},
             { text: "Found from intertidal zone to 30m.", references: [2]},
@@ -962,7 +971,9 @@ var crabData = [
             { key: "Halicarcinus whitei", label: "Estuarine Pillbox Crab" }  
         ],
         images : [
-            { url : "images/crabs/variablepillboxcrab01.jpg" }
+            // { url : "images/crabs/variablepillboxcrab01.jpg" },
+            { url : "images/crabs/variablepillboxcrab03.jpg" },
+            { url : "images/crabs/variablepillboxcrab02.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/416625-Halicarcinus-varius",
         references : [
@@ -1002,6 +1013,7 @@ var crabData = [
         ],
         images : [
             { url : "images/crabs/estuarinepillboxcrab02.jpg" },
+            { url : "images/crabs/estuarinepillboxcrab03.jpg" },
             { url : "images/crabs/estuarinepillboxcrab01.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/471051-Halicarcinus-whitei",
@@ -1042,7 +1054,7 @@ var crabData = [
         details : [
             { text: "Shell is rounded."},
             { text: "Shell does NOT have a small tooth/spike on each side, but it wouldn't be visible through the hair regardless." },
-            { text: "Shell <b>can be up to 6.5mm wide</b>.", references: [1]},
+            { text: "Shell <b>can be up to 6.5mm wide</b> (i.e. it is always very small).", references: [1]},
             { text: "<b>Crab (shell and legs) is covered in hair and will appear very furry </b>or look muddy." },
             { text: "Found from intertidal to 10m.", references: [1]},
             { text: "Found under rocks or among weed.", references: [1]},
