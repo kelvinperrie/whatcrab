@@ -106,6 +106,7 @@ var crabData = [
         images : [
             // { url : "images/crabs/hairyhandedcrab01.gif" },
             { url : "images/crabs/hairyhandedcrab05.jpg" },
+            { url : "images/crabs/hairyhandedcrab06.jpg" },
             { url : "images/crabs/hairyhandedcrab01.jpg" },
             { url : "images/crabs/hairyhandedcrab02.jpg" },
             { url : "images/crabs/hairyhandedcrab03.jpg" },
@@ -341,6 +342,8 @@ var crabData = [
         images : [
             { url : "images/crabs/tunnelingmudcrab03.jpg" },
             { url : "images/crabs/tunnelingmudcrab05.jpg" },
+            { url : "images/crabs/tunnelingmudcrab07.jpg" },
+            { url : "images/crabs/tunnelingmudcrab08.jpg" },
             { url : "images/crabs/tunnelingmudcrab06.jpg" },
             { url : "images/crabs/tunnelingmudcrab04.jpg" },
             { url : "images/crabs/tunnelingmudcrab01.jpg" },
@@ -495,6 +498,8 @@ var crabData = [
             // { url : "images/crabs/smoothhandedcrab01.gif" },
             { url : "images/crabs/smoothhandedcrab06.jpg" },
             { url : "images/crabs/smoothhandedcrab05.jpg" },
+            { url : "images/crabs/smoothhandedcrab07.jpg" },
+            { url : "images/crabs/smoothhandedcrab08.jpg" },
             { url : "images/crabs/smoothhandedcrab01.jpg" },
             { url : "images/crabs/smoothhandedcrab02.jpg" },
             { url : "images/crabs/smoothhandedcrab03.jpg" },
@@ -713,8 +718,10 @@ var crabData = [
             { key: "Charybdis japonica", label: "Asian Paddle Crab" }
         ],
         images : [
-            { url : "images/crabs/paddlecrab01.jpg" },
+            { url : "images/crabs/paddlecrab06.jpg" },
+            { url : "images/crabs/paddlecrab05.jpg" },
             { url : "images/crabs/paddlecrab04.jpg" },
+            { url : "images/crabs/paddlecrab01.jpg" },
             { url : "images/crabs/paddlecrab02.jpg" },
             { url : "images/crabs/paddlecrab03.jpg" }
         ],
@@ -780,6 +787,9 @@ var crabData = [
             { key: "Guinusia chabrus", label: "Red Rock Crab " }
         ],
         images : [
+            { url : "images/crabs/redswimmingcrab05.jpg" },
+            { url : "images/crabs/redswimmingcrab06.jpg" },
+            { url : "images/crabs/redswimmingcrab07.jpg" },
             { url : "images/crabs/redswimmingcrab01.jpg" },
             { url : "images/crabs/redswimmingcrab04.jpg" },
             { url : "images/crabs/redswimmingcrab02.jpg" },
@@ -896,6 +906,8 @@ var crabData = [
             { key: "Halicarcinus whitei", label: "Estuarine Pillbox Crab" }  
         ],
         images : [
+            { url : "images/crabs/cookspillboxcrab03.jpg" },
+            { url : "images/crabs/cookspillboxcrab04.jpg" },
             { url : "images/crabs/cookspillboxcrab02.jpg" },
             { url : "images/crabs/cookspillboxcrab01.jpg" }
         ],
@@ -934,6 +946,8 @@ var crabData = [
         images : [
             // { url : "images/crabs/flatpillboxcrab01.gif" },
             { url : "images/crabs/flatpillboxcrab04.jpg" },
+            { url : "images/crabs/flatpillboxcrab05.jpg" },
+            { url : "images/crabs/flatpillboxcrab06.jpg" },
             { url : "images/crabs/flatpillboxcrab01.jpg" },
             { url : "images/crabs/flatpillboxcrab03.jpg" },
             { url : "images/crabs/flatpillboxcrab02.jpg" }
@@ -972,6 +986,7 @@ var crabData = [
         ],
         images : [
             // { url : "images/crabs/variablepillboxcrab01.jpg" },
+            { url : "images/crabs/variablepillboxcrab04.jpg" },
             { url : "images/crabs/variablepillboxcrab03.jpg" },
             { url : "images/crabs/variablepillboxcrab02.jpg" }
         ],
@@ -1014,6 +1029,8 @@ var crabData = [
         images : [
             { url : "images/crabs/estuarinepillboxcrab02.jpg" },
             { url : "images/crabs/estuarinepillboxcrab03.jpg" },
+            { url : "images/crabs/estuarinepillboxcrab04.jpg" },
+            { url : "images/crabs/estuarinepillboxcrab05.jpg" },
             { url : "images/crabs/estuarinepillboxcrab01.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/471051-Halicarcinus-whitei",
@@ -1262,6 +1279,7 @@ var crabData = [
         ],
         images : [ 
             { url : "images/crabs/tuberculatepearcrab03.jpg" },
+            { url : "images/crabs/tuberculatepearcrab04.jpg" },
             { url : "images/crabs/tuberculatepearcrab01.jpg" },
             { url : "images/crabs/tuberculatepearcrab02.jpg" }
         ],
