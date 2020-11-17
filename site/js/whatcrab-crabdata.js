@@ -753,6 +753,12 @@ var crabData = [
             { key: "Ovalipes catharus", label: "Paddle Crab" }
         ],
         images : [
+            { url : "images/crabs/asianpaddlecrab07.jpg" },
+            { url : "images/crabs/asianpaddlecrab06.jpg" },
+            { url : "images/crabs/asianpaddlecrab05.jpg" },
+            { url : "images/crabs/asianpaddlecrab02.jpg" },
+            { url : "images/crabs/asianpaddlecrab04.jpg" },
+            { url : "images/crabs/asianpaddlecrab03.jpg" },
             { url : "images/crabs/asianpaddlecrab01.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/209010-Charybdis-japonica",
