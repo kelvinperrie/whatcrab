@@ -1283,7 +1283,7 @@ var crabData = [
             { url : "images/crabs/tuberculatepearcrab01.jpg" },
             { url : "images/crabs/tuberculatepearcrab02.jpg" }
         ],
-        natureWatchLink: "https://inaturalist.nz/taxa/523181-Metadromia-wilsoni",
+        natureWatchLink: "https://inaturalist.nz/taxa/165487-Pyromaia-tuberculata",
         references : [
             { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp112-114).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
