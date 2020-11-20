@@ -48,6 +48,7 @@ var crabData = [
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
             { key: "camouflageCrab", values : ["false"] },
+            { key: "pillboxCrab", values : ["false"] },
             { key: "sideNotches", values : ["true"] },
             { key: "rectangleShaped", values : ["false"] }
         ],
