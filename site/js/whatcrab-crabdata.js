@@ -43,7 +43,7 @@ var crabData = [
         scientificName : "Hemigrapsus sexdentatus",
         aka : ["Purple Rock Crab (there is another crab by this name)"],
         attributes : [
-            { key: "carapaceShape" , values : ["square"] },
+            { key: "carapaceShape" , values : ["square", "round"] },
             { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
@@ -81,7 +81,7 @@ var crabData = [
         commonName : "Hairy-Handed Crab",
         scientificName : "Hemigrapsus crenulatus",
         attributes : [ 
-            { key: "carapaceShape", values : ["square"] },
+            { key: "carapaceShape", values : ["square", "oval"] },
             { key: "lastLegsArePaddles", values : ["false"] },
             { key: "surfaceTexture", values : ["smooth"]},
             { key: "halfCrab", values : ["false"]},
