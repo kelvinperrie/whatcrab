@@ -1163,6 +1163,10 @@ var crabData = [
             { key: "Pilumnus lumpinus", label: "Hairy Crab" }
         ],
         images : [
+            { url: "images/crabs/bristlecrab03.jpg" },
+            { url: "images/crabs/bristlecrab04.jpg" },
+            { url: "images/crabs/bristlecrab05.jpg" },
+            { url: "images/crabs/bristlecrab06.jpg" },
             { url: "images/crabs/bristlecrab01.jpg" },
             { url: "images/crabs/bristlecrab02.jpg" }
         ],
