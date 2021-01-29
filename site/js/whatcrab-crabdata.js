@@ -875,6 +875,7 @@ var crabData = [
         ],
         images : [
             // { url : "images/crabs/pauacrab01.gif" },
+            { url : "images/crabs/pauacrab05.jpg" },
             { url : "images/crabs/pauacrab03.jpg" },
             { url : "images/crabs/pauacrab04.jpg" },
             { url : "images/crabs/pauacrab01.jpg" },
@@ -915,9 +916,10 @@ var crabData = [
         ],
         images : [
             { url : "images/crabs/cookspillboxcrab03.jpg" },
+            { url : "images/crabs/cookspillboxcrab05.jpg" },
             { url : "images/crabs/cookspillboxcrab04.jpg" },
-            { url : "images/crabs/cookspillboxcrab02.jpg" },
-            { url : "images/crabs/cookspillboxcrab01.jpg" }
+            { url : "images/crabs/cookspillboxcrab02.jpg" }
+            //{ url : "images/crabs/cookspillboxcrab01.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/471078-Halicarcinus-cookii",
         references : [
