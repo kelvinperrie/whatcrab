@@ -575,7 +575,12 @@ var crabData = [
         similarTo: [],
         images : [
             // { url : "images/crabs/trianglecrab01.gif" },
-            { url : "images/crabs/trianglecrab01.jpg" }
+            { url : "images/crabs/trianglecrab05.jpg" },
+            { url : "images/crabs/trianglecrab02.jpg" },
+            { url : "images/crabs/trianglecrab06.jpg" },
+            { url : "images/crabs/trianglecrab01.jpg" },
+            { url : "images/crabs/trianglecrab03.jpg" },
+            { url : "images/crabs/trianglecrab04.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/424825-Eurynolambrus-australis",
         references : [
