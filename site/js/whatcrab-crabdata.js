@@ -462,6 +462,7 @@ var crabData = [
         ],
         images : [
             { url : "images/crabs/piecrustcrab05.jpg" },
+            { url : "images/crabs/piecrustcrab07.jpg" },
             { url : "images/crabs/piecrustcrab06.jpg" },
             { url : "images/crabs/piecrustcrab01.jpg" },
             { url : "images/crabs/piecrustcrab02.jpg" },
@@ -498,6 +499,7 @@ var crabData = [
         images : [
             // { url : "images/crabs/smoothhandedcrab01.gif" },
             { url : "images/crabs/smoothhandedcrab06.jpg" },
+            { url : "images/crabs/smoothhandedcrab09.jpg" },
             { url : "images/crabs/smoothhandedcrab05.jpg" },
             { url : "images/crabs/smoothhandedcrab07.jpg" },
             { url : "images/crabs/smoothhandedcrab08.jpg" },
