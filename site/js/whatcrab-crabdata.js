@@ -1250,13 +1250,18 @@ var crabData = [
             { text: "Shell is oval, wider than long."},
             { text: "Shell has 3 very blunt spikes on each side.", references: [1]},
             { text: "Shell is up to 70mm wide.", references: [1]},
-            { text: "Shell has a shabby covering of dark hairs that may be hard to see and may be hidden under a sponge carried on the shell.", references: [1]},
+            { text: "Shell has a shabby covering of dark hairs that may be hard to see and may be <b>hidden under a sponge carried on the shell</b>.", references: [1]},
             { text: "Found low intertidally and 0 to 190m.", references: [1]},
             { text: "Found under rocks but usually around sponges.", references: [1]},
             { text: "Colouring can be a light brown, red, reddish brown; the sponge on the crab's shell might be brighter.", references: [1]}
         ],
         similarTo: [],
         images : [
+            { url : "images/crabs/spongecrab01.jpg" },
+            { url : "images/crabs/spongecrab02.jpg" },
+            { url : "images/crabs/spongecrab03.jpg" },
+            { url : "images/crabs/spongecrab04.jpg" },
+            { url : "images/crabs/spongecrab05.jpg" }
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/523181-Metadromia-wilsoni",
         references : [
