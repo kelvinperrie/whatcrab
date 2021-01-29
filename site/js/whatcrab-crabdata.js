@@ -540,6 +540,7 @@ var crabData = [
         ],
         images : [
             // { url : "images/crabs/bighandcrab01.gif" },
+            { url : "images/crabs/bighandcrab05.jpg" },
             { url : "images/crabs/bighandcrab01.jpg" },
             { url : "images/crabs/bighandcrab02.jpg" },
             { url : "images/crabs/bighandcrab03.jpg" },
