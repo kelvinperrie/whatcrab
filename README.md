@@ -53,4 +53,4 @@ A crab is described like this:
 * tiles that get bigger if less crabs in the results
 * when comparing crabs some way to view just the details that distinguish each one e.g. crab 1 has two teeth on shell, crab 2 has three teeth on shell
 * on a crab tile, add in ability to go left or right through images (click should open big image?)
-
+* something to indicate if introduced / native
