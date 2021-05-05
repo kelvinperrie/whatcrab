@@ -647,7 +647,7 @@ var crabData = [
             { text: "The surface of the shell will feel spikey and probably be covered in seaweed or short hooked hairs."},
             { text: "Intertial to 50m.", references: [2]},
             { text: "Found on rocky shores or rock pools but also sand or mud.", references: [2]},
-            { text: "Shell is probably a light orange, <b>claws dark green/brown.</b>"},
+            { text: "Shell is probably a light orange, <b>claws olive green, sometimes mixed with a reddish brown.</b>"},
             { text: "<b>Shell has two very small spines/spikes at the rear.</b>"}
         ],
         similarTo: [
@@ -686,7 +686,7 @@ var crabData = [
             { text: "The surface of the shell will feel spikey and probably be covered in seaweed or short hooked hairs."},
             { text: "Intertial to 35m.", references: [1]},
             { text: "Found on rocky shores or sandy, muddy or coarse shell bottoms.", references: [1]},
-            { text: "Shell pale yellowish, <b>claws dark red/purple or white with bluish markings.</b>", references: [1]},
+            { text: "Shell pale yellowish, <b>claws white with bluish markings sometimes mixed with a light brown.</b>", references: [1]},
             { text: "<b>Shell does not have two spines/spikes at the rear</b>."}
         ],
         similarTo: [
