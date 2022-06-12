@@ -131,6 +131,13 @@ var CrabModel = function(crab) {
             self.currentImageIndex(0);
         }
     }
+    // moves our current image to the previous image
+    self.showPreviousImage = function() {
+        self.currentImageIndex(self.currentImageIndex()-1);
+        if(self.currentImageIndex() < 0) {
+            self.currentImageIndex(self.images.length - 1);
+        }
+    }
 
     // see if the crab contains some values for a specific filter key
     self.getValuesForAttribute = function(key) {
@@ -211,7 +218,6 @@ var PageModel = function() {
     self.openImageFullsize = function(species) {
         // position the dialog at the top of the viewport I guess. There must be a css way to do this?
         var topMargin = 5;    // adding a little bit to where the dialog shows to make it look more natural (wat)
-        console.log($('html').scrollTop());
         var scrolledTo = ($('html').scrollTop() + topMargin) + "px";
         $(".fullsize-image-popup-container").css({ top : scrolledTo});
         self.speciesSetToOpenFullImage(species);

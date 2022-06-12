@@ -159,6 +159,31 @@ h1 {
     color: #ebebeb;
     padding: 0 4px;
     opacity: 0.7;
+    z-index: 10;
+}
+.crab-image-container:hover .previous-image-trigger, .crab-image-container:hover .next-image-trigger {
+    display: block;
+}
+.previous-image-trigger, .next-image-trigger {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    height: 100%;
+    padding-top: 60px;
+    z-index: 5;
+    opacity: 0.6;
+    user-select: none;
+}
+.crab-detail-container .previous-image-trigger, .crab-detail-container .next-image-trigger {
+    padding-top: 140px;
+    width: 30px;
+}
+.previous-image-trigger {
+    left: 0px;
+}
+.next-image-trigger {
+    right: 0px;
 }
 .crab-links {
     margin-top: 5px;
@@ -257,6 +282,7 @@ h1 {
     top: 0px;
     background-color: #fff;
     opacity: 0.9;
+    z-index: 10;
 }
 .view-image-fullsize-trigger:hover {
     color: #534;
@@ -299,8 +325,6 @@ h1 {
 }
 .references {
     font-size: 0.8em;
-}
-.crab-detail-container .details-list {
 }
 .crab-detail-container .crab-links {
     border-bottom-left-radius: 0.3em;
