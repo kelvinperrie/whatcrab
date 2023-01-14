@@ -700,7 +700,7 @@ var crabData = [
         ],
         natureWatchLink: "https://inaturalist.nz/taxa/410680-Notomithrax-minor",
         references : [
-            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp138-140).  Leigh Laboratory Bulletin, 22. (1988)" }
+            { id: 1, detail : "McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp134-136).  Leigh Laboratory Bulletin, 22. (1988)" }
         ]
     },
     {
