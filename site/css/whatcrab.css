@@ -368,3 +368,14 @@ h1 {
     vertical-align: middle;
 }
 
+
+
+/* version 2 styles */
+
+.crab-item{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid black;
+    margin: 2px;
+}

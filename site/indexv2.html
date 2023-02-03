@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175205403-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-175205403-1');
+    </script>
+    <meta name="description" content="An interactive guide for identifying New Zealand crabs in the form of a set of questions about the visual appearance of the crab.">
+    <meta name="keywords" content="crabs, crab guide, new zealand crabs, crab identification, species, crab names">
+    <meta property="og:title" content="What's My Crab">
+    <meta property="og:description" content="A guide in the form of a set of questions to help identify New Zealand Crabs." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <meta name="google-site-verification" content="6HG9EhuVYvFnErqYH2U-Im6OF1q6OL1PaWZiwOFff4k" />
+    <title>What's My Crab - New Zealand Crab Identification Guide</title>
+    <link rel="icon" type="image/svg+xml" href="images/crabby-logo.svg">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/whatcrab.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+                <div class="col">
+                    <h1>What's my crab?<img class="logo" src="images/crabby-logo.svg" alt="logo" title="this isn't even a realistic looking NZ crab, but I drew it myself" ></h1>
+                    <div class="header-tag-line">An experimental guide to help identify New Zealand crabs</div>
+                </div>
+        </header>
+
+        <div class="row">
+            
+            <div class="col-md-8">
+                <div class="breadcrumb-container">
+                    <!-- ko foreach: breadcrumbs -->
+                    <span class="breadcrumb-item" data-bind="text: $data, click: function() { $parents[0].HandleBreadcrumbClick($data) }">
+                        
+                    </span>
+                    <!-- /ko -->
+                </div>
+                click the one that looks most like your crabby <br/>
+                
+                <!-- ko with: currentCrabGroup -->
+                This group is called <span data-bind="text: groupName"></span><br/>
+
+                <!-- ko foreach: crabItems -->
+                <div class="crab-item">
+                    <div data-bind="text: name, click: function() { $parents[1].HandCrabItemClick($data) }"></div>
+                </div>
+                <!-- /ko -->
+                <!-- /ko -->
+            </div>
+        </div>
+        <footer class="row">
+            <div class="col">
+                <div class="info-link-button">
+                    <a href="https://github.com/kelvinperrie/whatcrab">
+                        <img src="images/GitHub-Mark-32px.png" alt="github repo link" />
+                        See repository on GitHub
+                    </a>
+                </div>
+                <div class="info-link-button">
+                    <span class="material-icons">alternate_email</span>
+                    whatsmycrab@gmail.com
+                </div>
+                Sources: 
+                <ul>
+                    <li>iNaturalist. Available from https://www.inaturalist.org. Accessed 28/04/2020.</li>
+                    <li>McLay, C.L. (1988) Brachyura and crab-like anomura of New Zealand (pp22-392).  Leigh Laboratory Bulletin, 22. (1988).</li>
+                    <li>Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp88-94). Collins, London 1973.</li>
+                    <li>Wilkens, S. L., Ahyong, S. T (2015) Coastal Crabs a guide to the crabs of New Zealand Version 1, 2015, 10-49 NIWA https://niwa.co.nz/static/web/coastal_crabs_2015.pdf.</li>
+                    <li>Wikipedia. Available from https://en.wikipedia.org, Wikimedia Foundation. Accessed 28/04/2020.</li>
+                    <li>The icons on the questions are based on the awesome ones in the NIWA costal crab guide.</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="js/polyfills.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/knockout-3.5.1.js"></script>
+    <script type="text/javascript" src="js/whatcrab-crabdata.js"></script>
+    <script type="text/javascript" src="js/whatcrab-v2.js"></script>
+    <script type="text/javascript">
+
+
+
+    </script>
+</body>
+
+</html>
