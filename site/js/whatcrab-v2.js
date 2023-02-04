@@ -354,6 +354,31 @@ var crabGroupData = [
                 directToGroupName : ""
             }
         ]
+    },
+    {
+        groupName : "Paddlers",
+        description : "",
+        helpText : [
+            ""
+        ],
+        crabItems : [
+
+            {
+                name : "Ovalipes catharus",
+                image : "images/crabs/small-paddlecrab06.jpg",
+                directToGroupName : "Paddlers"
+            },
+            {
+                name : "Charybdis japonica",
+                image : "images/crabs/small-asianpaddlecrab07.jpg",
+                directToGroupName : "Paddlers"
+            },
+            {
+                name : "Nectocarcinus antarcticus",
+                image : "images/crabs/small-redswimmingcrab05.jpg",
+                directToGroupName : "Paddlers"
+            },
+        ]
     }
 ]
 
