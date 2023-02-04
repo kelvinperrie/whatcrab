@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    
     <div class="container-fluid">
         <header class="row">
                 <div class="col">
@@ -32,30 +33,58 @@
                     <div class="header-tag-line">An experimental guide to help identify New Zealand crabs</div>
                 </div>
         </header>
-
+    </div>
+    <div class="container">
         <div class="row">
             
-            <div class="col-md-8">
-                <div class="breadcrumb-container">
-                    <!-- ko foreach: breadcrumbs -->
-                    <span class="breadcrumb-item" data-bind="text: $data, click: function() { $parents[0].HandleBreadcrumbClick($data) }">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+
+                        <div class="page-title">
+                            Click the image that looks most like your crabby.<br/>
+                        </div>
                         
-                    </span>
+                    </div>
+                    <div class="col breadcrumb-column">
+                        <div class="breadcrumb-container" data-bind="visible : breadcrumbs().length > 1">
+                            <!-- ko foreach: breadcrumbs -->
+                            <span class="breadcrumb-item" data-bind="text: $data, click: function() { $parents[0].HandleBreadcrumbClick($data) }">
+                                
+                            </span>
+                            <!-- /ko -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- ko with: currentCrabGroup -->
+                <!-- This group is called <span data-bind="text: groupName"></span><br/> -->
+                
+                <div class="help-text-section" data-bind="visible : helpText.length > 1">
+                    Clues to help identify these types of crabs:
+                    <ul>
+                        <!-- ko foreach: helpText -->
+                        <li data-bind="text: $data"></li>
+                        <!-- /ko -->
+                    </ul>
+                </div>
+
+                <div class="crab-options-container">
+                    <!-- ko foreach: crabItems -->
+                    <div class="crab-item">
+                        <div data-bind="click: function() { $parents[1].HandCrabItemClick($data) }">
+                            <img src="" data-bind="attr: { src : image }" alt="crab image" />
+                        </div>
+                    </div>
                     <!-- /ko -->
                 </div>
-                click the one that looks most like your crabby <br/>
-                
-                <!-- ko with: currentCrabGroup -->
-                This group is called <span data-bind="text: groupName"></span><br/>
-
-                <!-- ko foreach: crabItems -->
-                <div class="crab-item">
-                    <div data-bind="text: name, click: function() { $parents[1].HandCrabItemClick($data) }"></div>
-                </div>
-                <!-- /ko -->
                 <!-- /ko -->
             </div>
         </div>
+    </div>
+    <div class="container-fluid">
         <footer class="row">
             <div class="col">
                 <div class="info-link-button">

@@ -15,179 +15,331 @@
 var crabGroupData = [
     {
         groupName : "Base crabs",
+        description : "",
+        helpText : [
+            "Check the shape of the shell; for example is it square or round",
+            "Check the size of the crab; is it small or large",
+            "Is the crab covered in seaweed or hairs/fur?"
+        ],
         crabItems : [
             {
-                name : "Petrolisthes elongatus",
+                name : "Leptograpsus variegatus",
+                image : "images/crabs/small-purplerockcrab01.jpg",
                 directToGroupName : "Small and round"
             },
             {
-                name : "Elamena producta",
+                name : "Hemigrapsus sexdentatus",
+                image : "images/crabs/small-commonrockcrab01.jpg",
+                directToGroupName : "Small and round"
+            },
+            {
+                name : "Hemigrapsus crenulatus",
+                image : "images/crabs/small-hairyhandedcrab05.jpg",
                 directToGroupName : "Small and round"
             },
             {
                 name : "Cyclograpsus lavaux",
+                image : "images/crabs/small-smoothshorecrab04.jpg",
                 directToGroupName : "The rectangle gang"
             },
             {
+                name : "Petrolisthes elongatus",
+                image : "images/crabs/small-nzhalfcrab01.jpg",
+                directToGroupName : "Small and round"
+            },
+            {
+                name : "Guinusia chabrus",
+                image : "images/crabs/small-redrockcrab01.jpg",
+                directToGroupName : "Small and round"
+            },
+            {
                 name : "Austrohelice crassa",
+                image : "images/crabs/small-tunnelingmudcrab03.jpg",
                 directToGroupName : "The rectangle gang"
             },
             {
                 name : "Ozius deplanatus",
+                image : "images/crabs/small-ironcrab02.jpg",
                 directToGroupName : "Kind of oval"
             },
             {
+                name : "Metacarcinus novaezelandiae",
+                image : "images/crabs/small-piecrustcrab05.jpg",
+                directToGroupName : "Kind of oval"
+            },
+            {
+                name : "Heterozius rotundifrons",
+                image : "images/crabs/small-bighandcrab01.jpg",
+                directToGroupName : "Kind of oval"
+            },
+            {
+                name : "Eurynolambrus australis",
+                image : "images/crabs/small-trianglecrab05.jpg",
+                directToGroupName : ""
+            },
+            {
                 name : "Notomithrax ursus",
+                image : "images/crabs/small-smalldecoratorcrab02.jpg",
                 directToGroupName : "Weedy types"
             },
             {
-                name : "Notomithrax peronii",
+                name : "Ovalipes catharus",
+                image : "images/crabs/small-paddlecrab06.jpg",
+                directToGroupName : "Paddlers"
+            },
+            {
+                name : "Charybdis japonica",
+                image : "images/crabs/small-asianpaddlecrab07.jpg",
+                directToGroupName : "Paddlers"
+            },
+            {
+                name : "Halicarcinus innominatus",
+                image : "images/crabs/small-flatpillboxcrab04.jpg",
+                directToGroupName : "Small and round"
+            },
+            {
+                name : "Neohymenicus pubescens",
+                image : "images/crabs/small-neopub05.jpg",
+                directToGroupName : "Weedy types"
+            },
+            {
+                name : "Pilumnus lumpinus",
+                image : "images/crabs/small-hairycrab03.jpg",
+                directToGroupName : "Weedy types"
+            },
+            {
+                name : "Metadromia wilsoni",
+                image : "images/crabs/small-spongecrab01.jpg",
+                directToGroupName : "Kind of oval"
+            },
+            {
+                name : "Nepinnotheres novaezelandiae",
+                image : "images/crabs/small-peacrab03.jpg",
+                directToGroupName : "Small and round"
+            },
+            {
+                name : "Pyromaia tuberculata",
+                image : "images/crabs/small-tuberculatepearcrab03.jpg",
                 directToGroupName : "Weedy types"
             }
         ]
     },
     {
         groupName : "Small and round",
+        description : "",
+        helpText : [
+            "Is the crab flat like a coin or a sphere like a pea",
+            "Are the claw big and flat or small and skinny"
+        ],
         crabItems : [
             {
                 name : "Petrolisthes elongatus",
+                image : "images/crabs/small-nzhalfcrab01.jpg",
                 directToGroupName : "Half crabs"
             },
             {
                 name : "Elamena producta",
+                image : "images/crabs/small-pauacrab05.jpg",
                 directToGroupName : "Half crabs"
             }
         ]
     },
     {
         groupName : "Weedy types",
+        helpText : ["Does the stuff covering the crab look more like seaweed or fur/hair?"],
+        description : "Crabs covered in seaweed or hairs/fur",
         crabItems : [
             {
                 name : "Notomithrax ursus",
+                image : "images/crabs/small-hairyseaweedcrab04.jpg",
                 directToGroupName : "Camoish crabs"
             },
             {
                 name : "Notomithrax peronii",
+                image : "images/crabs/small-peronscamouflagecrab02.jpg",
+                directToGroupName : "Camoish crabs"
+            },
+            {
+                name : "Notomithrax peronii",
+                image : "images/crabs/small-peronscamouflagecrab01.jpg",
                 directToGroupName : "Camoish crabs"
             },
             {
                 name : "Notomithrax minor",
+                image : "images/crabs/small-smalldecoratorcrab02.jpg",
                 directToGroupName : "Camoish crabs"
             },
             {
                 name : "Pyromaia tuberculata",
+                image : "images/crabs/small-tuberculatepearcrab03.jpg",
                 directToGroupName : "Camoish crabs"
             },
             {
                 name : "Halicarcinus whitei",
+                image : "images/crabs/small-estuarinepillboxcrab02.jpg",
                 directToGroupName : "Pillbox"
             },
             {
                 name : "Neohymenicus pubescens",
+                image : "images/crabs/small-neopub05.jpg",
                 directToGroupName : ""
             }
         ]
     },
     {
         groupName : "Camoish crabs",
+        description : "",
+        helpText : ["Check how long the legs are compared to the body"],
         crabItems : [
             {
                 name : "Notomithrax ursus",
+                image : "images/crabs/small-hairyseaweedcrab04.jpg",
                 directToGroupName : "Camo crabs"
             },
             {
                 name : "Notomithrax peronii",
+                image : "images/crabs/small-peronscamouflagecrab01.jpg",
                 directToGroupName : "Camo crabs"
             },
             {
                 name : "Notomithrax minor",
+                image : "images/crabs/small-smalldecoratorcrab02.jpg",
                 directToGroupName : "Camo crabs"
             },
             {
                 name : "Pyromaia tuberculata",
+                image : "images/crabs/small-tuberculatepearcrab03.jpg",
                 directToGroupName : ""
             }
         ]
     },
     {
         groupName : "Camo crabs",
+        description : "",
+        helpText : [
+            "Check for posterior spines",
+            "Check claw colour"
+        ],
         crabItems : [
             {
                 name : "Notomithrax ursus",
+                image : "images/crabs/small-hairyseaweedcrab04.jpg",
                 directToGroupName : ""
             },
             {
                 name : "Notomithrax peronii",
+                image : "images/crabs/small-peronscamouflagecrab03.jpg",
                 directToGroupName : ""
             },
             {
                 name : "Notomithrax minor",
+                image : "images/crabs/small-smalldecoratorcrab03.jpg",
                 directToGroupName : ""
             }
         ]
     },
     {
         groupName : "The rectangle gang",
+        description : "",
+        helpText : [
+            "Check for notches/spikes on the side of the shell"
+        ],
         crabItems : [
             {
                 name : "Cyclograpsus lavaux",
+                image : "images/crabs/small-smoothshorecrab04.jpg",
                 directToGroupName : ""
             },
             {
                 name : "Austrohelice crassa",
+                image : "images/crabs/small-tunnelingmudcrab03.jpg",
                 directToGroupName : "Mud tunnelers"
             },
             {
                 name : "Hemiplax hirtipes",
+                image : "images/crabs/small-sentinelcrab04.jpg",
                 directToGroupName : "Mud tunnelers"
             }
         ]
     },
     {
         groupName : "Mud tunnelers",
+        description : "",
+        helpText : [
+            "Check the claws, are the ends bent down (shaped like a boomerang)"
+        ],
         crabItems : [
             {
                 name : "Austrohelice crassa",
+                image : "images/crabs/small-tunnelingmudcrab03.jpg",
                 directToGroupName : ""
             },
             {
                 name : "Hemiplax hirtipes",
+                image : "images/crabs/small-sentinelcrab04.jpg",
                 directToGroupName : ""
             }
         ]
     },
     {
         groupName : "Kind of oval",
+        description : "",
+        helpText : [
+            ""
+        ],
         crabItems : [
             {
                 name : "Ozius deplanatus",
+                image : "images/crabs/small-ironcrab02.jpg",
                 directToGroupName : "Iron vs smooth"
             },
             {
                 name : "Pilumnopeus serratifrons",
+                image : "images/crabs/small-smoothhandedcrab06.jpg",
                 directToGroupName : "Iron vs smooth"
             },
             {
                 name : "Metacarcinus novaezelandiae",
+                image : "images/crabs/small-piecrustcrab05.jpg",
                 directToGroupName : ""
             }
         ]
     },
     {
         groupName : "Iron vs smooth",
+        description : "",
+        helpText : [
+            ""
+        ],
         crabItems : [
             {
                 name : "Ozius deplanatus",
+                image : "images/crabs/small-ironcrab02.jpg",
+                directToGroupName : ""
+            },
+            {
+                name : "Ozius deplanatus",
+                image : "images/crabs/small-ironcrab04.jpg",
                 directToGroupName : ""
             },
             {
                 name : "Pilumnopeus serratifrons",
+                image : "images/crabs/small-smoothhandedcrab06.jpg",
+                directToGroupName : ""
+            },
+            {
+                name : "Pilumnopeus serratifrons",
+                image : "images/crabs/small-smoothhandedcrab09.jpg",
                 directToGroupName : ""
             }
         ]
     },
     {
         groupName : "Half crabs",
+        description : "",
+        helpText : [
+            ""
+        ],
         crabItems : [
             {
                 name : "Petrolisthes elongatus",
@@ -208,19 +360,21 @@ var crabGroupData = [
 var PossibleCrabItem = function(crabItem) {
     var self = this;
 
-    self.image = "";
+    self.image = crabItem.image;
     self.name = crabItem.name;
     self.directToGroupName = crabItem.directToGroupName;
 }
 
 
-var CrabGroupModel = function(groupName, crabItems) {
+var CrabGroupModel = function(crabGroup) {
     var self = this;
 
-    self.groupName = groupName;
+    self.groupName = crabGroup.groupName;
     self.crabItems = [];
+    self.helpText = crabGroup.helpText;
+    self.description = crabGroup.description;
 
-    crabItems.forEach((element) => {
+    crabGroup.crabItems.forEach((element) => {
         var newCrabItem = new PossibleCrabItem(element);
         self.crabItems.push(newCrabItem);
     })
@@ -289,7 +443,7 @@ var PageModel = function() {
 
     self.SetupData = function() {
         crabGroupData.forEach((element) => {
-            var newGroup = new CrabGroupModel(element.groupName, element.crabItems);
+            var newGroup = new CrabGroupModel(element);
             self.crabGroups.push(newGroup);
         });
         // we're going to start with displaying the first one in our collection

@@ -372,10 +372,24 @@ h1 {
 
 /* version 2 styles */
 
+.page-title{
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
 .crab-item{
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
     display: inline-block;
     border: 1px solid black;
     margin: 2px;
+}
+.breadcrumb-item {
+    cursor: pointer;
+}
+.breadcrumb-column {
+    text-align: right;
+}
+.crab-options-container{
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
