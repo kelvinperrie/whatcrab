@@ -372,16 +372,23 @@ h1 {
 
 /* version 2 styles */
 
+.main-container{
+    background-color: #FFF4E8;
+}
 .page-title{
     font-size: 1.5em;
     margin-bottom: .5em;
 }
 .crab-item{
-    /* width: 100px;
-    height: 100px; */
     display: inline-block;
-    border: 1px solid black;
-    margin: 2px;
+    /* border: 1px solid #959595; */
+    margin: 8px;
+    vertical-align: top;
+    width: 200px;
+    /* border-radius: 5px; */
+    /* box-sizing: border-box; */
+    height: 200px;
+    background-color: #EEE2DC;
 }
 .breadcrumb-item {
     cursor: pointer;
@@ -392,4 +399,12 @@ h1 {
 .crab-options-container{
     margin-top: 1em;
     margin-bottom: 1em;
+}
+.crab-item-id-notes {
+    color: #000;
+    font-size: 14px;
+    padding: 2px;
+}
+.crab-item-id-notes:first-letter {
+    text-transform: uppercase;
 }

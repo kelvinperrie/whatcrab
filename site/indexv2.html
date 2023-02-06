@@ -34,7 +34,7 @@
                 </div>
         </header>
     </div>
-    <div class="container">
+    <div class="container main-container">
         <div class="row">
             
             <div class="col">
@@ -77,6 +77,9 @@
                         <div data-bind="click: function() { $parents[1].HandCrabItemClick($data) }">
                             <img src="" data-bind="attr: { src : image }" alt="crab image" />
                         </div>
+                        <div data-bind="text:allIdCharacteristics" class="crab-item-id-notes">
+
+                        </div>
                     </div>
                     <!-- /ko -->
                 </div>
@@ -115,6 +118,7 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/knockout-3.5.1.js"></script>
     <script type="text/javascript" src="js/whatcrab-crabdata.js"></script>
+    <script type="text/javascript" src="js/whatcrab-crabgroupdata.js"></script>
     <script type="text/javascript" src="js/whatcrab-v2.js"></script>
     <script type="text/javascript">
 
