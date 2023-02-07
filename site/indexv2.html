@@ -62,7 +62,7 @@
                 <!-- ko with: currentCrabGroup -->
                 <!-- This group is called <span data-bind="text: groupName"></span><br/> -->
                 
-                <div class="help-text-section" data-bind="visible : helpText.length > 1">
+                <div class="help-text-section" data-bind="visible : helpText.length >= 1">
                     Clues to help identify these types of crabs:
                     <ul>
                         <!-- ko foreach: helpText -->

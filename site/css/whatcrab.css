@@ -403,6 +403,7 @@ h1 {
 .crab-item-id-notes {
     color: #000;
     font-size: 14px;
+    line-height: 16px;
     padding: 2px;
 }
 .crab-item-id-notes:first-letter {

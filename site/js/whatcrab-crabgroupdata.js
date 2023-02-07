@@ -128,7 +128,7 @@ var crabGroupData = [
                 name : "Neohymenicus pubescens",
                 image : "images/crabs/small-neopub05.jpg",
                 directToGroupName : "Weedy types",
-                idCharacteristics : [ "coin shaped", "very small (max 7.5mm wide)" ]
+                idCharacteristics : [ "coin shaped", "very small (max 6.5mm wide shell)" ]
             },
             {
                 name : "Pilumnus lumpinus",
@@ -228,108 +228,108 @@ var crabGroupData = [
                 name : "Notomithrax ursus",
                 image : "images/crabs/small-hairyseaweedcrab03.jpg",
                 directToGroupName : "Camoish crabs",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "pear shaped" ]
             },
             {
                 name : "Notomithrax peronii",
                 image : "images/crabs/small-peronscamouflagecrab05.jpg",
                 directToGroupName : "Camoish crabs",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "pear shaped" ]
             },
             {
                 name : "Notomithrax peronii",
                 image : "images/crabs/small-peronscamouflagecrab01.jpg",
                 directToGroupName : "Camoish crabs",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "pear shaped" ]
             },
             {
                 name : "Notomithrax minor",
                 image : "images/crabs/small-smalldecoratorcrab02.jpg",
                 directToGroupName : "Camoish crabs",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "pear shaped" ]
             },
             // pear crab
             {
                 name : "Pyromaia tuberculata",
                 image : "images/crabs/small-tuberculatepearcrab03.jpg",
                 directToGroupName : "Camoish crabs",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "pear shaped" ]
             },
             // small dudes
             {
                 name : "Halicarcinus whitei",
                 image : "images/crabs/small-estuarinepillboxcrab02.jpg",
                 directToGroupName : "Pillbox crabs",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "coin shaped", "bit between eyes sticks out past eyes" ]
             },
             {
                 name : "Neohymenicus pubescens",
                 image : "images/crabs/small-neopub05.jpg",
                 directToGroupName : "",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "coin shaped", "very small (max 6.5mm wide shell)" ]
             },
             // oval dudes
             {
                 name : "Pilumnus lumpinus",
                 image : "images/crabs/small-hairycrab03.jpg",
                 directToGroupName : "Oval and furry",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "oval shaped", "hairs the same length" , "claw tips are dark brown" ]
             },
             {
                 name : "Pilumnus novaezelandiae",
                 image : "images/crabs/small-bristlecrab03.jpg",
                 directToGroupName : "Oval and furry",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "long and short hairs make it look ragged", "claws often purple on top" ]
             }
         ]
     },
     {
         groupName : "Oval and furry",
         description : "",
-        helpText : [""],
+        helpText : ["Is the fur consistent or different lengths and ragged"],
         crabItems : [
             {
                 name : "Pilumnus lumpinus",
                 image : "images/crabs/small-hairycrab03.jpg",
                 directToGroupName : "",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "furry" , "claw tips are dark brown" ]
             },
             {
                 name : "Pilumnus novaezelandiae",
                 image : "images/crabs/small-bristlecrab03.jpg",
                 directToGroupName : "",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "long and short hairs make it look ragged", "claws often purple on top" ]
             }
         ]
     },
     {
         groupName : "Camoish crabs",
         description : "",
-        helpText : ["Check how long the legs are compared to the body"],
+        helpText : [ "Check how long the legs are compared to the body" ],
         crabItems : [
             {
-                name : "Notomithrax ursus",
-                image : "images/crabs/small-hairyseaweedcrab04.jpg",
-                directToGroupName : "Camo crabs",
-                idCharacteristics : [  ]
+                name : "Notomithrax peronii",
+                image : "images/crabs/small-peronscamouflagecrab05.jpg",
+                directToGroupName : "Camoish crabs",
+                idCharacteristics : [ ]
             },
             {
                 name : "Notomithrax peronii",
                 image : "images/crabs/small-peronscamouflagecrab01.jpg",
                 directToGroupName : "Camo crabs",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "stubby legs" ]
             },
             {
                 name : "Notomithrax minor",
                 image : "images/crabs/small-smalldecoratorcrab02.jpg",
                 directToGroupName : "Camo crabs",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "stubby legs" ]
             },
             {
                 name : "Pyromaia tuberculata",
                 image : "images/crabs/small-tuberculatepearcrab03.jpg",
                 directToGroupName : "",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "very long thin legs" ]
             }
         ]
     },
@@ -337,7 +337,7 @@ var crabGroupData = [
         groupName : "Camo crabs",
         description : "",
         helpText : [
-            "Check for posterior spines",
+            "Check for posterior spines (two spikes or bumps right at the back of the shell)",
             "Check claw colour"
         ],
         crabItems : [
@@ -345,19 +345,19 @@ var crabGroupData = [
                 name : "Notomithrax ursus",
                 image : "images/crabs/small-hairyseaweedcrab04.jpg",
                 directToGroupName : "",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "claws a burnt dark orange/purple", "no bumps on back of shell" ]
             },
             {
                 name : "Notomithrax peronii",
                 image : "images/crabs/small-peronscamouflagecrab03.jpg",
                 directToGroupName : "",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "claws olive green, sometimes reddish brown", "two small bumps on back of shell" ]
             },
             {
                 name : "Notomithrax minor",
                 image : "images/crabs/small-smalldecoratorcrab03.jpg",
                 directToGroupName : "",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "claws white with bluish markings", "no bumps on back of shell" ]
             }
         ]
     },
@@ -365,47 +365,27 @@ var crabGroupData = [
         groupName : "The rectangle gang",
         description : "",
         helpText : [
-            "Check for notches/spikes on the side of the shell"
+            "Check for notches/spikes on the side of the shell",
+            "Check the shape of the claws - do the tips bend down (like a boomerang)"
         ],
         crabItems : [
             {
                 name : "Cyclograpsus lavaux",
                 image : "images/crabs/small-smoothshorecrab04.jpg",
                 directToGroupName : "",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "No notches on the sides of the shell" ]
             },
-            {
-                name : "Austrohelice crassa",
-                image : "images/crabs/small-tunnelingmudcrab03.jpg",
-                directToGroupName : "Mud tunnelers",
-                idCharacteristics : [  ]
-            },
-            {
-                name : "Hemiplax hirtipes",
-                image : "images/crabs/small-sentinelcrab04.jpg",
-                directToGroupName : "Mud tunnelers",
-                idCharacteristics : [  ]
-            }
-        ]
-    },
-    {
-        groupName : "Mud tunnelers",
-        description : "",
-        helpText : [
-            "Check the claws, are the ends bent down (shaped like a boomerang)"
-        ],
-        crabItems : [
             {
                 name : "Austrohelice crassa",
                 image : "images/crabs/small-tunnelingmudcrab03.jpg",
                 directToGroupName : "",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "Has notches on the sides of the shell", "Claws are not bent" ]
             },
             {
                 name : "Hemiplax hirtipes",
                 image : "images/crabs/small-sentinelcrab04.jpg",
                 directToGroupName : "",
-                idCharacteristics : [  ]
+                idCharacteristics : [ "Has notches on the sides of the shell", "Claws are bent (shaped like a boomerang)" ]
             }
         ]
     },
