@@ -92,6 +92,7 @@ var CrabModel = function(crab) {
 
     self.commonName = crab.commonName || "No common name";      // the name the crab is known by
     self.scientificName = crab.scientificName;                  // the stupid scientific name
+    self.otherScientificNames = crab.otherScientificNames;      // any other scientific names we know the crab by, I cannot be bothered putting them all in here but sometimes it changes which could break links?
     self.attributes = crab.attributes;                          // an array of attributes that describe the crab e.g. [ { key : "carapaceShape",  values : ["oval"] } ]
     self.images = crab.images;                                  // an array of images { url: 'blah.jpg' }
     self.natureWatchLink = crab.natureWatchLink;                // a url to the naturewatch details page
@@ -226,16 +227,13 @@ var PageModel = function() {
         self.speciesSetToOpenFullImage(null);
     }
 
-
     // mark the crab indicated by the supplied key as to be compared
     // used when in the details/compare dialog to open a 'similar to' crab
     // the key is the scientific name
     self.openForCompareByKey = function(key) {
-        for(var i = 0 ; i < self.crabData().length; i++) {
-            if(self.crabData()[i].scientificName === key) {
-                self.crabData()[i].selectedForCompare(true);
-                break;
-            }
+        var match = self.findCrabByScientificName(key);
+        if(match) {
+            match.selectedForCompare(true);
         }
     }
 
@@ -424,7 +422,15 @@ var PageModel = function() {
     // locates and returns a crab by the scientific name
     self.findCrabByScientificName = function(scientificName) {
         var match = ko.utils.arrayFirst(self.crabData(), function(item) {
-            return item.scientificName == scientificName;
+            // if the scientific name we're searching for matches this crabs scientific name then return true (i.e. we found a match)
+            if(item.scientificName == scientificName) return true;
+            // check to see if this crab has 'other scientific names' that match the scientific name we're searching for
+            var otherScientificNameMatch = ko.utils.arrayFirst(item.otherScientificNames ?? [],function(otherItem){
+                return otherItem == scientificName;
+            });
+            if(otherScientificNameMatch) return true;
+            // the scientific name didn't match our crab name AND our crab didn't have other scientific names that matched
+            return false;
         });
         return match;
     }
@@ -434,7 +440,12 @@ var PageModel = function() {
     self.openForCompareByScienificName = function(selectThese) {
         for(var i = 0; i < selectThese.length; i++) {
             var crab = self.findCrabByScientificName(selectThese[i]);
-            crab.selectedForCompare(true);
+            // if there name is wrong (e.g. the url param gets messed up) then we might not find it I guess
+            if(crab) {
+                crab.selectedForCompare(true);
+            } else {
+                console.log("dang, I couldn't find a crab with the scientific name of "+selectThese[i])
+            }
         }
         self.compareDialogVisible(true);
     }

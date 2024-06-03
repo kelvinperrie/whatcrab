@@ -935,7 +935,8 @@ var crabData = [
     },
     {
         commonName : "Flat Pillbox Crab",
-        scientificName : "Halicarcinus innominatus",
+        scientificName : "Halicarcinus quoyi",
+        otherScientificNames: ["Halicarcinus innominatus"],
         attributes : [
             { key : "carapaceShape", values : ["round"] },
             { key : "toothOnMargin", values : ["false"] },
